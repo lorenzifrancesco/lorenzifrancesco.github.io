@@ -780,7 +780,7 @@ html, body {
 ================================================== */
 .hero { 
     background: url(../img/hero.jpg) no-repeat center / cover; 
-    height: 100%;
+    height: 50%;
     width: 100%;
     display: table;
     position: relative;
@@ -895,7 +895,7 @@ html, body {
 .subheading-text {
     font-size: 20px;
     font-style: italic;
-    color:rgba(210, 222, 245, 0.05);
+    color: rgba(0, 0, 0, 0)
 }
 
 .heading-separator {
