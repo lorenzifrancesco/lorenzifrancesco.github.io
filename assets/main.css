@@ -467,7 +467,12 @@
     font-size:3vw;
     font-weight: 300;
   }
-
+  .post-intro{
+    margin-top:4vh;
+    padding-bottom:6px;
+    font-size:3vw;
+    font-weight: 300;
+  }
 
   /* media queries */
   /* ----------------------------------------------------------*/
@@ -476,8 +481,9 @@
        font-size: 30px;
     }
     .bitter-description{
-      margin-top:5px;
-      padding-bottom:6px;
+      font-size:20pt;
+    }
+    .post-intro{
       font-size:20pt;
     }
   }
