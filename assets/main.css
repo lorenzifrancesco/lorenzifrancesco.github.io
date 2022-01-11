@@ -76,10 +76,11 @@
     border-bottom: 4px solid #922;
     min-height: 56px;
     background-color: white;
-    text-indent: 20pt;
   }
 
   .site-title{
+    margin-top: 5pt;
+    margin-bottom: 5pt;
     display: block;
     color: #000;
     font-size: 31px;
