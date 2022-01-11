@@ -14,17 +14,16 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /*font-family: Charter, Georgia, serif;*/
     color: #000;
-    font-size: 17.5px;
+    font-size: 1vw;
     line-height: 1.5;
     font-weight: 300;
     background-color: #fdfdfd;
     text-align: justify;
     text-justify: inter-word;
-    min-height: 100vh;
-    max-width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 20pt;
+    min-height: 95vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
   }
   
   h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal}
@@ -79,17 +78,17 @@
   }
 
   .site-title{
-    margin-top: 5pt;
-    margin-bottom: 5pt;
     display: block;
     color: #000;
-    font-size: 31px;
+    font-size: 7vw;
     float: left;
   /*  line-height: 56px;*/
   /*  position: relative;*/
     z-index: 1;
     padding-bottom: 0;
     font-weight: 300;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
   
   .site-nav {
@@ -406,7 +405,7 @@
     justify-content: center;
   }
   .img-res{
-    width: 85%;
+    width: 15vw;
     background-color: rgb(#818181);
     border: 2px;
     border-style: solid;
@@ -456,10 +455,33 @@
   .blog-text:hover {
     color: #C22
   }
+
+  .bitter{
+    float:left;
+     margin-top:4px;
+      margin-right:10px;
+  }
+  .bitter-description{
+    margin-top:4vh;
+    padding-bottom:6px;
+    font-size:3vw;
+    font-weight: 300;
+  }
+
+
   /* media queries */
   /* ----------------------------------------------------------*/
-  
-  
+  @media screen and (min-width: 1600px) {
+    .site-title {
+       font-size: 30px;
+    }
+    .bitter-description{
+      margin-top:5px;
+      padding-bottom:6px;
+      font-size:20pt;
+    }
+  }
+
   @media screen and (max-width: 750px) {
   
     .footer-col-1 { width: 50%; }
