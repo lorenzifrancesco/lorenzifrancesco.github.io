@@ -6,7 +6,9 @@
     padding: 0;
   }
   
-  html, body { height: 100%; }
+  html, body { 
+    height: 100%;
+  }
   
   body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -16,9 +18,13 @@
     line-height: 1.5;
     font-weight: 300;
     background-color: #fdfdfd;
-    width: 80%;
     text-align: justify;
     text-justify: inter-word;
+    min-height: 100vh;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20pt;
   }
   
   h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal}
@@ -66,15 +72,14 @@
   /* Site header */
   
   .site-header {
-    border-top: 5px solid #232323;
-    border-bottom: 1px solid #e8e8e8;
+    border-top: 4px solid #922;
+    border-bottom: 4px solid #922;
     min-height: 56px;
     background-color: white;
+    text-indent: 20pt;
   }
-  
-  .site-title,
-  .site-title:hover,
-  .site-title:visited {
+
+  .site-title,{
     display: block;
     color: #000;
     font-size: 31px;
@@ -107,6 +112,7 @@
   .site-footer {
     border-top: 1px solid #e8e8e8;
     padding: 30px 0;
+    text-align: right;
   }
   
   .footer-heading {
@@ -390,15 +396,63 @@
   #featuredlink:hover, #featuredlink:active {
     background-color: rgba(245, 245, 245);
   }
-  
+  .center{
+
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    display: flex;
+    justify-content: center;
+  }
   .img-res{
-    width: 60pt;
+    width: 85%;
     background-color: rgb(#818181);
-    border-width: 1pt;
+    border: 2px;
+    border-style: solid;
     /*background-color: rgba(255, 130, 0);*/
     border-radius: 10px;
-    color: white;
+    color: #922;
+    padding: 1px 1px;
+  }
+
+  .portfolio{
+    margin-top: 2pt;
+    margin-bottom: 2pt;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portfolio-item{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 300pt;
+    border-radius: 10px;
+    border-color: #922;
     padding: 2px 2px;
+    cursor: pointer; 
+    color: #922;
+  }
+
+  .portfolio-item:hover {
+    color: #C22
+  }
+
+  .portfolio-head{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: Charter, Georgia, serif;*/
+    color: #922;
+    font-size: 24.5px;
+    font-weight: bold;
+  }
+
+  .rule{
+    color: #922;
+    width: 90%;
+  }
+
+  .blog-text{
+    color: #922;
+  }
+  .blog-text:hover {
+    color: #C22
   }
   /* media queries */
   /* ----------------------------------------------------------*/
