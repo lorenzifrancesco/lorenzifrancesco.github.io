@@ -49,9 +49,9 @@
       padding: 3px;
   }
   
-  a         { color: #2a7ae2; text-decoration: none; }
-  a:hover   { color: ##232323; text-decoration: underline; }
-  a:visited { color: #205caa; }
+  a         { color: #922; text-decoration: none; }
+  a:hover   { color: #C22; text-decoration: underline; }
+  a:visited { color: #C22; }
   
   /* Utility */
   
@@ -79,7 +79,7 @@
     text-indent: 20pt;
   }
 
-  .site-title,{
+  .site-title{
     display: block;
     color: #000;
     font-size: 31px;
