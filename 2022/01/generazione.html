@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Basic Page Needs
+    ================================================== -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>lorenzifra</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+
+        <!-- Mobile Specific Metas
+    ================================================== -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0,
+            maximum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Stylesheets
+    ================================================== -->
+        <!-- Custom styles for this template -->
+        <link href="../../assets/main.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <h1 class="post-header">
+            Generazione di numeri casuali
+            <hr>
+        </h1>
+        
+        <div class="post-content">
+            TEST-TEST-TEST-TEST-TEST-TEST-TEST-TEST-
+            In order to write meaningful equation for the fields, we need to have a physical definition for them [[Fields definitions]].
+            Furthermore, the actual representation of fields can vary based on the assumption of harmonicity in time and space, decomposition, ... so the main results are arranged in [[Representation of fields]].
+            ## Maxwell eq in vacuum
+            
+            $$
+            \begin{align}
+            &\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0}\\
+            
+            &\nabla \cdot \mathbf{B} = 0 \\
+            
+            &\nabla \times \mathbf{E} = -\frac{d}{dt} \mathbf{B} \\
+            
+            &\nabla \times \mathbf{B} = \mu_0 \varepsilon_0 \frac{d}{dt}  \mathbf{E}
+            \end{align}
+            $$
+            
+            
+            ## Maxwell eq in continuous media
+            These are the "true" and useful Maxwell equation, but they rely on the constitutive relation of media [[Constitutive relations]]. 
+            
+            The constitutive relations are defined from structure of matter considerations, reassumed in [[Polarization-magnetization]] 
+            
+            >**teo:** the equation in integral and differential form are equivalent
+            
+              > **dim:** using the theorems from integration $\square$   
+            
+            $$
+            \begin{align}
+            &\nabla \cdot \mathbf{D} = \rho\\
+            
+            &\nabla \cdot \mathbf{B} = 0 \\
+            
+            &\nabla \times \mathbf{E} = -\frac{d}{dt} \mathbf{B} \\
+            
+            &\nabla \times \mathbf{H} = \frac{d}{dt} \mathbf{D}
+            \end{align}
+            $$
+            
+            ## Maxwell equation in media for time harmonic fields
+            In general, the notation for the phasor terms uses the bold fields.
+            $$
+            \begin{align}
+            &\nabla \cdot \mathbf{D} = \rho\\
+            
+            &\nabla \cdot \mathbf{B} = 0 \\
+            
+            &\nabla \times \mathbf{E} = -j \omega_0 \mathbf{B} \\
+            
+            &\nabla \times \mathbf{H} = j \omega_0 \mathbf{D}
+            \end{align}
+            $$
+            this notation gives the possibility to write the [[Helmholtz equation]]
+            
+            From each of the formulations we can derive some very fundamental physical results [[General theorems]]
+            
+            
+            
+            
+            > needed mathematics $\rightarrow$ [[Vector calculus]]
+            > 
+        </div>
+        <footer class="site-footer">
+            <a href="../../about.html">torna al blog</a>
+        </footer>
+    </body>
+</html>
+
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        tags: 'ams'        
+      }
+    };
+
+</script>
+<script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+

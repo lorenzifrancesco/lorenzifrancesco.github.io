@@ -216,8 +216,9 @@
     color: #666;
     /*color: #818181;*/
     margin-top: 5px;
+    margin-bottom: 5px;
   }
-  
+
   .post-content { margin: 0 0 30px; }
   
   .post-content > * { margin: 20px 0; }
