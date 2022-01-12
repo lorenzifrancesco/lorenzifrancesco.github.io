@@ -8,15 +8,17 @@
   
   html, body { 
     height: 100%;
+    max-width: 35cm;
+    margin: auto;
   }
   
   body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /*font-family: Charter, Georgia, serif;*/
     color: #000;
-    font-size: 1vw;
-    line-height: 1.5;
-    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 50;
     background-color: #fdfdfd;
     text-align: justify;
     text-justify: inter-word;
@@ -80,7 +82,7 @@
   .site-title{
     display: block;
     color: #000;
-    font-size: 7vw;
+    font-size: 25px;
     float: left;
   /*  line-height: 56px;*/
   /*  position: relative;*/
@@ -186,16 +188,18 @@
   .posts li { margin-bottom: 5px; }
   
   .posts .post-link {
-    font-size: 20px;
-    /*letter-spacing: -.5px;*/
-    line-height: 1;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 23px;
+    /* letter-spacing: -.5px; */
   }
   
   .posts .post-date {
-    padding-top: 15px;
+    padding-top: 5px;
     display: block;
     font-size: 15px;
     color: #818181;
+    padding-bottom: 5px;
   }
   
   
@@ -456,38 +460,36 @@
     color: #C22
   }
 
-  .bitter{
-    float:left;
-     margin-top:4px;
-      margin-right:10px;
+  .bitter-title{
+    text-align: left;
+    padding-bottom:20px;
+    font-size: 26px;
   }
+
   .bitter-description{
-    margin-top:4vh;
+    display: block;
     padding-bottom:6px;
-    font-weight: 300;
+    font-weight: 200;
   }
+
   .post-intro{
-    margin-top:4vh;
+    margin-top:5px;
     padding-bottom:6px;
-    font-weight: 300;
   }
 
   /* media queries */
   /* ----------------------------------------------------------*/
   @media screen and (min-width: 1600px) {
     .site-title {
-       font-size: 30px;
-    }
-    .bitter-description{
-      font-size:20pt;
-    }
-    .post-intro{
-      font-size:20pt;
+       font-size: 25pt;
     }
   }
 
   @media screen and (max-width: 750px) {
-  
+    .site-title {
+      font-size: 25pt;
+      padding-bottom: 10px;
+   }
     .footer-col-1 { width: 50%; }
   
     .footer-col-2 {
