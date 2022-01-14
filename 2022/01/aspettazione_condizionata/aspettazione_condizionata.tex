@@ -1,0 +1,38 @@
+\documentclass[10pt, article]{article}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath, amsfonts, mathtools}
+
+
+\begin{document}
+
+
+Il valore atteso, o aspettazione, è un funzionale che associa ad ogni variabile aleatoria un numero, ottenuto tramite integrazione sullo spazio della variabile aleatoria. Sia per esempio $X$ una variabile aleatoria reale, con distribuzione di probabilità $f_X(x)$, allora
+\begin{align} 
+	\mathbb{E}\left[X\right] = \int_{\mathbb{R}} dx \, x \, f_X(x)
+\end{align}
+se la nostra variabile è definita nello spazio di probabilità continuo $(\Omega, \mathcal{F}, p)$ con $p$ densità di probabilità, possiamo anche scrivere
+\begin{equation}
+	\mathbb{E}\left[X\right] = \int_{\Omega} d\omega \, X(\omega) \, f_X(X(\omega)) = \int_{\Omega} d\omega \, X(\omega) \, p(\omega)
+\end{equation}
+questa definizione può essere generalizzata a qualsiasi funzione deterministica di variabile aleatoria
+\begin{equation}
+	\mathbb{E}\left[g(X)\right] = \int_{\mathbb{R}}dx \, g(x) \, f_X(x)
+\end{equation}
+In realtà la formula precedente non è una naturale estensione, ma è un teorema, chiamato anche teorema dello statistico inconsapevole!
+L'aspettazione gode di molte proprietà, che la rendono uno strumento meraviglioso anche per la statistica.
+Quando condizioniamo la probabilità di un evento, lo facciamo rispetto ad un altro evento. Quando vogliamo determinare la distribuzione di variabile aleatoria condizionata, prendiamo come condizione un evento, ma possiamo anche porre questo evento come un generico evento appartenente ad una classe di eventi, per esempio tutti i valori possibili che . A questo punto la distribuzione cercata sarà parametrica nei parametri che descrivono l'evento.
+
+
+Infatti è equivalente condizionare rispetto a 
+\begin{equation}
+	p()
+\end{equation}
+Poniamoci in una situazione appunto di statistica:
+
+\begin{equation} 
+	\mathbb{E}\left[X|Y\right] = \underset{h(\cdot)}{\arg \min} \left[\mathbb{E}\left[(X - h(Y))^2\right]\right]
+\end{equation}
+
+\end{document}
