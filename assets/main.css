@@ -21,7 +21,7 @@
     font-weight: 50;
     background-color: #fdfdfd;
     text-align: justify;
-    text-justify: inter-word;
+    text-justify: auto;
     min-height: 95vh;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -475,6 +475,21 @@
   .post-intro{
     margin-top:5px;
     padding-bottom:6px;
+    width: fit-content;
+  }
+
+  .post-thumb{
+    display:inline-block;
+    margin-left: auto; 
+    margin-right: auto; 
+    vertical-align:top;            
+    padding-top:15px; 
+    text-align:center;
+    width:15%;
+  }
+  .post-block{
+    display:inline-block;
+    width:80%;
   }
 
   /* media queries */
@@ -485,7 +500,7 @@
     }
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 1000px) {
     .site-title {
       font-size: 25pt;
       padding-bottom: 10px;
@@ -507,6 +522,35 @@
       clear: both;
     }
   
+    .posts .post-link {
+      text-align: left;
+      margin-top: 10px;
+      font-size: 20px;
+      /* letter-spacing: -.5px; */
+    }
+
+    .post-intro{
+      margin-top:5px;
+      padding-bottom:6px;
+      width: fit-content;
+      font-size: 10pt;
+    }
+
+    .post-block{
+      display:inline-block;
+      width:95%;
+    }
+
+    .post-thumb{
+      display:block; 
+      margin-left: 5vw;          
+      margin-right: auto; 
+      vertical-align:top;         
+      padding-top:15px; 
+      text-align:center;
+      width:15%;
+    }
+
   }
   
   /*@media screen and (min-width: 900px) {
