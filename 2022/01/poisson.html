@@ -43,9 +43,11 @@
 
             Ovvero la probabilità che ci siano $k$ arrivi dal "flusso" 1, sapendo che ci sono $n+k$ arrivi totali
             \begin{align}
-                P[X_1(t)=k| X_1(t)+X_2(t) &= n+k] = \frac{P[X_1(t)=k, X_2(t)= n]}{P[X_1(t) + X_2(t)= n+k]} \\
+                & P[X_1(t)=k| X_1(t)+X_2(t) &= n+k] =\\
+                 &= \frac{P[X_1(t)=k, X_2(t)= n]}{P[X_1(t) + X_2(t)= n+k]} \\
                 &=\frac{(\lambda_1 t)^k (k!)^{-1} e^{-\lambda_1 t} (\lambda_2 t)^n (n!)^{-1} e^{-\lambda_2 t}}{((\lambda_1 + \lambda_2) t)^{n+k} ((n+k)!)^{-1} e^{-(\lambda_1+\lambda_2) t}} \\
-                &= \frac{(n+k)!}{n! k!}\frac{\lambda_1^k \lambda_2^n}{((\lambda_1 + \lambda_2))^{n+k}}
+                &= \frac{(n+k)!}{n! k!}\frac{\lambda_1^k \lambda_2^n}{((\lambda_1 + \lambda_2))^{n+k}} \\
+                &= \binom{n+k}{k} \left(\frac{\lambda_1}{\lambda_1+\lambda_2}\right)^k \left(\frac{\lambda_2}{\lambda_1+\lambda_2}\right)^n.
             \end{align}
             Ecco che allora questa probabilità coincide con quella di una variabile binomiale 
             \begin{equation}
