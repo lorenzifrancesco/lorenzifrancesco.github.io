@@ -26,6 +26,8 @@
     margin-left: 5vw;
     margin-right: 50vw;
     margin-top: 5vh;
+    background-image: "./assets/img/breaking";
+    background-color: #966;
   }
   
   h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal}
