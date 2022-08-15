@@ -68,6 +68,7 @@ td {
 a {
     color: rgb(255, 137, 137);
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
@@ -109,17 +110,23 @@ a:visited {
 /* Site header */
 
 .site-image {
+    border-radius: 20px;
+    border-color: rgb(152, 113, 75);
+    padding: 5px 5px;
     background-image: url("./img/quasi_third.png");
     background-color: #006000;
-    width: 40vw;
+    width: 45vw;
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
-    height: 500px;
+    height: 55vh;
 }
 
 .site-header {
-    color: rgb(255, 225, 144);
+    font-family: 'Helvetica', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: ;
+    font-weight: 500;
+    color: rgb(253, 236, 187);
     background-color: #346e54;
     /* Used if the image is unavailable */
     border-top: 4px solid rgb(152, 113, 75);
@@ -135,8 +142,6 @@ a:visited {
 }
 
 .big-title {
-    font-family: 'Helvetica', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 300;
     display: block;
     float: left;
 }
@@ -535,12 +540,12 @@ span.colab-span {
     border-style: solid;
     /*background-color: rgba(255, 130, 0);*/
     border-radius: 10px;
-    color: #922;
+    color: rgb(152, 113, 75);
     padding: 1px 1px;
 }
 
 .portfolio-collection {
-    border-top: 2px solid #922;
+    border-top: 2px solid rgb(152, 113, 75);
 
 }
 
@@ -556,10 +561,10 @@ span.colab-span {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 300pt;
     border-radius: 10px;
-    border-color: #922;
+    border-color: rgb(152, 113, 75);
     padding: 2px 2px;
     cursor: pointer;
-    color: #922;
+    color: rgb(250, 188, 126);
 }
 
 .portfolio-item:hover {
@@ -569,14 +574,14 @@ span.colab-span {
 .portfolio-head {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /*font-family: Charter, Georgia, serif;*/
-    color: rgb(211, 40, 40);
+    color: rgb(255, 189, 123);
     font-size: 24.5px;
     font-weight: bold;
     margin-left: 2vw;
 }
 
 .rule {
-    color: #922;
+    color: rgb(152, 113, 75);
     height: 2px;
 }
 
