@@ -1,5 +1,0 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'aspettazione_condizionata.blg'
-[67] biber:340> INFO - === gio gen 13, 2022, 17:40:12
-[127] Utils.pm:411> ERROR - Cannot find 'aspettazione_condizionata.bcf'!
-[127] Biber.pm:132> INFO - ERRORS: 1
