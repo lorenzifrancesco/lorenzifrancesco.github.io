@@ -419,12 +419,13 @@
     padding: 1px 1px;
   }
 
-  .portfolio{
+  .portfolio {
     margin-top: 2pt;
     margin-bottom: 2pt;
     align-items: center;
     text-align: center;
-  }
+    display: inline-flex;
+}
 
   .portfolio-item{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
