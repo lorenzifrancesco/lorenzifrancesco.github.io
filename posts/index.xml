@@ -13,7 +13,7 @@
       <pubDate>Mon, 14 Aug 2023 16:52:51 +0200</pubDate>
       
       <guid>/posts/test/</guid>
-      <description>$$ \int_{-\infty}^\infty e^{-x^2} dx = \sqrt{\pi} $$</description>
+      <description>$ \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi} $</description>
     </item>
     
   </channel>
