@@ -49,14 +49,18 @@
 
 
 
+  
+  
+  
+
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name"></title>
-<meta property="og:title" content=ZgotmplZ />
-<meta name="twitter:title" content=ZgotmplZ />
-<meta itemprop="name" content=ZgotmplZ />
-<meta name="application-name" content=ZgotmplZ />
+<title itemprop="name">Francesco Lorenzi - L&#39;equazione nonlineare di Schrödinger è canonica</title>
+<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;L&#39;equazione&#32;nonlineare&#32;di&#32;Schrödinger&#32;è&#32;canonica />
+<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;L&#39;equazione&#32;nonlineare&#32;di&#32;Schrödinger&#32;è&#32;canonica />
+<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;L&#39;equazione&#32;nonlineare&#32;di&#32;Schrödinger&#32;è&#32;canonica />
+<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;L&#39;equazione&#32;nonlineare&#32;di&#32;Schrödinger&#32;è&#32;canonica />
 <meta property="og:site_name" content="" />
 
 
@@ -66,18 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="/tags/" />
-<link rel="canonical" href="/tags/" itemprop="url" />
-<meta name="url" content="/tags/" />
-<meta name="twitter:url" content="/tags/" />
-<meta property="og:url" content="/tags/" />
+<base href="/posts/canonica/" />
+<link rel="canonical" href="/posts/canonica/" itemprop="url" />
+<meta name="url" content="/posts/canonica/" />
+<meta name="twitter:url" content="/posts/canonica/" />
+<meta property="og:url" content="/posts/canonica/" />
 
 
-<meta property="og:updated_time" content=1001-01-12T10:00:01Z />
+<meta property="og:updated_time" content=14008-14-07T830:52:23&#43;0200 />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
-<link href="/tags/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -91,6 +94,20 @@
 <meta name="apple-mobile-web-app-title" content="" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:publisher" content="" />
+<meta property="og:article:published_time" content=14008-14-07T830:52:23&#43;0200 />
+<meta property="article:published_time" content=14008-14-07T830:52:23&#43;0200 />
+
+
 
 
 
@@ -279,13 +296,85 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">Tags</h1>
-<ul class="entries">
+                <div class="post">
+  <div class="info">
+    <h1 class="post-title">
+        <a href="/posts/canonica/">L&#39;equazione nonlineare di Schrödinger è canonica</a>
+    </h1>
     
-</ul>
+        <time datetime="2023-08-14T19:30:52&#43;0200" class="post-date">
+            August 14, 2023
+        </time>
+    
+    
+    
+    
+    
+    
+    
+</div>
 
+  <p>L&rsquo;equazione nonlineare di Schrödinger (NLSE) compare nei più disparati campi della Fisica, come l&rsquo;ottica nonlineare, la materia condensata, la fisica dei plasmi. In tutti questi scenari, l&rsquo;equazione descrive la dinamica di inviluppi in presenza di dispersione e nonlinearità debole. Quindi una domanda che viene spontanea è quella di capire se sia possibile derivare questa equazione senza ricorrere ad una particolare situazione fisica. Ciò è particolarmente illuminante dal punto di vista matematico, oltre ad essere un utile esercizio. In questo post esploreremo un metodo che ci permette di derivare l&rsquo;equazione in generale, a partire da una generica equazione alle derivate parziali, usando solamente assunzioni fondamentali sulle sue proprietà matematiche delle soluzioni.
+Sia in generale un&rsquo;equazione alle derivate parziali in $d$ dimensioni per un campo scalare $u$ espressa come
+\begin{equation}
+L(\partial_t, \nabla)u = G(u),
+\end{equation}
+dove $L$ è un operatore lineare, e $G$ una generica funzione, nonlineare di $u$ e le sue derivate.
+Per soluzioni dall&rsquo;ampiezza ridotta, il termine nonlineare viene assunto essere trascurabile, perciò le soluzioni saranno
+\begin{equation}\label{solution}
+u = \epsilon\psi \exp[i(\mathbf{k} \cdot \mathbf{r} - \omega t)],
+\end{equation}
+con $\omega$ e $\mathbf{k}$ che soddisfano la relazione di dispersione
+\begin{equation}
+L(-i\omega, i\mathbf{k}) = 0.
+\end{equation}
+in generale, questa relazione può ammettere diverse soluzioni $\omega$ per uno stesso $\mathbf{k}$. Sia $\omega(\mathbf{k})$ una di queste.
+Prendendo la soluzione espressa in Eq. (\ref{solution}), la relazione di dispersione può essere scritta come
+\begin{equation}\label{dispersion}
+[i\partial_t - \omega(i\partial_{\mathbf{r}})] \ \epsilon\psi\exp[i(\mathbf{k} \cdot \mathbf{r} - \omega t)],
+\end{equation}
+promuovendo $\omega$ ad un operatore.
+Ora introduciamo una correzione: nel caso di nonlinearità piccole, la pulsazione dipenderà anche da $\epsilon^2 |\psi|^2$. Quindi potremo sostituire $\omega(\mathbf{k})$ con $\Omega(\mathbf{k}, \epsilon^2|\psi|^2)$. Si noti $\Omega(\mathbf{k}, 0)=\omega(\mathbf{k})$.
+Inoltre, l&rsquo;ampiezza $\psi$ diventa dipendente dalle variabili <code>lente'' $T=\epsilon t$ e $\mathbf{X} = \epsilon \mathbf{x}$. Possiamo sostituire formalmente $\partial_t \longrightarrow \partial_t + \epsilon\partial_T$ e $\partial_{\mathbf{x}} \longrightarrow \partial_{x}+\epsilon \nabla$, dove $\nabla$ è il gradiente rispetto alla variabile </code>lenta&rsquo;&rsquo;.
+La relazione Eq. (\ref{dispersion}) diventa
+\begin{equation}
+[i\omega + \epsilon \partial_T - \Omega(\mathbf{k}-i\epsilon\nabla, \epsilon^2|\psi|^2)]\psi = 0.
+\end{equation}
+Dato che $\epsilon$ è piccolo, possiamo espandere in serie questa equazione attorno a $\epsilon=0$, ottenendo
+\begin{equation}
+i(\partial_T + \mathbf{v}_g \cdot \nabla)\psi + \epsilon[\nabla \cdot (D\nabla\psi) + \gamma|\psi|^2\psi]=0
+\end{equation}
+dove $\mathbf{v}<em>g=\nabla</em>\mathbf{k}\omega$ è la velocità di gruppo, e $D$ la matrice hessiana dimezzata di $\omega$.
+In un mezzo isotropico, $\nabla \cdot (D\nabla) = \nabla^2$. Inoltre, riscalando la variabile spaziale usando  $\mathbf{\zeta} = \mathbf{X} - T\mathbf{v}<em>g$, e $\tau = \epsilon T$, otteniamo
+\begin{equation}
+i\partial</em>\tau +\nabla \cdot (D\nabla\psi) + \gamma |\psi|^2 \psi = 0
+\end{equation}
+che è proprio la NLSE in un mezzo anisotropo.</p>
+
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="/posts/first/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Quasistationary modes in optical resonator with...</a>
+        
+	    
+    
+</div>
+
+  
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>

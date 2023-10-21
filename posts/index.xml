@@ -6,14 +6,24 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Aug 2023 16:52:51 +0200</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 19:30:52 +0200</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test post</title>
-      <link>/posts/test/</link>
-      <pubDate>Mon, 14 Aug 2023 16:52:51 +0200</pubDate>
+      <title>L&#39;equazione nonlineare di Schrödinger è canonica</title>
+      <link>/posts/canonica/</link>
+      <pubDate>Mon, 14 Aug 2023 19:30:52 +0200</pubDate>
       
-      <guid>/posts/test/</guid>
-      <description>$ \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi} $</description>
+      <guid>/posts/canonica/</guid>
+      <description>L&amp;rsquo;equazione nonlineare di Schrödinger (NLSE) compare nei più disparati campi della Fisica, come l&amp;rsquo;ottica nonlineare, la materia condensata, la fisica dei plasmi. In tutti questi scenari, l&amp;rsquo;equazione descrive la dinamica di inviluppi in presenza di dispersione e nonlinearità debole. Quindi una domanda che viene spontanea è quella di capire se sia possibile derivare questa equazione senza ricorrere ad una particolare situazione fisica. Ciò è particolarmente illuminante dal punto di vista matematico, oltre ad essere un utile esercizio.</description>
+    </item>
+    
+    <item>
+      <title>Quasistationary modes in optical resonator with moving mirror</title>
+      <link>/posts/first/</link>
+      <pubDate>Mon, 14 Aug 2023 19:30:52 +0200</pubDate>
+      
+      <guid>/posts/first/</guid>
+      <description>Based on Zh. Eksp. Teor. Fiz. 53, 2123 (1967)
+Consider an electromagnetic field in a laser cavity with a mirror moving with velocity $v=\beta c$. Suppose to neglect polarization. So the transverse field $E(x, t)$ satisfy boundary conditions $$ E(0, t) = 0 $$ and, in the transformed reference frame $$ E(L_0 + vt, t) - \beta H(L_0+vt, t) = 0 $$ We seek solutions as superposition of plane waves, so we have</description>
     </item>
     
   </channel>
