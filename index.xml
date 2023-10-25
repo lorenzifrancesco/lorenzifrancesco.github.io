@@ -8,15 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 14 Aug 2023 19:30:52 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>L&#39;equazione nonlineare di Schrödinger è canonica</title>
-      <link>/posts/canonica/</link>
-      <pubDate>Mon, 14 Aug 2023 19:30:52 +0200</pubDate>
-      
-      <guid>/posts/canonica/</guid>
-      <description>L&amp;rsquo;equazione nonlineare di Schrödinger (NLSE) compare nei più disparati campi della Fisica, come l&amp;rsquo;ottica nonlineare, la materia condensata, la fisica dei plasmi. In tutti questi scenari, l&amp;rsquo;equazione descrive la dinamica di inviluppi in presenza di dispersione e nonlinearità debole. Quindi una domanda che viene spontanea è quella di capire se sia possibile derivare questa equazione senza ricorrere ad una particolare situazione fisica. Ciò è particolarmente illuminante dal punto di vista matematico, oltre ad essere un utile esercizio.</description>
-    </item>
-    
-    <item>
       <title>Quasistationary modes in optical resonator with moving mirror</title>
       <link>/posts/first/</link>
       <pubDate>Mon, 14 Aug 2023 19:30:52 +0200</pubDate>
@@ -35,6 +26,15 @@ Consider an electromagnetic field in a laser cavity with a mirror moving with ve
       <description>I&amp;rsquo;m a passionate Ph.D. student of Theoretical Physics of Matter, at the department of Physics and Astronomy of University of Padova. I have background in optics and photonics for telecommunications.
 My current research interests are in theoretical physic of matter:
 solitons and their stability in classical and quantum field theories highly nonlinear phenomena in Bose-Einstein condensates, Josephson oscillations Due to my background in photonic engineering and ICT, I&amp;rsquo;m also interested in</description>
+    </item>
+    
+    <item>
+      <title>Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation</title>
+      <link>/posts/canonical/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/canonical/</guid>
+      <description>Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics. In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.</description>
     </item>
     
   </channel>
