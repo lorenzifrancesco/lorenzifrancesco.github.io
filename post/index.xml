@@ -9,6 +9,15 @@
     <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binomial from Poisson in composite process</title>
+      <link>/post/bose-einstein_condensation/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bose-einstein_condensation/</guid>
+      <description>In this posts I will review the various calculations one can perform to derive the result of Bose-Einstein condensation for a ideal and a weakly interacting Bose gas. These derivations are useful for their mathematical content and to show the relevant physical variables that are meaningful in this context.</description>
+    </item>
+    
+    <item>
+      <title>Binomial from Poisson in composite process</title>
       <link>/post/poisson/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
       
@@ -34,6 +43,15 @@ Consider an electromagnetic field in a laser cavity with a mirror moving with ve
       
       <guid>/post/canonical/</guid>
       <description>Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics. In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/regularization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/regularization/</guid>
+      <description></description>
     </item>
     
   </channel>
