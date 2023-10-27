@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>/</link>
-    <description>Recent content on </description>
+    <title>Post on </title>
+    <link>/post/</link>
+    <description>Recent content in Post on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binomial from Poisson in composite process</title>
       <link>/post/poisson/</link>
@@ -25,17 +25,6 @@ Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_
       <guid>/post/first/</guid>
       <description>Based on Zh. Eksp. Teor. Fiz. 53, 2123 (1967)
 Consider an electromagnetic field in a laser cavity with a mirror moving with velocity $v=\beta c$. Suppose to neglect polarization. So the transverse field $E(x, t)$ satisfy boundary conditions $$ E(0, t) = 0 $$ and, in the transformed reference frame $$ E(L_0 + vt, t) - \beta H(L_0+vt, t) = 0 $$ We seek solutions as superposition of plane waves, so we have</description>
-    </item>
-    
-    <item>
-      <title>Welcome to my projects and research page!</title>
-      <link>/about/about/</link>
-      <pubDate>Mon, 14 Aug 2023 16:56:10 +0200</pubDate>
-      
-      <guid>/about/about/</guid>
-      <description>I&amp;rsquo;m a passionate Ph.D. student of Theoretical Physics of Matter, at the department of Physics and Astronomy of University of Padova. I have background in optics and photonics for telecommunications.
-My current research interests are in theoretical physics of matter:
-solitons and their stability in classical and quantum field theories highly nonlinear phenomena in Bose-Einstein condensates, Josephson oscillations Due to my background in photonic engineering and ICT, I&amp;rsquo;m also interested in</description>
     </item>
     
     <item>

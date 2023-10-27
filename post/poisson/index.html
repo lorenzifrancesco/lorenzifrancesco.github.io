@@ -44,41 +44,43 @@
 
 
   
+
+
+
+
+
   
-
-
-
-
+  
+  
 
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Francesco Lorenzi</title>
-<meta property="og:title" content=Francesco&#32;Lorenzi />
-<meta name="twitter:title" content=Francesco&#32;Lorenzi />
-<meta itemprop="name" content=Francesco&#32;Lorenzi />
-<meta name="application-name" content=Francesco&#32;Lorenzi />
+<title itemprop="name">Francesco Lorenzi - Binomial from Poisson in composite process</title>
+<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;Binomial&#32;from&#32;Poisson&#32;in&#32;composite&#32;process />
+<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;Binomial&#32;from&#32;Poisson&#32;in&#32;composite&#32;process />
+<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;Binomial&#32;from&#32;Poisson&#32;in&#32;composite&#32;process />
+<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;Binomial&#32;from&#32;Poisson&#32;in&#32;composite&#32;process />
 <meta property="og:site_name" content="" />
 
 
-<meta name="description" content="Ph.D. student in Theoretical Condensed Matter Physics" />
-<meta itemprop="description" content="Ph.D. student in Theoretical Condensed Matter Physics" />
-<meta property="og:description" content="Ph.D. student in Theoretical Condensed Matter Physics" />
-<meta name="twitter:description" content="Ph.D. student in Theoretical Condensed Matter Physics" />
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
 
 
-<base href="/" />
-<link rel="canonical" href="/" itemprop="url" />
-<meta name="url" content="/" />
-<meta name="twitter:url" content="/" />
-<meta property="og:url" content="/" />
+<base href="/post/poisson/" />
+<link rel="canonical" href="/post/poisson/" itemprop="url" />
+<meta name="url" content="/post/poisson/" />
+<meta name="twitter:url" content="/post/poisson/" />
+<meta property="og:url" content="/post/poisson/" />
 
 
 <meta property="og:updated_time" content=27010-27-12T100:00:23Z />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -290,17 +292,14 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <div class="posts">
-    
-    
-    <article class="post">
-        <div class="info">
+                <div class="post">
+  <div class="info">
     <h1 class="post-title">
-        <a href="/about/about/">Welcome to my projects and research page!</a>
+        <a href="/post/poisson/">Binomial from Poisson in composite process</a>
     </h1>
     
-        <time datetime="2023-08-14T16:56:10&#43;0200" class="post-date">
-            August 14, 2023
+        <time datetime="2023-10-27T00:00:00Z" class="post-date">
+            October 27, 2023
         </time>
     
     
@@ -311,21 +310,59 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
 </div>
 
-        I&rsquo;m a passionate Ph.D. student of Theoretical Physics of Matter, at the department of Physics and Astronomy of University of Padova. I have background in optics and photonics for telecommunications.
-My current research interests are in theoretical physics of matter:
-solitons and their stability in classical and quantum field theories highly nonlinear phenomena in Bose-Einstein condensates, Josephson oscillations Due to my background in photonic engineering and ICT, I&rsquo;m also interested in
+  <p>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.</p>
+<p>Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as averave arrivals in a second. Let us consider the following conditional
+$$
+\begin{align}
+&amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;= n+k]
+\end{align}
+$$
+that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.
+$$
+\begin{align}
+&amp; P[X_1(t)=k \ | \  X_1(t)+X_2(t) &amp;= n+k] = \\
+&amp;= \frac{P[X_1(t)=k, X_2(t)= n]}{P[X_1(t) + X_2(t)= n+k]} \\
+&amp;=\frac{(\lambda_1 t)^k (k!)^{-1} e^{-\lambda_1 t} (\lambda_2 t)^n (n!)^{-1} e^{-\lambda_2 t}}{((\lambda_1 + \lambda_2) t)^{n+k} ((n+k)!)^{-1} e^{-(\lambda_1+\lambda_2) t}} \\
+&amp;= \frac{(n+k)!}{n! k!}\frac{\lambda_1^k \lambda_2^n}{((\lambda_1 + \lambda_2))^{n+k}} \\
+&amp;= \binom{n+k}{k} \left(\frac{\lambda_1}{\lambda_1+\lambda_2}\right)^k \left(\frac{\lambda_2}{\lambda_1+\lambda_2}\right)^n.
+\end{align}
+$$
+Here we found that this probability distribution coincides to the one of a binomial variable
+$$
+Y \sim \text{Bin}(n+k, p)
+$$
+where
+$$
+p = \frac{\lambda_1}{\lambda_1+ \lambda_2}
+$$
+This result is well rooted in our intuition: every arrival comes from process 1 or process 2, with a probability which is proportional to the arrival rate of the two processes. Expressing this results with the rates $\lambda_i$, we obtain a sum of Bernoulli variables, that boils down to the binomial variable we found.</p>
+
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="/post/first/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Quasistationary modes in optical resonator with...</a>
         
-        <div class="read-more-link">
-            <a href="/about/about/">Read More…</a>
-        </div>
-        
-    </article>
+	    
+    
 </div>
 
+  
 
-
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>
