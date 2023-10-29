@@ -6,7 +6,16 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Kapitza pendulum</title>
+      <link>/post/kapitza/</link>
+      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/kapitza/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Binomial from Poisson in composite process</title>
       <link>/post/poisson/</link>
@@ -23,7 +32,7 @@ Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>/post/second_quantization/</guid>
-      <description>La procedura di quantizzazione di un modello classico di un fenomeno fisico ha il suo passaggio cruciale nella promozione delle variabili dinamiche del modello a degli operatori nello spazio di Hilbert degli stati quantistici del sistema. La quantizzazione ha successo se questi operatori formano un insieme completo di osservabili che commutano, quindi sono compatibili (tale insieme ha l&amp;rsquo;acronimo ICOC). In tal caso, ogni stato quantistico del sistema si può esprimere come somma di autostati, e possiamo scrivere le ampiezze di probabilità, e prendere le medie di tutte le variabili dinamiche.</description>
+      <description>The procedure of quantization of a classical theory has its crucial passage in the promotion of the dynamical variables to operators in the Hilbert space of the quantum states of the system. The quantization is successful if these operators form a complete set of commuting observables (this set is called ICOC). In this case, every quantum state of the system can be expressed as a sum of eigenstates, and we can write the probability amplitudes, and take the averages of all the dynamical variables.</description>
     </item>
     
     <item>
