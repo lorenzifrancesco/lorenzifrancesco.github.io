@@ -56,11 +56,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Francesco Lorenzi - Binomial from Poisson in composite process</title>
-<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;Binomial&#32;from&#32;Poisson&#32;in&#32;composite&#32;process />
-<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;Binomial&#32;from&#32;Poisson&#32;in&#32;composite&#32;process />
-<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;Binomial&#32;from&#32;Poisson&#32;in&#32;composite&#32;process />
-<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;Binomial&#32;from&#32;Poisson&#32;in&#32;composite&#32;process />
+<title itemprop="name">Francesco Lorenzi - Second quantization of the electromagnetic field</title>
+<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;Second&#32;quantization&#32;of&#32;the&#32;electromagnetic&#32;field />
+<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;Second&#32;quantization&#32;of&#32;the&#32;electromagnetic&#32;field />
+<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;Second&#32;quantization&#32;of&#32;the&#32;electromagnetic&#32;field />
+<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;Second&#32;quantization&#32;of&#32;the&#32;electromagnetic&#32;field />
 <meta property="og:site_name" content="" />
 
 
@@ -70,11 +70,11 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="/post/poisson/" />
-<link rel="canonical" href="/post/poisson/" itemprop="url" />
-<meta name="url" content="/post/poisson/" />
-<meta name="twitter:url" content="/post/poisson/" />
-<meta property="og:url" content="/post/poisson/" />
+<base href="/post/second_quantization/" />
+<link rel="canonical" href="/post/second_quantization/" itemprop="url" />
+<meta name="url" content="/post/second_quantization/" />
+<meta name="twitter:url" content="/post/second_quantization/" />
+<meta property="og:url" content="/post/second_quantization/" />
 
 
 <meta property="og:updated_time" content=27010-27-12T100:00:23Z />
@@ -295,7 +295,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
     <h1 class="post-title">
-        <a href="/post/poisson/">Binomial from Poisson in composite process</a>
+        <a href="/post/second_quantization/">Second quantization of the electromagnetic field</a>
     </h1>
     
         <time datetime="2023-10-27T00:00:00Z" class="post-date">
@@ -310,41 +310,138 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
 </div>
 
-  <p>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.</p>
-<p>Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as averave arrivals in a second. Let us consider the following conditional
+  <p>La procedura di quantizzazione di un modello classico di un fenomeno fisico ha il suo passaggio cruciale nella promozione delle variabili dinamiche del modello a degli operatori nello spazio di Hilbert degli stati quantistici del sistema. La quantizzazione ha successo se questi operatori formano un insieme completo di osservabili che commutano, quindi sono compatibili (tale insieme ha l&rsquo;acronimo ICOC). In tal caso, ogni stato quantistico del sistema si può esprimere come somma di autostati, e possiamo scrivere le ampiezze di probabilità, e prendere le medie di tutte le variabili dinamiche.
+La descrizione quantizzata del campo elettromagnetico nel vuoto si ottiene esprimendo l&rsquo;hamiltoniana del campo in un volume $V$ finito, per poi prendere il limite per $V \to \infty$. La promozione ad operatori è effettuata tramite gli operatori di posizione e momento coniugato, che sono introdotti tramite la scrittura dell&rsquo;hamiltoniana del campo in termini di una somma, eventualmente infinita, di oscillatori armonici non accoppiati.</p>
+<p>Iniziamo esprimendo l&rsquo;hamiltoniana del campo in un volume di spazio $V$.
+$$
+H = \int_{V}dV \dfrac{1}{2}\varepsilon_0 |\mathbf{E}|^2 + \dfrac{1}{2\mu_0}|\mathbf{B}|^2
+$$</p>
+<p>Ora ricordiamo che è possibile esprimere i campi $\mathbf{E}$, $\mathbf{B}$ usando il potenziale vettore magnetico $\mathbf{A}$ in questo modo, scegliendo il gauge di Coulomb:
 $$
 \begin{align}
-&amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;= n+k]
+\mathbf{E} &amp;= - \dfrac{\partial}{\partial t}	\mathbf{A} \\
+\mathbf{B} &amp;= \nabla \times \mathbf{A}
 \end{align}
 $$
-that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.
+Ricordiamo, dalle equazioni di Maxwell, l&rsquo;equazione d&rsquo;onda per il campo $\mathbf{A}$
 $$
+\left(\nabla^2 - \dfrac{1}{c^2} \dfrac{\partial^2}{\partial t^2} \right)\mathbf{A} =0
+$$
+Dato che siamo in un volume limitato di spazio, possiamo imporre una condizione al contorno periodica, ed esprimiamo il campo $\mathbf{A}$ secondo la sua serie di Fourier, tramite somma di esponenziali complessi.
+Scegliamo di esprimere le onde piane componenti come onde polarizzate linearmente. Questo non inficia la generalità del procedimento, in quanto altre polarizzazioni sono esprimibili come somme di onde polarizzate linearmente, con opportuni sfasamenti.
+Sia quindi $\mathbf{k}$ il vettore d&rsquo;onda, ed $s$ la polarizzazione lineare ($s \in {\alpha, \beta}$ dove $\alpha, \beta$ sono due polarizzazioni ortogonali possibili dato il vettore d&rsquo;onda $\mathbf{k}$).
+Abbiamo che</p>
+<p>$$
+\mathbf{A} = \sum_{\mathbf{k}s} A_{\mathbf{k}s}(t) e^{i \mathbf{k} \cdot \mathbf{r}} , \hat{\epsilon}_{\mathbf{k}s}
+$$</p>
+<p>Dove $\hat{\epsilon}_{\mathbf{k}s}$ è  il versore del campo, parallelo alla polarizzazione.
+Inoltre, il campo $\mathbf{A}$ dev&rsquo;essere reale, quindi abbiamo la condizione</p>
+<p>$$
+A_{-\mathbf{k}s}(t) = A_{\mathbf{k}s}^*(t)
+$$</p>
+<p>In vista di questa condizione, a meno di ridefinire i termini $A_{\mathbf{k}s}$ dimezzandoli, possiamo riscrivere la somma come</p>
+<p>$$
+\mathbf{A} = \sum _{\mathbf{k}s} A _{\mathbf{k}s}(t) e^{i \mathbf{k} \cdot \mathbf{r}} +  A^* _{\mathbf{k}s}(t) e^{-i \mathbf{k} \cdot \mathbf{r}} \hat{\epsilon} _{\mathbf{k}s}
+$$</p>
+<p>Sostituendo la seguente condizione</p>
+<p>$$
+\ddot{A} _{\mathbf{k}s}(t) + \omega _\mathbf{k}^2  A _{\mathbf{k}s}(t) = 0
+$$</p>
+<p>con la <strong>relazione di dispersione</strong></p>
+<p>$$
+\omega_\mathbf{k} = c |\mathbf{k}|
+$$</p>
+<p>Dato che $\omega$, nel vuoto, dipende solamente dal modulo $|\mathbf{k}| =: k$ possiamo anche scrivere $\omega_k$ per semplicità.
+Quindi l&rsquo;equazione di risolve</p>
+<p>$$
+A_{\mathbf{k}s}(t) = A_{\mathbf{k}s}(0) e^{-\omega_k t}
+$$</p>
+<p>Calcoliamo ora l&rsquo;hamiltoniana in termini di questa espansione di Fourier dei campi</p>
+<p>$$
+H = \int_{V}dV \dfrac{1}{2}\varepsilon_0 |\dfrac{\partial}{\partial t} \mathbf{A}|^2 + \dfrac{1}{2\mu_0}|\nabla \times \mathbf{A}|^2
+$$</p>
+<p>In questo modo otteniamo</p>
+<p>$$
+H = \sum_{\mathbf{k}s} \varepsilon_0 \omega_k^2 ( A_{\mathbf{k}s}(t) A_{\mathbf{k}s}^* (t) + A_{\mathbf{k}s}^{*} (t) A_{\mathbf{k}s}(t))
+$$</p>
+<p>notiamo che questa hamiltoniana è indipendente dal tempo, poiché lo sono i termini  $A_{\mathbf{k}s}(t)A_{\mathbf{k}s}^* (t)$ ed il complesso coniugato. Per brevità possiamo scrivere semplicemente $A_{\mathbf{k}s} A_{\mathbf{k}s}^* $.
+Introduciamo le variabili adimensionali $a_{\mathbf{k}s}$, ed $a_{\mathbf{k}s}^*$ in modo che</p>
+<p>$$
 \begin{align}
-&amp; P[X_1(t)=k \ | \  X_1(t)+X_2(t) &amp;= n+k] = \\
-&amp;= \frac{P[X_1(t)=k, X_2(t)= n]}{P[X_1(t) + X_2(t)= n+k]} \\
-&amp;=\frac{(\lambda_1 t)^k (k!)^{-1} e^{-\lambda_1 t} (\lambda_2 t)^n (n!)^{-1} e^{-\lambda_2 t}}{((\lambda_1 + \lambda_2) t)^{n+k} ((n+k)!)^{-1} e^{-(\lambda_1+\lambda_2) t}} \\
-&amp;= \frac{(n+k)!}{n! k!}\frac{\lambda_1^k \lambda_2^n}{((\lambda_1 + \lambda_2))^{n+k}} \\
-&amp;= \binom{n+k}{k} \left(\frac{\lambda_1}{\lambda_1+\lambda_2}\right)^k \left(\frac{\lambda_2}{\lambda_1+\lambda_2}\right)^n.
+A_{\mathbf{k}s} &amp;= \sqrt{\dfrac{\hslash}{2\epsilon_0 \omega_k}} a_{\mathbf{k}s} \\
+A_{\mathbf{k}s}^* &amp;= \sqrt{\dfrac{\hslash}{2\epsilon_0 \omega_k}} a_{\mathbf{k}s}^*
 \end{align}
-$$
-Here we found that this probability distribution coincides to the one of a binomial variable
-$$
-Y \sim \text{Bin}(n+k, p)
-$$
-where
-$$
-p = \frac{\lambda_1}{\lambda_1+ \lambda_2}
-$$
-This result is well rooted in our intuition: every arrival comes from process 1 or process 2, with a probability which is proportional to the arrival rate of the two processes. Expressing this results with the rates $\lambda_i$, we obtain a sum of Bernoulli variables, that boils down to the binomial variable we found.</p>
+$$</p>
+<p>Allora</p>
+<p>$$
+H = \sum_{\mathbf{k}s} \dfrac{\hslash \omega_k}{2} (a_{\mathbf{k}s}a_{\mathbf{k}s}^* +a_{\mathbf{k}s}a_{\mathbf{k}s}^*)
+$$</p>
+<p>Possiamo intodurre altre variabili</p>
+<p>$$
+\begin{align}
+q_{\mathbf{k}s} &amp;= \sqrt{\dfrac{2\hslash}{\omega_k}} (a_{\mathbf{k}s} + a_{\mathbf{k}s}^* )\\
+p_{\mathbf{k}s} &amp;= \sqrt{2\hslash \omega_k} (a_{\mathbf{k}s} - a_{\mathbf{k}s}^* )
+\end{align}
+$$</p>
+<p>quindi esprimendo l&rsquo;hamiltoniana in funzione di $q_{\mathbf{k}s}$ e $p_{\mathbf{k}s}$, otteniamo la seguente, importante espressione</p>
+<p>$$
+H = \sum_{\mathbf{k}s} \dfrac{p_{\mathbf{k}s}^2}{2} +  \omega_k^2 \dfrac{q_{\mathbf{k}s}^2}{2}
+$$</p>
+<p>Osserviamo che questa hamiltoniana è esattamente quella di una somma di un&rsquo;infinità di oscillatori armonici, uno per ogni modo del campo elettromagnetico.
+Siamo finalmente giunti al punto in cui possiamo promuovere le variabili ad operatori. Questa è un&rsquo;operazione possibile quando stabiliamo le relazioni di commutazione tra le variabili dinamiche. In questo caso assumiamo le relazioni di commutazione fondamentali</p>
+<p>$$
+[ \hat{q} _{n} , \hat{p} _m ] = \delta _{nm}
+$$</p>
+<p>ovvero</p>
+<p>$$
+\hat{q} _n \hat{p} _m - \hat{p} _m \hat{q} _n = i\hslash \delta _{nm}
+$$</p>
+<p>dato che</p>
+<p>$$
+i\hslash [\hat{A}, \hat{B}] =  \hat{A}\hat{B}-\hat{B}\hat{A}
+$$</p>
+<p>Tramite quindi l&rsquo;operazione di promozione</p>
+<p>$$
+\begin{align}
+q _{\mathbf{k}s} \to \hat{q} _{\mathbf{k}s} \\
+p _{\mathbf{k}s} \to \hat{p} _{\mathbf{k}s}
+\end{align}
+$$</p>
+<p>possiamo scrivere un&rsquo;hamiltoniana quantistica</p>
+<p>$$
+\hat{H} = \sum _{\mathbf{k}s} \dfrac{\hat{p} _{\mathbf{k}s}^2}{2} +  \omega _k^2 \dfrac{\hat{q} _{\mathbf{k}s}^2}{2}
+$$</p>
+<p>Notiamo che è un&rsquo;osservabile, poiché è una somma di osservabili (possiamo dire che questo è un operatore hermitiano).
+Possiamo applicare la procedura standard per la quantizzazione dell&rsquo;oscillatore armonico, introducendo gli operatori di creazione e annichilazione</p>
+<p>$$
+\begin{align}
+\hat{a} _{\mathbf{k}s} &amp;= \sqrt{\dfrac{\omega _k}{2\hslash}} \left(\hat{q} _{\mathbf{k}s} + \dfrac{i}{\omega _k}\hat{p} _{\mathbf{k}s}\right)\\
+\hat{a} _{\mathbf{k}s}^{\dagger} &amp;= \sqrt{\dfrac{\omega _k}{2\hslash}} \left(\hat{q} _{\mathbf{k}s} - \dfrac{i}{\omega _k}\hat{p} _{\mathbf{k}s}\right)
+\end{align}
+$$</p>
+<p>che soddisfano alle relazioni di commutazione</p>
+<p>$$
+[\hat{a} _{\mathbf{k}s}, \hat{a} _{\mathbf{k}&rsquo;s&rsquo;}^\dagger] = \delta _{\mathbf{k}, \mathbf{k}&rsquo;} \delta _{s, s&rsquo;}
+$$</p>
+<p>otteniamo quindi</p>
+<p>$$
+\hat{H} = \sum _{\mathbf{k}s} \hslash \omega_k \left(\hat{a} _{\mathbf{k}s}^\dagger \hat{a} _{\mathbf{k}s} + \dfrac{1}{2}\right)
+$$</p>
+<p>Lo spazio di Hilbert degli stati quantistici del sistema è chiamato spazio di Fock.
+La procedura di seconda quantizzazione del campo elettromagnetico è un esempio di calcolo tipico della teoria quantistica dei campi. Questa teoria fisica permette di trovare delle espressioni quantistiche per i campi, siano essi elettromagnetici, o anche campi di materia.</p>
 
   
   <hr>
 <div class="footer">
     
 	    
-            <a class="previous-post" href="/post/second_quantization/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Second quantization of the electromagnetic field</a>
+            <a class="previous-post" href="/post/first/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Quasistationary modes in optical resonator with...</a>
         
 	    
+            <div class="next-post">
+                <a href="/post/poisson/?ref=footer"><span style="font-weight:bold;">Next »</span><br>Binomial from Poisson in composite process</a>
+            </div>
+        
     
 </div>
 
