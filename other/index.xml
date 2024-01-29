@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other on </title>
+    <link>/other/</link>
+    <description>Recent content in Other on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/other/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some interesting bibliography in physics</title>
+      <link>/other/interesting_bibliography/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>/other/interesting_bibliography/</guid>
+      <description>Here I collect some interesting bibliography in physics, that I have read or I am reading. They are mainly articles with little technical content, explaining some interesting physics on a conceptual level.&#xA;QCD </description>
+    </item>
+  </channel>
+</rss>

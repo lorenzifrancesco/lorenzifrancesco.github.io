@@ -6,62 +6,28 @@
     <description>Recent content in Post on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Kapitza pendulum</title>
-      <link>/post/kapitza/</link>
-      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/post/kapitza/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binomial from Poisson in composite process</title>
       <link>/post/poisson/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      
       <guid>/post/poisson/</guid>
-      <description>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.
-Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as averave arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp;amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;amp;= n+k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.</description>
+      <description>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.&#xA;Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as averave arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp;amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;amp;= n+k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.</description>
     </item>
-    
     <item>
       <title>Second quantization of the electromagnetic field</title>
       <link>/post/second_quantization/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      
       <guid>/post/second_quantization/</guid>
       <description>The procedure of quantization of a classical theory has its crucial passage in the promotion of the dynamical variables to operators in the Hilbert space of the quantum states of the system. The quantization is successful if these operators form a complete set of commuting observables (this set is called ICOC). In this case, every quantum state of the system can be expressed as a sum of eigenstates, and we can write the probability amplitudes, and take the averages of all the dynamical variables.</description>
     </item>
-    
-    <item>
-      <title>Quasistationary modes in optical resonator with moving mirror</title>
-      <link>/post/first/</link>
-      <pubDate>Mon, 14 Aug 2023 19:30:52 +0200</pubDate>
-      
-      <guid>/post/first/</guid>
-      <description>Based on Zh. Eksp. Teor. Fiz. 53, 2123 (1967)
-Consider an electromagnetic field in a laser cavity with a mirror moving with velocity $v=\beta c$. Suppose to neglect polarization. So the transverse field $E(x, t)$ satisfy boundary conditions $$ E(0, t) = 0 $$ and, in the transformed reference frame $$ E(L_0 + vt, t) - \beta H(L_0+vt, t) = 0 $$ We seek solutions as superposition of plane waves, so we have</description>
-    </item>
-    
     <item>
       <title>Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation</title>
       <link>/post/canonical/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>/post/canonical/</guid>
       <description>Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics. In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.</description>
     </item>
-    
-    <item>
-      <title></title>
-      <link>/post/regularization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/regularization/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
