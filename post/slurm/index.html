@@ -395,6 +395,26 @@ systemctl start slurmd
 This is due to
 <code>slurmdbd: error: s_p_parse_file: unable to read &quot;/etc/slurm/slurmdbd.conf&quot;: Permission denied</code></p>
 </blockquote>
+<p>Also, we got error</p>
+<pre tabindex="0"><code>Feb 11 17:26:11 slurph.novalocal slurmdbd[7414]: slurmdbd: error: mysql_real_connect failed: 2002 Can&#39;t connect to local MySQL server through socket &#39;/var/lib/mys&gt;
+</code></pre><p>Seems like we have problems with the installation of MariaDB.
+Lets run</p>
+<pre tabindex="0"><code> sudo dnf install mariadb-server 
+</code></pre><p>Finally we are able to start the service</p>
+<pre tabindex="0"><code>systemctl start mariadb.service
+</code></pre><h2 id="who-is-running-slurm">Who is running SLURM?</h2>
+<p>Running</p>
+<pre tabindex="0"><code>slurmdbd -Dvvv
+</code></pre><p>We get errors like</p>
+<pre tabindex="0"><code>slurmdbd.conf owned by 1000 not SlurmUser(1003)
+</code></pre><p>Seems like we have problems in read from <code>/var/run/&lt;PID files&gt;</code>
+One can <a href="https://serverfault.com/questions/159334/what-permissions-are-needed-to-write-a-pid-file-in-var-run" target="_blank">generate a folder inside <code>/var/run</code> and chown it</a>, but since <code>/var/run</code> is <code>tmpfs</code> it will go after a system reboot.
+The solution seems to be to run a <code>mkdir + chown</code> script at startup. This is to be implemented.
+The script looks like (<code>/home/centos/startup_pid.sh</code>)</p>
+<pre tabindex="0"><code>#! /bin/bash
+mkdir /var/run/slurm
+chown slurm /var/run/slurm
+</code></pre><p>Still we have problems in connecting to the database.</p>
 <h2 id="useful-resources-for-slurm-management">Useful resources for SLURM management</h2>
 <ul>
 <li><a href="https://www.carc.usc.edu/user-information/user-guides/hpc-basics/slurm-cheatsheet" target="_blank">SLURM cheatsheet</a></li>
@@ -427,6 +447,7 @@ This is due to
     <li><a href="#slurm-super-quick-start-guide">SLURM super quick start guide</a></li>
     <li><a href="#a-handy-alternative-rpm">A handy alternative: RPM</a></li>
     <li><a href="#slurmconf">slurm.conf</a></li>
+    <li><a href="#who-is-running-slurm">Who is running SLURM?</a></li>
     <li><a href="#useful-resources-for-slurm-management">Useful resources for SLURM management</a></li>
   </ul>
 </nav>
