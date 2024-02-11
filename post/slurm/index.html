@@ -47,20 +47,20 @@
 
 
 
-  
-  
-  
 
 
+  
+  
+  
 
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Francesco Lorenzi - Post</title>
-<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;Post />
-<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;Post />
-<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;Post />
-<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;Post />
+<title itemprop="name">Francesco Lorenzi - A clean installation of SLURM scheduler</title>
+<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;A&#32;clean&#32;installation&#32;of&#32;SLURM&#32;scheduler />
+<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;A&#32;clean&#32;installation&#32;of&#32;SLURM&#32;scheduler />
+<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;A&#32;clean&#32;installation&#32;of&#32;SLURM&#32;scheduler />
+<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;A&#32;clean&#32;installation&#32;of&#32;SLURM&#32;scheduler />
 <meta property="og:site_name" content="" />
 
 
@@ -70,18 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="/post/" />
-<link rel="canonical" href="/post/" itemprop="url" />
-<meta name="url" content="/post/" />
-<meta name="twitter:url" content="/post/" />
-<meta property="og:url" content="/post/" />
+<base href="/post/slurm/" />
+<link rel="canonical" href="/post/slurm/" itemprop="url" />
+<meta name="url" content="/post/slurm/" />
+<meta name="twitter:url" content="/post/slurm/" />
+<meta property="og:url" content="/post/slurm/" />
 
 
 <meta property="og:updated_time" content=11002-11-04T212:36:24&#43;0100 />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
-<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -299,55 +298,143 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">Post</h1>
-<ul class="entries">
+                <div class="post">
+  <div class="info">
+    <h1 class="post-title">
+        <a href="/post/slurm/">A clean installation of SLURM scheduler</a>
+    </h1>
     
-        <h3 style="text-align: center;">2024</h3>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/slurm/">A clean installation of SLURM scheduler</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">February 11, 2024</time>
-                </span>
-            </li>
-        
+        <time datetime="2024-02-11T16:12:36&#43;0100" class="post-date">
+            February 11, 2024
+        </time>
     
-        <h3 style="text-align: center;">2023</h3>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/second_quantization/">Second quantization of the electromagnetic field</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">October 27, 2023</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/poisson/">Binomial from Poisson in composite process</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">October 27, 2023</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/canonical/">Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">August 14, 2023</time>
-                </span>
-            </li>
-        
     
+    
+    
+    
+    
+    
+</div>
+
+  <h2 id="desired-topology-and-active-services">Desired topology and active services</h2>
+<p><img src="../images/slurm/SLURM.jpg" alt="topology"></p>
+<h2 id="slurm-super-quick-start-guide">SLURM super quick start guide</h2>
+<p>The guide is available <a href="https://slurm.schedmd.com/quickstart_admin.html" target="_blank">here</a>.</p>
+<p>On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package</p>
+<pre tabindex="0"><code>wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2
+</code></pre><p>We then unzip, configure, and build SLURM</p>
+<p>We then need to create, by the SLURM user &ldquo;slurm&rdquo;, the directories of</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> log files</li>
+<li><input disabled="" type="checkbox"> PID files</li>
+<li><input checked="" disabled="" type="checkbox"> State save</li>
+</ul>
+<p>and make them writable. We take inspiration from an existing <code>slurm.conf</code> file.
+So the directories will be</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Directory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PID files</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>SlurmdSpoolDir</td>
+<td>/var/spool/slurmd</td>
+</tr>
+<tr>
+<td>StateSaveLocation</td>
+<td>/var/spool/slurmctld</td>
+</tr>
+</tbody>
+</table>
+<p>Beware, <code>slurm</code> is not in the sudoers group (and it must not be!).
+If the directories are already there, we must <code>chown</code> them, and <code>chmod</code> them to writable by <code>slurm</code>.
+This can be done only by a sudoer.</p>
+<p>In order to use the SLURM API, we must link to the libraries</p>
+<pre tabindex="0"><code>ldconfig -n &lt;library-location&gt;
+</code></pre><p>in our case <code>&lt;library-location&gt;</code> is in the downloaded (and built) package.</p>
+<h2 id="a-handy-alternative-rpm">A handy alternative: RPM</h2>
+<p>We can use  <code>rpmbuild</code> to directly install and configure the directories and link the libraries.
+We do it in the <code>slurm</code> user.</p>
+<p>This method show a missing dependency</p>
+<pre tabindex="0"><code>error: Failed build dependencies:
+	mariadb-devel &gt;= 5.0.0 is needed by slurm-23.11.3-1.el8.x86_64
+</code></pre><p>that we can easily solve by</p>
+<pre tabindex="0"><code>sudo yum install mariadb-devel  
+</code></pre><p>A warning in the <code>rpmbuild</code> suggest to run <code>libtool --finish /lib64/security</code>. We do it, installing <code>libtool</code> first</p>
+<blockquote>
+<p>We still have the problem that the commands are not available.
+The SLURM services are not available.</p>
+</blockquote>
+<p>The RPM files are loacated into</p>
+<pre tabindex="0"><code>~/rpmbuild/RPMS
+</code></pre><p>so we need to run</p>
+<pre tabindex="0"><code>rpm -i *.rpm
+</code></pre><p>inside the rpms folder.</p>
+<h2 id="slurmconf">slurm.conf</h2>
+<p>We use the generator tool to make the <code>slurm.conf</code> file</p>
+<p>We can now enable the daemons</p>
+<pre tabindex="0"><code>systemctl enable slurmctld
+systemctl enable slurmdbd
+systemctl enable slurmd 
+</code></pre><p>and activate them</p>
+<pre tabindex="0"><code>systemctl start slurmctld
+systemctl start slurmdbd
+systemctl start slurmd 
+</code></pre><p>The order is important!</p>
+<blockquote>
+<p>We have a problem in starting the <code>slurmdbd</code> service:
+<code>Condition: start condition failed at Sun 2024-02-11 17:10:08 CET; 8min ago</code>
+<code>          └─ ConditionPathExists=/etc/slurm/slurmdbd.conf was not met</code>
+This is due to
+<code>slurmdbd: error: s_p_parse_file: unable to read &quot;/etc/slurm/slurmdbd.conf&quot;: Permission denied</code></p>
+</blockquote>
+<h2 id="useful-resources-for-slurm-management">Useful resources for SLURM management</h2>
+<ul>
+<li><a href="https://www.carc.usc.edu/user-information/user-guides/hpc-basics/slurm-cheatsheet" target="_blank">SLURM cheatsheet</a></li>
+<li><a href="https://slurm.schedmd.com/configurator.html" target="_blank">SLURM config file generator</a></li>
 </ul>
 
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="/post/poisson/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Binomial from Poisson in composite process</a>
+        
+	    
+    
+</div>
+
+  
+
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#desired-topology-and-active-services">Desired topology and active services</a></li>
+    <li><a href="#slurm-super-quick-start-guide">SLURM super quick start guide</a></li>
+    <li><a href="#a-handy-alternative-rpm">A handy alternative: RPM</a></li>
+    <li><a href="#slurmconf">slurm.conf</a></li>
+    <li><a href="#useful-resources-for-slurm-management">Useful resources for SLURM management</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>

@@ -6,8 +6,15 @@
     <description>Recent content in Post on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Feb 2024 16:12:36 +0100</lastBuildDate>
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A clean installation of SLURM scheduler</title>
+      <link>/post/slurm/</link>
+      <pubDate>Sun, 11 Feb 2024 16:12:36 +0100</pubDate>
+      <guid>/post/slurm/</guid>
+      <description>Desired topology and active services SLURM super quick start guide The guide is available here.&#xA;On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package&#xA;wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2 We then unzip, configure, and build SLURM&#xA;We then need to create, by the SLURM user &amp;ldquo;slurm&amp;rdquo;, the directories of&#xA;log files PID files State save and make them writable. We take inspiration from an existing slurm.conf file. So the directories will be</description>
+    </item>
     <item>
       <title>Binomial from Poisson in composite process</title>
       <link>/post/poisson/</link>
