@@ -13,7 +13,7 @@
       <link>/post/slurm/</link>
       <pubDate>Sun, 11 Feb 2024 16:12:36 +0100</pubDate>
       <guid>/post/slurm/</guid>
-      <description>Desired topology and active services SLURM super quick start guide The guide is available here.&#xA;On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package&#xA;wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2 We then unzip, configure, and build SLURM&#xA;We then need to create, by the SLURM user &amp;ldquo;slurm&amp;rdquo;, the directories of&#xA;log files PID files State save and make them writable. We take inspiration from an existing slurm.conf file. So the directories will be</description>
+      <description>Desired topology and active services SLURM super quick start guide The guide is available here.&#xA;On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package. Status of munge can be probed by&#xA;munge -n | unmunge Installing the SLURM package is done manually&#xA;wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2 We then unzip, configure, and build SLURM&#xA;We then need to create, by the SLURM user &amp;ldquo;slurm&amp;rdquo;, the directories of&#xA;log files PID files State save and make them writable.</description>
     </item>
     <item>
       <title>Some interesting bibliography in physics</title>

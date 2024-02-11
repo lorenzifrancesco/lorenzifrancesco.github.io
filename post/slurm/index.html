@@ -317,10 +317,13 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </div>
 
   <h2 id="desired-topology-and-active-services">Desired topology and active services</h2>
-<p><img src="../images/slurm/SLURM.jpg" alt="topology"></p>
+<p><img src="../../images/slurm/SLURM.jpg" alt="topology"></p>
 <h2 id="slurm-super-quick-start-guide">SLURM super quick start guide</h2>
 <p>The guide is available <a href="https://slurm.schedmd.com/quickstart_admin.html" target="_blank">here</a>.</p>
-<p>On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package</p>
+<p>On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package.
+Status of munge can be probed by</p>
+<pre tabindex="0"><code>munge -n | unmunge
+</code></pre><p>Installing the SLURM package is done manually</p>
 <pre tabindex="0"><code>wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2
 </code></pre><p>We then unzip, configure, and build SLURM</p>
 <p>We then need to create, by the SLURM user &ldquo;slurm&rdquo;, the directories of</p>
@@ -414,11 +417,21 @@ The script looks like (<code>/home/centos/startup_pid.sh</code>)</p>
 <pre tabindex="0"><code>#! /bin/bash
 mkdir /var/run/slurm
 chown slurm /var/run/slurm
-</code></pre><p>Still we have problems in connecting to the database.</p>
+</code></pre><p>Still we have problems in connecting to the database. This is a problem also on the startup of <code>slurmd.service</code>.
+Obviously, we lack a <a href="https://wiki.fysik.dtu.dk/Niflheim_system/Slurm_installation/" target="_blank">DB configuration</a>.</p>
+<h2 id="database-configuration">Database configuration</h2>
+<p>We follow commands from the previous link.</p>
+<h2 id="unable-to-determine-this-slurmds-nodename">Unable to determine this slurmd&rsquo;s nodename</h2>
+<p>This problem is related to the impossibility to detect <code>runner01</code>.</p>
 <h2 id="useful-resources-for-slurm-management">Useful resources for SLURM management</h2>
 <ul>
 <li><a href="https://www.carc.usc.edu/user-information/user-guides/hpc-basics/slurm-cheatsheet" target="_blank">SLURM cheatsheet</a></li>
 <li><a href="https://slurm.schedmd.com/configurator.html" target="_blank">SLURM config file generator</a></li>
+</ul>
+<h3 id="other-installation-guides">Other installation guides</h3>
+<ul>
+<li><a href="https://wiki.docking.org/index.php/Slurm_Installation_Guide" target="_blank">@DISI_computational_pharmacology</a></li>
+<li><a href="https://wiki.fysik.dtu.dk/Niflheim_system/Slurm_installation/" target="_blank">@niflheim</a></li>
 </ul>
 
   
@@ -448,7 +461,13 @@ chown slurm /var/run/slurm
     <li><a href="#a-handy-alternative-rpm">A handy alternative: RPM</a></li>
     <li><a href="#slurmconf">slurm.conf</a></li>
     <li><a href="#who-is-running-slurm">Who is running SLURM?</a></li>
-    <li><a href="#useful-resources-for-slurm-management">Useful resources for SLURM management</a></li>
+    <li><a href="#database-configuration">Database configuration</a></li>
+    <li><a href="#unable-to-determine-this-slurmds-nodename">Unable to determine this slurmd&rsquo;s nodename</a></li>
+    <li><a href="#useful-resources-for-slurm-management">Useful resources for SLURM management</a>
+      <ul>
+        <li><a href="#other-installation-guides">Other installation guides</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
