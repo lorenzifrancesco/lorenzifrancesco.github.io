@@ -334,6 +334,18 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <td>Change owner</td>
 <td><code>chown user:group -R folder</code></td>
 </tr>
+<tr>
+<td>Check owner &amp; permissions</td>
+<td><code>stat filename</code></td>
+</tr>
+<tr>
+<td>List all users with UID</td>
+<td><code>cut -d: -f1,3 /etc/passwd</code></td>
+</tr>
+<tr>
+<td>List all groups with GID</td>
+<td><code>getent group</code></td>
+</tr>
 </tbody>
 </table>
 <h2 id="linux-ownership-system">Linux ownership system</h2>

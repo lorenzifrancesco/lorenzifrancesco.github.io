@@ -426,11 +426,76 @@ Obviously, we lack a <a href="https://wiki.fysik.dtu.dk/Niflheim_system/Slurm_in
 Before running the <code>slurmd</code> daemon, we need to setup the computing nodes.
 Now our <code>slurmctld</code> and <code>slurmdbd</code> are running.</p>
 <h2 id="configuraiton-of-the-computing-nodes">Configuraiton of the computing node(s)</h2>
-<p>Follow instruction from <a href="https://www.youtube.com/watch?v=Fm5RIE3NSN8&amp;t=322s&amp;pp=ygULc2x1cm0gbXVuZ2U%3D" target="_blank">youtube</a>.</p>
+<p>Follow instruction from <a href="https://www.youtube.com/watch?v=Fm5RIE3NSN8&amp;t=322s&amp;pp=ygULc2x1cm0gbXVuZ2U%3D" target="_blank">youtube</a>.
+After the configuration, and running the <code>slurmd</code> on <code>runner01</code>, the <code>slurmctld.log</code> file on the <code>slurPh</code> machine indicates a problem with</p>
+<pre tabindex="0"><code>[2024-02-12T17:57:04.216] error: Node runner01 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+</code></pre><p>and most importantly, an authentication problem by Munge</p>
+<pre tabindex="0"><code>[2024-02-12T17:57:18.718] error: Munge decode failed: Unauthorized credential for client UID=1003 GID=1003
+</code></pre><p>We should check</p>
+<pre tabindex="0"><code>munge -n | unmunge
+</code></pre><p>Both machines return a success code.</p>
+<p>runner01:</p>
+<pre tabindex="0"><code>STATUS:           Success (0)
+ENCODE_HOST:      runner01.novalocal (10.64.37.114)
+ENCODE_TIME:      2024-02-12 18:02:47 +0100 (1707757367)
+DECODE_TIME:      2024-02-12 18:02:47 +0100 (1707757367)
+TTL:              300
+CIPHER:           aes128 (4)
+MAC:              sha256 (5)
+ZIP:              none (0)
+UID:              centos (1000)
+GID:              centos (1000)
+LENGTH:           0
+</code></pre><p>slurPh:</p>
+<pre tabindex="0"><code>STATUS:           Success (0)
+ENCODE_HOST:      runner01.novalocal (10.64.37.114)
+ENCODE_TIME:      2024-02-12 18:02:47 +0100 (1707757367)
+DECODE_TIME:      2024-02-12 18:02:47 +0100 (1707757367)
+TTL:              300
+CIPHER:           aes128 (4)
+MAC:              sha256 (5)
+ZIP:              none (0)
+UID:              centos (1000)
+GID:              centos (1000)
+LENGTH:           0
+</code></pre><p>The problem seems to be that UID and GID are not the same in the two machines
+runner01:</p>
+<pre tabindex="0"><code>File: /etc/slurm
+Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: fc01h/64513d	Inode: 30103776    Links: 2
+Access: (0777/drwxrwxrwx)  Uid: ( 1001/   slurm)   Gid: ( 1001/   slurm)
+</code></pre><p>slurPh:</p>
+<pre tabindex="0"><code>File: /etc/slurm
+Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: fc01h/64513d	Inode: 25439750    Links: 2
+Access: (0755/drwxr-xr-x)  Uid: ( 1003/   slurm)   Gid: ( 1003/   slurm)
+</code></pre><p>the <code>id munge</code> command returns, strangely:</p>
+<p>runner01:</p>
+<pre tabindex="0"><code>uid=991(munge) gid=988(munge) groups=988(munge)
+</code></pre><p>slurPh:</p>
+<pre tabindex="0"><code>uid=991(munge) gid=988(munge) groups=988(munge)
+</code></pre><p>We need to set the right UID, and change the permissions to <code>/etc/munge/munge.key</code> on both machines.
+We run <code>groupmod -g 1099 munge</code>, and <code>usermod -u 1004 -g 1099 munge</code>. In order not to have conflicts with other users, we list all users by <code>cut -d: -f1,3 /etc/passwd</code>. To list all groups with GID: <code>getent group</code>.
+With the changed users, the munge daemon fails to start.
+In the log file, we also notice</p>
+<pre tabindex="0"><code>2024-02-12 17:57:18 +0100 Info:      Unauthorized credential for client UID=1003 GID=1003
+</code></pre><p>previous attempts by slurm user on runner01 (?) to authenticate.
+The change of user created ownership issues on log files and on the PRNG generator folder.
+We fix it by</p>
+<pre tabindex="0"><code>sudo chown munge:munge -R /etc/munge
+sudo chown munge:munge -R /var/lib/munge
+sudo chown munge:munge -R /var/log/munge
+</code></pre><p>Ok, we still have <code>unable to determine this node name</code>.
+<code>scontrol ping</code> on runner01 still gives</p>
+<pre tabindex="0"><code>Slurmctld(primary) at slurph is DOWN
+</code></pre><p>There is more: every execution of the ping on runner01 triggers the writing of</p>
+<pre tabindex="0"><code>2024-02-12 18:34:26 +0100 Info:      Unauthorized credential for client UID=1003 GID=1003
+</code></pre><p>in <code>var/log/munge/munged.log</code>!</p>
 <h2 id="useful-resources-for-slurm-management">Useful resources for SLURM management</h2>
 <ul>
 <li><a href="https://www.carc.usc.edu/user-information/user-guides/hpc-basics/slurm-cheatsheet" target="_blank">SLURM cheatsheet</a></li>
 <li><a href="https://slurm.schedmd.com/configurator.html" target="_blank">SLURM config file generator</a></li>
+<li><a href="https://slurm.schedmd.com/troubleshoot.html" target="_blank">SLURM official debug guide</a></li>
 </ul>
 <h3 id="other-installation-guides">Other installation guides</h3>
 <ul>
