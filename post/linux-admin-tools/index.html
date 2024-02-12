@@ -44,41 +44,43 @@
 
 
   
+
+
+
+
+
   
-
-
-
-
+  
+  
 
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Francesco Lorenzi</title>
-<meta property="og:title" content=Francesco&#32;Lorenzi />
-<meta name="twitter:title" content=Francesco&#32;Lorenzi />
-<meta itemprop="name" content=Francesco&#32;Lorenzi />
-<meta name="application-name" content=Francesco&#32;Lorenzi />
+<title itemprop="name">Francesco Lorenzi - Linux Admin Tools</title>
+<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;Linux&#32;Admin&#32;Tools />
+<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;Linux&#32;Admin&#32;Tools />
+<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;Linux&#32;Admin&#32;Tools />
+<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;Linux&#32;Admin&#32;Tools />
 <meta property="og:site_name" content="" />
 
 
-<meta name="description" content="Ph.D. student in Theoretical Condensed Matter Physics" />
-<meta itemprop="description" content="Ph.D. student in Theoretical Condensed Matter Physics" />
-<meta property="og:description" content="Ph.D. student in Theoretical Condensed Matter Physics" />
-<meta name="twitter:description" content="Ph.D. student in Theoretical Condensed Matter Physics" />
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
 
 
-<base href="/" />
-<link rel="canonical" href="/" itemprop="url" />
-<meta name="url" content="/" />
-<meta name="twitter:url" content="/" />
-<meta property="og:url" content="/" />
+<base href="/post/linux-admin-tools/" />
+<link rel="canonical" href="/post/linux-admin-tools/" itemprop="url" />
+<meta name="url" content="/post/linux-admin-tools/" />
+<meta name="twitter:url" content="/post/linux-admin-tools/" />
+<meta property="og:url" content="/post/linux-admin-tools/" />
 
 
 <meta property="og:updated_time" content=12002-12-12T20:00:24Z />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -296,17 +298,14 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <div class="posts">
-    
-    
-    <article class="post">
-        <div class="info">
+                <div class="post">
+  <div class="info">
     <h1 class="post-title">
-        <a href="/about/about/">Welcome to my projects and research page!</a>
+        <a href="/post/linux-admin-tools/">Linux Admin Tools</a>
     </h1>
     
-        <time datetime="2023-08-14T16:56:10&#43;0200" class="post-date">
-            August 14, 2023
+        <time datetime="2024-02-12T00:00:00Z" class="post-date">
+            February 12, 2024
         </time>
     
     
@@ -317,21 +316,95 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
 </div>
 
-        I&rsquo;m a passionate Ph.D. student of Theoretical Physics of Matter, at the department of Physics and Astronomy of University of Padova. I have background in optics and photonics for telecommunications.
-My current research interests are in theoretical physics of matter:
-solitons and their stability in classical and quantum field theories highly nonlinear phenomena in Bose-Einstein condensates, Josephson oscillations Due to my background in photonic engineering and ICT, I&rsquo;m also interested in
+  <p>This post is designed to be updated as soon as new tricks come handy.</p>
+<h2 id="useful-commands">Useful commands</h2>
+<table>
+<thead>
+<tr>
+<th>Instruction</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Change user</td>
+<td><code>su - &lt;username&gt;</code></td>
+</tr>
+<tr>
+<td>Change owner</td>
+<td><code>chown user:group -R folder</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="linux-ownership-system">Linux ownership system</h2>
+<h3 id="rwx">rwx</h3>
+<p>Owner and permissions: typing <code>la</code> we get informations about the pemissions about a file or a folder</p>
+<h4 id="example">example</h4>
+<pre tabindex="0"><code>-rw-r--r--   1 lorenzi lorenzi 4,3K 19 gen 11.22 .bashrc
+drwxr-xr-x  26 lorenzi lorenzi 4,0K  8 feb 14.01 bench/
+</code></pre><p>the first column is divided in three parts:</p>
+<table>
+<thead>
+<tr>
+<th>Owner of the file (U)</th>
+<th>User group of the owner (G)</th>
+<th>all others (O)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code> rw-</code></td>
+<td><code>r--</code></td>
+<td><code>r--</code></td>
+</tr>
+</tbody>
+</table>
+<p>the first character indicates the file type, that for example in the <code>bench</code> case is a directory.</p>
+<h3 id="octal-characters">Octal characters</h3>
+<p>A mapping can be done from the three permissions to a single octal value.
+This mapping is one-to-one.</p>
+<blockquote>
+<p>r (read): 4
+w (write): 2
+x (execute): 1</p>
+</blockquote>
+
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="/post/slurm/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>A clean installation of SLURM scheduler</a>
         
-        <div class="read-more-link">
-            <a href="/about/about/">Read More…</a>
-        </div>
-        
-    </article>
+	    
+    
 </div>
 
+  
 
-
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#useful-commands">Useful commands</a></li>
+    <li><a href="#linux-ownership-system">Linux ownership system</a>
+      <ul>
+        <li><a href="#rwx">rwx</a></li>
+        <li><a href="#octal-characters">Octal characters</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>
