@@ -490,7 +490,32 @@ sudo chown munge:munge -R /var/log/munge
 <pre tabindex="0"><code>Slurmctld(primary) at slurph is DOWN
 </code></pre><p>There is more: every execution of the ping on runner01 triggers the writing of</p>
 <pre tabindex="0"><code>2024-02-12 18:34:26 +0100 Info:      Unauthorized credential for client UID=1003 GID=1003
-</code></pre><p>in <code>var/log/munge/munged.log</code>!</p>
+</code></pre><p>in <code>/var/log/munge/munged.log</code>!
+Error bursts of the corresponding event in <code>/var/log/slurm/slurmctld.log</code> are like</p>
+<pre tabindex="0"><code>[2024-02-12T18:44:00.281] error: Munge decode failed: Unauthorized credential for client UID=1003 GID=1003
+[2024-02-12T18:44:00.281] auth/munge: _print_cred: ENCODED: Thu Jan 01 01:00:00 1970
+[2024-02-12T18:44:00.281] auth/munge: _print_cred: DECODED: Thu Jan 01 01:00:00 1970
+[2024-02-12T18:44:00.281] error: slurm_unpack_received_msg: [[runner01]:50994] auth_g_verify: REQUEST_PING has authentication error: Unspecified error
+[2024-02-12T18:44:00.281] error: slurm_unpack_received_msg: [[runner01]:50994] Protocol authentication error
+[2024-02-12T18:44:00.291] error: slurm_receive_msg [10.64.37.114:50994]: Protocol authentication error
+</code></pre><p>Note that <strong>unauhtorized</strong> credential is very different from <strong>invalid</strong> credentials!</p>
+<h1 id="change-to-ubuntu-os">Change to Ubuntu OS</h1>
+<p>Due to the dubious status of CentOS in relationship to RHEL, we switch to Ubuntu.
+This would allow a clean installation of SLURM to be seamless.</p>
+<p>Connection aliases commands to the new instances are, in fish:</p>
+<pre tabindex="0"><code>alias runner01=&#34;ssh -L2082:10.64.37.221:22 florenzi@gate.cloudveneto.it&#34;
+alias slurPh=&#34;ssh -L2081:10.64.37.17:22 florenzi@gate.cloudveneto.it&#34;
+alias connect-slurPh=&#34;ssh -p 2081 -i ~/.ssh/certificates/slurPh-key.pem ubuntu@localhost&#34;
+alias connect-runner01=&#34;ssh -p 2082 -i ~/.ssh/certificates/slurPh-key.pem ubuntu@localhost&#34;
+</code></pre><h2 id="slurmdbdconf">slurmdbd.conf</h2>
+<p>We need to insert here the credentials to the MySQL database.
+MySQL database is to be managed via SLURM using <code>sacct</code>.
+For example, for adding a new user, we have</p>
+<pre tabindex="0"><code>sacctmgr create user name=&lt;USERNAME&gt; account=&lt;GROUP&gt;
+</code></pre><h2 id="cgroups">CGroups</h2>
+<p>When launching a job, we immediately set the node state to <code>drain</code>, and the log file show</p>
+<pre tabindex="0"><code>[2024-02-20T16:06:16.263] error: slurmd error running JobId=50 on node(s)=runner01: Plugin initialization failed
+</code></pre><p>This is an error related to the Cgroups plugin.</p>
 <h2 id="useful-resources-for-slurm-management">Useful resources for SLURM management</h2>
 <ul>
 <li><a href="https://www.carc.usc.edu/user-information/user-guides/hpc-basics/slurm-cheatsheet" target="_blank">SLURM cheatsheet</a></li>
@@ -501,6 +526,10 @@ sudo chown munge:munge -R /var/log/munge
 <ul>
 <li><a href="https://wiki.docking.org/index.php/Slurm_Installation_Guide" target="_blank">@DISI_computational_pharmacology</a></li>
 <li><a href="https://wiki.fysik.dtu.dk/Niflheim_system/Slurm_installation/" target="_blank">@niflheim</a></li>
+</ul>
+<h3 id="slides">Slides</h3>
+<ul>
+<li><a href="https://linuxclustersinstitute.org/wp-content/uploads/2021/08/9-Slurm.pdf" target="_blank">Utah uni</a></li>
 </ul>
 
   
@@ -537,9 +566,15 @@ sudo chown munge:munge -R /var/log/munge
     <li><a href="#database-configuration">Database configuration</a></li>
     <li><a href="#unable-to-determine-this-slurmds-nodename">Unable to determine this slurmd&rsquo;s nodename</a></li>
     <li><a href="#configuraiton-of-the-computing-nodes">Configuraiton of the computing node(s)</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#slurmdbdconf">slurmdbd.conf</a></li>
+    <li><a href="#cgroups">CGroups</a></li>
     <li><a href="#useful-resources-for-slurm-management">Useful resources for SLURM management</a>
       <ul>
         <li><a href="#other-installation-guides">Other installation guides</a></li>
+        <li><a href="#slides">Slides</a></li>
       </ul>
     </li>
   </ul>
