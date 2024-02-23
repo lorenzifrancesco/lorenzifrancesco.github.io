@@ -515,8 +515,23 @@ For example, for adding a new user, we have</p>
 </code></pre><h2 id="cgroups">CGroups</h2>
 <p>When launching a job, we immediately set the node state to <code>drain</code>, and the log file show</p>
 <pre tabindex="0"><code>[2024-02-20T16:06:16.263] error: slurmd error running JobId=50 on node(s)=runner01: Plugin initialization failed
-</code></pre><p>This is an error related to the Cgroups plugin.</p>
-<h2 id="useful-resources-for-slurm-management">Useful resources for SLURM management</h2>
+</code></pre><p>This is an error related to the Cgroups plugin.
+On the runner, we have in <code>/var/log/slurmd.log</code></p>
+<pre tabindex="0"><code>[2024-02-20T16:06:16.269] [50.batch] error: unable to mount memory cgroup namespace: Device or resource busy
+[2024-02-20T16:06:16.269] [50.batch] error: unable to create memory cgroup namespace
+[2024-02-20T16:06:16.269] [50.batch] error: Couldn&#39;t load specified plugin name for jobacct_gather/cgroup: Plugin init() callback failed
+[2024-02-20T16:06:16.269] [50.batch] error: cannot create jobacct_gather context for jobacct_gather/cgroup
+[2024-02-20T16:06:16.273] [50.batch] error: unable to mount cpuset cgroup namespace: Device or resource busy
+[2024-02-20T16:06:16.273] [50.batch] error: unable to create cpuset cgroup namespace
+[2024-02-20T16:06:16.273] [50.batch] error: unable to mount memory cgroup namespace: Device or resource busy
+[2024-02-20T16:06:16.273] [50.batch] error: unable to create memory cgroup namespace
+[2024-02-20T16:06:16.273] [50.batch] error: failure enabling memory enforcement: Unspecified error
+[2024-02-20T16:06:16.273] [50.batch] error: Couldn&#39;t load specified plugin name for task/cgroup: Plugin init() callback failed
+[2024-02-20T16:06:16.273] [50.batch] error: cannot create task context for task/cgroup
+[2024-02-20T16:06:16.273] [50.batch] error: job_manager: exiting abnormally: Plugin initialization failed
+[2024-02-20T16:06:16.273] [50.batch] sending REQUEST_COMPLETE_BATCH_SCRIPT, error:1011 status:0
+[2024-02-20T16:06:16.275] [50.batch] done with job
+</code></pre><h2 id="useful-resources-for-slurm-management">Useful resources for SLURM management</h2>
 <ul>
 <li><a href="https://www.carc.usc.edu/user-information/user-guides/hpc-basics/slurm-cheatsheet" target="_blank">SLURM cheatsheet</a></li>
 <li><a href="https://slurm.schedmd.com/configurator.html" target="_blank">SLURM config file generator</a></li>
