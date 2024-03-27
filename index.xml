@@ -6,8 +6,15 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2024 10:28:58 +0100</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple Multiprocessing in Julia</title>
+      <link>/post/simple_multiprocessing/</link>
+      <pubDate>Wed, 27 Mar 2024 10:28:58 +0100</pubDate>
+      <guid>/post/simple_multiprocessing/</guid>
+      <description>In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar&#xA;using Distributed, Printf @info @sprintf(&amp;#34;Number of workers: %d&amp;#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x += sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&amp;#34;Single eval time [s]: %4.3e&amp;#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&amp;#34;pmap eval time [s] : %4.</description>
+    </item>
     <item>
       <title>Linux Admin Tools</title>
       <link>/post/linux-admin-tools/</link>

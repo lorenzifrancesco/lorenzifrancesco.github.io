@@ -49,14 +49,18 @@
 
 
 
+  
+  
+  
+
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name"></title>
-<meta property="og:title" content=ZgotmplZ />
-<meta name="twitter:title" content=ZgotmplZ />
-<meta itemprop="name" content=ZgotmplZ />
-<meta name="application-name" content=ZgotmplZ />
+<title itemprop="name">Francesco Lorenzi - Simple Multiprocessing in Julia</title>
+<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;Simple&#32;Multiprocessing&#32;in&#32;Julia />
+<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;Simple&#32;Multiprocessing&#32;in&#32;Julia />
+<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;Simple&#32;Multiprocessing&#32;in&#32;Julia />
+<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;Simple&#32;Multiprocessing&#32;in&#32;Julia />
 <meta property="og:site_name" content="" />
 
 
@@ -66,18 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="/tags/" />
-<link rel="canonical" href="/tags/" itemprop="url" />
-<meta name="url" content="/tags/" />
-<meta name="twitter:url" content="/tags/" />
-<meta property="og:url" content="/tags/" />
+<base href="/post/simple_multiprocessing/" />
+<link rel="canonical" href="/post/simple_multiprocessing/" itemprop="url" />
+<meta name="url" content="/post/simple_multiprocessing/" />
+<meta name="twitter:url" content="/post/simple_multiprocessing/" />
+<meta property="og:url" content="/post/simple_multiprocessing/" />
 
 
-<meta property="og:updated_time" content=1001-01-12T10:00:01Z />
+<meta property="og:updated_time" content=27003-27-10T328:58:24&#43;0100 />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
-<link href="/tags/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -295,13 +298,74 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">Tags</h1>
-<ul class="entries">
+                <div class="post">
+  <div class="info">
+    <h1 class="post-title">
+        <a href="/post/simple_multiprocessing/">Simple Multiprocessing in Julia</a>
+    </h1>
     
-</ul>
+        <time datetime="2024-03-27T10:28:58&#43;0100" class="post-date">
+            March 27, 2024
+        </time>
+    
+    
+    
+    
+    
+    
+    
+</div>
 
+  <p>In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Distributed, Printf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@info</span> <span style="color:#a6e22e">@sprintf</span>(<span style="color:#e6db74">&#34;Number of workers: </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>, nprocs())
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@everywhere</span> <span style="color:#66d9ef">function</span> loop_compute(x)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100000000</span>
+</span></span><span style="display:flex;"><span>		x <span style="color:#f92672">+=</span> sin(x)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> x
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>t0 <span style="color:#f92672">=</span> <span style="color:#a6e22e">@elapsed</span> loop_compute(<span style="color:#ae81ff">1.0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@info</span> <span style="color:#a6e22e">@sprintf</span>(<span style="color:#e6db74">&#34;Single eval time [s]: </span><span style="color:#e6db74">%4.3e</span><span style="color:#e6db74">&#34;</span>, t0) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mat <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>t_pmap <span style="color:#f92672">=</span> <span style="color:#a6e22e">@elapsed</span> pmap(loop_compute, mat)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@info</span> <span style="color:#a6e22e">@sprintf</span>(<span style="color:#e6db74">&#34;pmap   eval time [s] : </span><span style="color:#e6db74">%4.3e</span><span style="color:#e6db74">&#34;</span>, t_pmap)
+</span></span><span style="display:flex;"><span>t_sing <span style="color:#f92672">=</span> <span style="color:#a6e22e">@elapsed</span> loop_compute<span style="color:#f92672">.</span>(mat)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@info</span> <span style="color:#a6e22e">@sprintf</span>(<span style="color:#e6db74">&#34;serial eval time [s] : </span><span style="color:#e6db74">%4.3e</span><span style="color:#e6db74">&#34;</span>, t_sing)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@info</span> <span style="color:#a6e22e">@sprintf</span>(<span style="color:#e6db74">&#34;Speeup ratio: %4444&#34;</span>, t_sing<span style="color:#f92672">/</span>t_pmap)
+</span></span></code></pre></div><p>Try to run this simple script using</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>julia -p <span style="color:#ae81ff">4</span> script.jl
+</span></span></code></pre></div><p>And check the speedup of the parallelized code.
+Keep also an eye on memory allocation.</p>
+
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="/post/linux-admin-tools/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Linux Admin Tools</a>
+        
+	    
+    
+</div>
+
+  
+
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>
