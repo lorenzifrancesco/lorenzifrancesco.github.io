@@ -47,20 +47,20 @@
 
 
 
-  
-  
-  
 
 
+  
+  
+  
 
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Francesco Lorenzi - Post</title>
-<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;Post />
-<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;Post />
-<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;Post />
-<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;Post />
+<title itemprop="name">Francesco Lorenzi - Simple (but nontrivial) vectorization in Numpy</title>
+<meta property="og:title" content=Francesco&#32;Lorenzi&#32;-&#32;Simple&#32;(but&#32;nontrivial)&#32;vectorization&#32;in&#32;Numpy />
+<meta name="twitter:title" content=Francesco&#32;Lorenzi&#32;-&#32;Simple&#32;(but&#32;nontrivial)&#32;vectorization&#32;in&#32;Numpy />
+<meta itemprop="name" content=Francesco&#32;Lorenzi&#32;-&#32;Simple&#32;(but&#32;nontrivial)&#32;vectorization&#32;in&#32;Numpy />
+<meta name="application-name" content=Francesco&#32;Lorenzi&#32;-&#32;Simple&#32;(but&#32;nontrivial)&#32;vectorization&#32;in&#32;Numpy />
 <meta property="og:site_name" content="" />
 
 
@@ -70,18 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="/post/" />
-<link rel="canonical" href="/post/" itemprop="url" />
-<meta name="url" content="/post/" />
-<meta name="twitter:url" content="/post/" />
-<meta property="og:url" content="/post/" />
+<base href="/post/simple_vectorization/" />
+<link rel="canonical" href="/post/simple_vectorization/" itemprop="url" />
+<meta name="url" content="/post/simple_vectorization/" />
+<meta name="twitter:url" content="/post/simple_vectorization/" />
+<meta property="og:url" content="/post/simple_vectorization/" />
 
 
 <meta property="og:updated_time" content=9005-09-07T511:37:24&#43;0200 />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
-<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -334,91 +333,97 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">Post</h1>
-<ul class="entries">
+                <div class="post">
+  <div class="info">
+    <h1 class="post-title">
+        <a href="/post/simple_vectorization/">Simple (but nontrivial) vectorization in Numpy</a>
+    </h1>
     
-        <h3 style="text-align: center;">2024</h3>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/simple_vectorization/">Simple (but nontrivial) vectorization in Numpy</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">May 9, 2024</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/simple_multiprocessing/">Simple Multiprocessing in Julia</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">March 27, 2024</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/linux-admin-tools/">Linux Admin Tools</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">February 12, 2024</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/slurm/">A clean installation of SLURM scheduler</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">February 11, 2024</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/kapitza/">The Kapitza pendulum</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">February 11, 2024</time>
-                </span>
-            </li>
-        
+        <time datetime="2024-05-09T19:11:37&#43;0200" class="post-date">
+            May 9, 2024
+        </time>
     
-        <h3 style="text-align: center;">2023</h3>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/second_quantization/">Second quantization of the electromagnetic field</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">October 27, 2023</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/poisson/">Binomial from Poisson in composite process</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">October 27, 2023</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/post/canonical/">Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">August 14, 2023</time>
-                </span>
-            </li>
-        
     
-</ul>
+    
+    
+    
+    
+    
+</div>
 
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>f(a, b, c, d)
+</span></span></code></pre></div><p>Let&rsquo;s say we want to explore the behavior of <code>f</code> in some range of parameters.</p>
+<p>How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be <em>very inefficient</em>, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least.
+Let&rsquo;s say the parameters have a definite number of samples (<code>len(x)</code>  or <code>np.shape(x)</code> in pyhon, with <code>x</code> a parameter vector). We change the axis of the numpy vectors, making them multi-dimensional vectors (or, respecting the notion of dimension in algebra, <em>multi-axial</em>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a_vec <span style="color:#f92672">=</span> a[:, <span style="color:#66d9ef">None</span>, <span style="color:#66d9ef">None</span>, <span style="color:#66d9ef">None</span>]
+</span></span></code></pre></div><p>Therefore the samples on each axis will be</p>
+<pre tabindex="0"><code>(10, 1, 1, 1)
+(1,  2, 1, 1)
+(1,  1, 4, 1)
+(1,  1, 1, 8)
+</code></pre><p>By calling the function <code>foo(a_vec, b_vec, c_vec, d_vec)</code>, we get a</p>
+<pre tabindex="0"><code>res = foo(a_vec, b_vec, c_vec, d_vec)
+</code></pre><p>and</p>
+<pre tabindex="0"><code>np.shape(res)
+</code></pre><p>will give <code>(10, 2, 4, 8)</code>. The vectorization is crucially dependent on the number of items in each axis of the multi-axis vectors.
+For example, we expect that only two values are allowed in a column: <code>1</code> or a fixed <code>N</code></p>
+<pre tabindex="0"><code>(..., 1, ...)
+(..., 1, ...)
+(..., N, ...)
+(..., 1, ...)
+(..., N, ...)
+</code></pre><p>The vectorization routine is therefore allowed to <strong>broadcast</strong>.</p>
+<h3 id="example-script">Example script</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(x, y, z): <span style="color:#66d9ef">return</span> x<span style="color:#f92672">+</span>y<span style="color:#f92672">+</span>z
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Check the normal operation&#34;</span>)
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span>, (<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span>, (<span style="color:#ae81ff">32</span>))
+</span></span><span style="display:flex;"><span>c <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span>, (<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">32</span>))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;a   : &#34;</span>, np<span style="color:#f92672">.</span>shape(a))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;b   : &#34;</span>, np<span style="color:#f92672">.</span>shape(b[<span style="color:#66d9ef">None</span>, <span style="color:#66d9ef">None</span>, :]))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;c   : &#34;</span>, np<span style="color:#f92672">.</span>shape(c))
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">=</span> f(a, b[<span style="color:#66d9ef">None</span>, <span style="color:#66d9ef">None</span>, :], c)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;res : &#34;</span>, np<span style="color:#f92672">.</span>shape(res))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Now we generate a vectorization (broadcasting) error&#34;</span>)
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100</span>, (<span style="color:#ae81ff">31</span>))
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">=</span> f(a, b[<span style="color:#66d9ef">None</span>, <span style="color:#66d9ef">None</span>, :], c)
+</span></span></code></pre></div>
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="/post/simple_multiprocessing/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Simple Multiprocessing in Julia</a>
+        
+	    
+    
+</div>
+
+  
+
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#example-script">Example script</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>
