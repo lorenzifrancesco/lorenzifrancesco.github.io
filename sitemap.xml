@@ -3,24 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2024-05-09T19:11:37+02:00</lastmod>
+    <lastmod>2024-07-24T18:54:44+02:00</lastmod>
+  </url><url>
+    <loc>/post/relativistic/</loc>
+    <lastmod>2024-07-24T18:54:44+02:00</lastmod>
   </url><url>
     <loc>/post/</loc>
+    <lastmod>2024-07-24T18:54:44+02:00</lastmod>
+  </url><url>
+    <loc>/post/numerics/simple_vectorization/</loc>
     <lastmod>2024-05-09T19:11:37+02:00</lastmod>
   </url><url>
-    <loc>/post/simple_vectorization/</loc>
-    <lastmod>2024-05-09T19:11:37+02:00</lastmod>
-  </url><url>
-    <loc>/post/simple_multiprocessing/</loc>
+    <loc>/post/numerics/simple_multiprocessing/</loc>
     <lastmod>2024-03-27T10:28:58+01:00</lastmod>
   </url><url>
-    <loc>/post/linux-admin-tools/</loc>
+    <loc>/post/numerics/linux-admin-tools/</loc>
     <lastmod>2024-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/slurm/</loc>
+    <loc>/post/numerics/slurm/</loc>
     <lastmod>2024-02-11T16:12:36+01:00</lastmod>
   </url><url>
-    <loc>/post/kapitza/</loc>
+    <loc>/post/classical/kapitza/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/other/</loc>
@@ -35,10 +38,10 @@
     <loc>/readings/interesting_bibliography/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/poisson/</loc>
+    <loc>/post/mathematics/poisson/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/second_quantization/</loc>
+    <loc>/post/quantum/second_quantization/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/about/</loc>
@@ -47,7 +50,7 @@
     <loc>/about/about/</loc>
     <lastmod>2023-08-14T16:56:10+02:00</lastmod>
   </url><url>
-    <loc>/post/canonical/</loc>
+    <loc>/post/mathematics/canonical/</loc>
     <lastmod>2023-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/series/</loc>
