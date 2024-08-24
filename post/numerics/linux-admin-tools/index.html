@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Linux Admin Tools | Francesco Lorenzi</title>
 <meta name="keywords" content="computer programming">
 <meta name="description" content="This post is designed to be updated as soon as new tricks come handy.
 Useful commands Instruction Command Change user su - &lt;username&gt; Change owner chown user:group -R folder Check owner &amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder">
 <meta name="author" content="">
-<link rel="canonical" href="http://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/">
+<link rel="canonical" href="http://localhost:1313/post/numerics/linux-admin-tools/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://lorenzifrancesco.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://lorenzifrancesco.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://lorenzifrancesco.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://lorenzifrancesco.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="http://lorenzifrancesco.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/numerics/linux-admin-tools/">
 <noscript>
     <style>
         #theme-toggle,
@@ -47,71 +47,6 @@ Useful commands Instruction Command Change user su - &lt;username&gt; Change own
         });
     });
 </script>
-  
-
-<meta property="og:title" content="Linux Admin Tools" />
-<meta property="og:description" content="This post is designed to be updated as soon as new tricks come handy.
-Useful commands Instruction Command Change user su - &lt;username&gt; Change owner chown user:group -R folder Check owner &amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2024-02-12T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-02-12T00:00:00+00:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux Admin Tools"/>
-<meta name="twitter:description" content="This post is designed to be updated as soon as new tricks come handy.
-Useful commands Instruction Command Change user su - &lt;username&gt; Change owner chown user:group -R folder Check owner &amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://lorenzifrancesco.github.io/post/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Linux Admin Tools",
-      "item": "http://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Linux Admin Tools",
-  "name": "Linux Admin Tools",
-  "description": "This post is designed to be updated as soon as new tricks come handy.\nUseful commands Instruction Command Change user su - \u0026lt;username\u0026gt; Change owner chown user:group -R folder Check owner \u0026amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder",
-  "keywords": [
-    "computer programming"
-  ],
-  "articleBody": "This post is designed to be updated as soon as new tricks come handy.\nUseful commands Instruction Command Change user su - Change owner chown user:group -R folder Check owner \u0026 permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder\nexample -rw-r--r-- 1 lorenzi lorenzi 4,3K 19 gen 11.22 .bashrc drwxr-xr-x 26 lorenzi lorenzi 4,0K 8 feb 14.01 bench/ the first column is divided in three parts:\nOwner of the file (U) User group of the owner (G) all others (O) rw- r-- r-- the first character indicates the file type, that for example in the bench case is a directory.\nOctal characters A mapping can be done from the three permissions to a single octal value. This mapping is one-to-one.\nr (read): 4 w (write): 2 x (execute): 1\n",
-  "wordCount" : "162",
-  "inLanguage": "en",
-  "datePublished": "2024-02-12T00:00:00Z",
-  "dateModified": "2024-02-12T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "http://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Francesco Lorenzi",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://lorenzifrancesco.github.io/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class=" dark" id="top">
@@ -125,7 +60,7 @@ Useful commands Instruction Command Change user su - &lt;username&gt; Change own
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://lorenzifrancesco.github.io/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -151,27 +86,27 @@ Useful commands Instruction Command Change user su - &lt;username&gt; Change own
         </div>
         <ul id="menu">
             <li>
-                <a href="http://lorenzifrancesco.github.io/" title="Home">
+                <a href="http://localhost:1313/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="http://lorenzifrancesco.github.io/tags/" title="Posts">
+                <a href="http://localhost:1313/tags/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://lorenzifrancesco.github.io/post/" title="Archive">
+                <a href="http://localhost:1313/post/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://lorenzifrancesco.github.io/readings/" title="Readings">
+                <a href="http://localhost:1313/readings/" title="Readings">
                     <span>Readings</span>
                 </a>
             </li>
             <li>
-                <a href="http://lorenzifrancesco.github.io/lab/" title="Sunday mornings in the lab">
+                <a href="http://localhost:1313/lab/" title="Sunday mornings in the lab">
                     <span>Sunday mornings in the lab</span>
                 </a>
             </li>
@@ -182,7 +117,7 @@ Useful commands Instruction Command Change user su - &lt;username&gt; Change own
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://lorenzifrancesco.github.io/">Home</a>&nbsp;»&nbsp;<a href="http://lorenzifrancesco.github.io/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Linux Admin Tools
     </h1>
@@ -284,15 +219,15 @@ x (execute): 1</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://lorenzifrancesco.github.io/tags/computer-programming/">Computer Programming</a></li>
+      <li><a href="http://localhost:1313/tags/computer-programming/">Computer Programming</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/">
+  <a class="prev" href="http://localhost:1313/post/numerics/simple_multiprocessing/">
     <span class="title">« Prev</span>
     <br>
     <span>Simple Multiprocessing in Julia</span>
   </a>
-  <a class="next" href="http://lorenzifrancesco.github.io/post/numerics/slurm/">
+  <a class="next" href="http://localhost:1313/post/numerics/slurm/">
     <span class="title">Next »</span>
     <br>
     <span>A clean installation of SLURM scheduler</span>
@@ -304,7 +239,7 @@ x (execute): 1</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://lorenzifrancesco.github.io/">Francesco Lorenzi</a></span> · 
+        <span>&copy; 2024 <a href="http://localhost:1313/">Francesco Lorenzi</a></span> · 
 
     <span>
         Powered by
