@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Simple Multiprocessing in Julia | Francesco Lorenzi</title>
 <meta name="keywords" content="computer programming">
 <meta name="description" content="In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar
 using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x &#43;= sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&#34;Single eval time [s]: %4.3e&#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&#34;pmap eval time [s] : %4.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/post/numerics/simple_multiprocessing/">
+<link rel="canonical" href="https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://lorenzifrancesco.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lorenzifrancesco.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lorenzifrancesco.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lorenzifrancesco.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lorenzifrancesco.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/post/numerics/simple_multiprocessing/">
+<link rel="alternate" hreflang="en" href="https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/">
 <noscript>
     <style>
         #theme-toggle,
@@ -47,6 +47,71 @@ using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs
         });
     });
 </script>
+  
+
+<meta property="og:title" content="Simple Multiprocessing in Julia" />
+<meta property="og:description" content="In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar
+using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x &#43;= sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&#34;Single eval time [s]: %4.3e&#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&#34;pmap eval time [s] : %4." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-03-27T10:28:58+01:00" />
+<meta property="article:modified_time" content="2024-03-27T10:28:58+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Simple Multiprocessing in Julia"/>
+<meta name="twitter:description" content="In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar
+using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x &#43;= sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&#34;Single eval time [s]: %4.3e&#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&#34;pmap eval time [s] : %4."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://lorenzifrancesco.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Simple Multiprocessing in Julia",
+      "item": "https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Simple Multiprocessing in Julia",
+  "name": "Simple Multiprocessing in Julia",
+  "description": "In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar\nusing Distributed, Printf @info @sprintf(\u0026#34;Number of workers: %d\u0026#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x += sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(\u0026#34;Single eval time [s]: %4.3e\u0026#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(\u0026#34;pmap eval time [s] : %4.",
+  "keywords": [
+    "computer programming"
+  ],
+  "articleBody": "In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar\nusing Distributed, Printf @info @sprintf(\"Number of workers: %d\", nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x += sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(\"Single eval time [s]: %4.3e\", t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(\"pmap eval time [s] : %4.3e\", t_pmap) t_sing = @elapsed loop_compute.(mat) @info @sprintf(\"serial eval time [s] : %4.3e\", t_sing) @info @sprintf(\"Speeup ratio: %4444\", t_sing/t_pmap) Try to run this simple script using\njulia -p 4 script.jl And check the speedup of the parallelized code. Keep also an eye on memory allocation.\n",
+  "wordCount" : "125",
+  "inLanguage": "en",
+  "datePublished": "2024-03-27T10:28:58+01:00",
+  "dateModified": "2024-03-27T10:28:58+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Francesco Lorenzi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lorenzifrancesco.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class=" dark" id="top">
@@ -60,7 +125,7 @@ using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
+            <a href="https://lorenzifrancesco.github.io/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -86,27 +151,27 @@ using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="Home">
+                <a href="https://lorenzifrancesco.github.io/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Posts">
+                <a href="https://lorenzifrancesco.github.io/tags/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/post/" title="Archive">
+                <a href="https://lorenzifrancesco.github.io/post/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/readings/" title="Readings">
+                <a href="https://lorenzifrancesco.github.io/readings/" title="Readings">
                     <span>Readings</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/lab/" title="Sunday mornings in the lab">
+                <a href="https://lorenzifrancesco.github.io/lab/" title="Sunday mornings in the lab">
                     <span>Sunday mornings in the lab</span>
                 </a>
             </li>
@@ -117,7 +182,7 @@ using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://lorenzifrancesco.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://lorenzifrancesco.github.io/post/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Simple Multiprocessing in Julia
     </h1>
@@ -155,15 +220,15 @@ Keep also an eye on memory allocation.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/computer-programming/">Computer Programming</a></li>
+      <li><a href="https://lorenzifrancesco.github.io/tags/computer-programming/">Computer Programming</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/post/numerics/simple_vectorization/">
+  <a class="prev" href="https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/">
     <span class="title">« Prev</span>
     <br>
     <span>Simple (but nontrivial) vectorization in Numpy</span>
   </a>
-  <a class="next" href="http://localhost:1313/post/numerics/linux-admin-tools/">
+  <a class="next" href="https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/">
     <span class="title">Next »</span>
     <br>
     <span>Linux Admin Tools</span>
@@ -175,7 +240,7 @@ Keep also an eye on memory allocation.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">Francesco Lorenzi</a></span> · 
+        <span>&copy; 2024 <a href="https://lorenzifrancesco.github.io/">Francesco Lorenzi</a></span> · 
 
     <span>
         Powered by

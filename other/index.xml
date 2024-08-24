@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Others on Francesco Lorenzi</title>
-    <link>http://localhost:1313/other/</link>
+    <link>https://lorenzifrancesco.github.io/other/</link>
     <description>Recent content in Others on Francesco Lorenzi</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/other/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lorenzifrancesco.github.io/other/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Some interesting bibliography in physics</title>
-      <link>http://localhost:1313/other/interesting_bibliography/</link>
+      <link>https://lorenzifrancesco.github.io/other/interesting_bibliography/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/other/interesting_bibliography/</guid>
+      <guid>https://lorenzifrancesco.github.io/other/interesting_bibliography/</guid>
       <description>Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.
 Photonics and Electromagnetics A book with which I am in love and have followed me for many years is
 Electromagnetic Waves, C. G. Someda, CRC Press (2006) Quantum optics and noise Quantum noise - a Handbook of Markovian and Non-Markovian methods with Applications to Quantum Optics, C. W. Gardiner and P. Zoller, Springer (1999) Elements of Quantum Optics, P.</description>
