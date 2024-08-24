@@ -66,7 +66,7 @@ This is the opposite of what happens for a normal pendulum, which has always a s
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/mathematics/poisson/</guid>
       <description>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.
-Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as averave arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp;amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;amp;= n+k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.</description>
+Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp;amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;amp;= n+k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.</description>
     </item>
     <item>
       <title>Second quantization of the electromagnetic field</title>

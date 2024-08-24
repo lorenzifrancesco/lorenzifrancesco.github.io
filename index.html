@@ -20,6 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
@@ -29,7 +30,25 @@
         }
 
     </style>
-</noscript>
+</noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
 </head>
 
 <body class="list dark" id="top">
@@ -68,6 +87,31 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/post/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/readings/" title="Readings">
+                    <span>Readings</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/lab/" title="Sunday mornings in the lab">
+                    <span>Sunday mornings in the lab</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -162,7 +206,7 @@ This is the opposite of what happens for a normal pendulum, which has always a s
   </header>
   <div class="entry-content">
     <p>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.
-Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as averave arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp; P[X_1(t)=k \ | \ X_1(t)&#43;X_2(t) &amp;= n&#43;k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n&#43;k$....</p>
+Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp; P[X_1(t)=k \ | \ X_1(t)&#43;X_2(t) &amp;= n&#43;k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n&#43;k$....</p>
   </div>
   <footer class="entry-footer"><span title='2023-10-27 00:00:00 +0000 UTC'>October 27, 2023</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to Binomial from Poisson in composite process" href="http://localhost:1313/post/mathematics/poisson/"></a>

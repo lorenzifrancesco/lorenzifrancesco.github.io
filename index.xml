@@ -6,8 +6,22 @@
     <description>Recent content on Francesco Lorenzi</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jul 2024 18:54:44 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posts Overview</title>
+      <link>http://localhost:1313/posts/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/</guid>
+      <description> Classical Mechanics Quantum mechanics Mathematics Numerics Photonics and Electromagnetics </description>
+    </item>
+    <item>
+      <title>Posts Overview</title>
+      <link>http://localhost:1313/tags/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Longitudinal and transverse relativistic dynamics</title>
       <link>http://localhost:1313/post/relativistic/</link>
@@ -61,6 +75,14 @@ If $\phi$ is the angle the pendulum have with respect to the vertical downward p
 This is the opposite of what happens for a normal pendulum, which has always a stable equilibrium point with $\phi=0$ and unstable one with $\phi=\pi$.</description>
     </item>
     <item>
+      <title>Julia</title>
+      <link>http://localhost:1313/lab/julia/</link>
+      <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
+      <guid>http://localhost:1313/lab/julia/</guid>
+      <description>We want to optimize Julia performance through type-inference analysis.
+julia&amp;gt; @benchmark sim = InitSim(L, N, type) BenchmarkTools.Trial: 10000 samples with 1 evaluation. Range (min … max): 17.467 μs … 36.698 ms ┊ GC (min … max): 0.00% … 45.39% Time (median): 21.256 μs ┊ GC (median): 0.00% Time (mean ± σ): 28.770 μs ± 367.122 μs ┊ GC (mean ± σ): 5.79% ± 0.45% ▁█▃ ▂█████▇▅▄▄▃▃▃▂▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ ▂ 17.5 μs Histogram: frequency by time 54 μs &amp;lt; Memory estimate: 14.</description>
+    </item>
+    <item>
       <title>Some interesting bibliography in physics</title>
       <link>http://localhost:1313/other/interesting_bibliography/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
@@ -84,7 +106,7 @@ Electromagnetic Waves, C. G. Someda, CRC Press (2006) Quantum optics and noise Q
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/mathematics/poisson/</guid>
       <description>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.
-Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as averave arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp;amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;amp;= n+k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.</description>
+Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp;amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;amp;= n+k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.</description>
     </item>
     <item>
       <title>Second quantization of the electromagnetic field</title>
@@ -94,20 +116,20 @@ Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_
       <description>The procedure of quantization of a classical theory has its crucial passage in the promotion of the dynamical variables to operators in the Hilbert space of the quantum states of the system. The quantization is successful if these operators form a complete set of commuting observables (this set is called ICOC). In this case, every quantum state of the system can be expressed as a sum of eigenstates, and we can write the probability amplitudes, and take the averages of all the dynamical variables.</description>
     </item>
     <item>
-      <title>Welcome to my projects and research page!</title>
-      <link>http://localhost:1313/about/about/</link>
-      <pubDate>Mon, 14 Aug 2023 16:56:10 +0200</pubDate>
-      <guid>http://localhost:1313/about/about/</guid>
-      <description>I&amp;rsquo;m a passionate Ph.D. student of Theoretical Physics of Matter, at the department of Physics and Astronomy of University of Padova. I have background in optics and photonics for telecommunications.
-My current research interests are in theoretical physics of matter:
-solitons and their stability in classical and quantum field theories highly nonlinear phenomena in Bose-Einstein condensates, Josephson oscillations Due to my background in photonic engineering and ICT, I&amp;rsquo;m also interested in</description>
-    </item>
-    <item>
       <title>Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation</title>
       <link>http://localhost:1313/post/mathematics/canonical/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/mathematics/canonical/</guid>
       <description>Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics. In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.</description>
+    </item>
+    <item>
+      <title>Welcome to my projects and research page!</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>I&amp;rsquo;m a passionate Ph.D. student of Theoretical Physics of Matter, at the department of Physics and Astronomy of University of Padova. I have background in optics and photonics for telecommunications.
+My current research interests are in theoretical physics of matter:
+solitons and their stability in classical and quantum field theories highly nonlinear phenomena in Bose-Einstein condensates, Josephson oscillations Due to my background in photonic engineering and ICT, I&amp;rsquo;m also interested in</description>
     </item>
   </channel>
 </rss>
