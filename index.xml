@@ -75,12 +75,33 @@ If $\phi$ is the angle the pendulum have with respect to the vertical downward p
 This is the opposite of what happens for a normal pendulum, which has always a stable equilibrium point with $\phi=0$ and unstable one with $\phi=\pi$.</description>
     </item>
     <item>
-      <title>Julia</title>
-      <link>http://localhost:1313/lab/julia/</link>
+      <title>Some microscopies</title>
+      <link>http://localhost:1313/lab/w2/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/julia/</guid>
-      <description>We want to optimize Julia performance through type-inference analysis.
-julia&amp;gt; @benchmark sim = InitSim(L, N, type) BenchmarkTools.Trial: 10000 samples with 1 evaluation. Range (min … max): 17.467 μs … 36.698 ms ┊ GC (min … max): 0.00% … 45.39% Time (median): 21.256 μs ┊ GC (median): 0.00% Time (mean ± σ): 28.770 μs ± 367.122 μs ┊ GC (mean ± σ): 5.79% ± 0.45% ▁█▃ ▂█████▇▅▄▄▃▃▃▂▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ ▂ 17.5 μs Histogram: frequency by time 54 μs &amp;lt; Memory estimate: 14.</description>
+      <guid>http://localhost:1313/lab/w2/</guid>
+      <description>Piece of LCD screen with pigments Who can guess this? Hover over the picture to see Section of an Intel (1975!) memory chip </description>
+    </item>
+    <item>
+      <title>What is this?</title>
+      <link>http://localhost:1313/lab/w1/</link>
+      <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
+      <guid>http://localhost:1313/lab/w1/</guid>
+      <description>A very interesting piece for RF measurements! :)</description>
+    </item>
+    <item>
+      <title>X-Y</title>
+      <link>http://localhost:1313/lab/w3/</link>
+      <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
+      <guid>http://localhost:1313/lab/w3/</guid>
+      <description>Evergreen Lissajous patterns.
+Also Lincoln Labs like them!</description>
+    </item>
+    <item>
+      <title>Essays</title>
+      <link>http://localhost:1313/readings/essays/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/readings/essays/</guid>
+      <description> Introduzione alla Cibernetica, N. Wiener, Bollati Boringhieri (2012) Vortici e Colori - alle origini dell&amp;rsquo;opera di James Clerk Maxwell, G. Peruzzi, Dedalo (2010) </description>
     </item>
     <item>
       <title>Some interesting bibliography in physics</title>
@@ -93,9 +114,9 @@ Electromagnetic Waves, C. G. Someda, CRC Press (2006) Quantum optics and noise Q
     </item>
     <item>
       <title>Some interesting bibliography in physics</title>
-      <link>http://localhost:1313/readings/interesting_bibliography/</link>
+      <link>http://localhost:1313/readings/physics/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/readings/interesting_bibliography/</guid>
+      <guid>http://localhost:1313/readings/physics/</guid>
       <description>Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.
 Photonics and Electromagnetics A book with which I am in love and have followed me for many years is
 Electromagnetic Waves, C. G. Someda, CRC Press (2006) Quantum optics and noise Quantum noise - a Handbook of Markovian and Non-Markovian methods with Applications to Quantum Optics, C. W. Gardiner and P. Zoller, Springer (1999) Elements of Quantum Optics, P.</description>
@@ -121,15 +142,6 @@ Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/mathematics/canonical/</guid>
       <description>Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics. In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.</description>
-    </item>
-    <item>
-      <title>Welcome to my projects and research page!</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>I&amp;rsquo;m a passionate Ph.D. student of Theoretical Physics of Matter, at the department of Physics and Astronomy of University of Padova. I have background in optics and photonics for telecommunications.
-My current research interests are in theoretical physics of matter:
-solitons and their stability in classical and quantum field theories highly nonlinear phenomena in Bose-Einstein condensates, Josephson oscillations Due to my background in photonic engineering and ICT, I&amp;rsquo;m also interested in</description>
     </item>
   </channel>
 </rss>

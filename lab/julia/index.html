@@ -5,10 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Julia | Francesco Lorenzi</title>
+<title>What is this? | Francesco Lorenzi</title>
 <meta name="keywords" content="">
-<meta name="description" content="We want to optimize Julia performance through type-inference analysis.
-julia&gt; @benchmark sim = InitSim(L, N, type) BenchmarkTools.Trial: 10000 samples with 1 evaluation. Range (min … max): 17.467 μs … 36.698 ms ┊ GC (min … max): 0.00% … 45.39% Time (median): 21.256 μs ┊ GC (median): 0.00% Time (mean ± σ): 28.770 μs ± 367.122 μs ┊ GC (mean ± σ): 5.79% ± 0.45% ▁█▃ ▂█████▇▅▄▄▃▃▃▂▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ ▂ 17.5 μs Histogram: frequency by time 54 μs &lt; Memory estimate: 14.">
+<meta name="description" content="A very interesting piece for RF measurements! :)">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/lab/julia/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
@@ -86,7 +85,7 @@ julia&gt; @benchmark sim = InitSim(L, N, type) BenchmarkTools.Trial: 10000 sampl
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about/" title="Home">
+                <a href="http://localhost:1313/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
@@ -119,65 +118,16 @@ julia&gt; @benchmark sim = InitSim(L, N, type) BenchmarkTools.Trial: 10000 sampl
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/lab/">Labs</a></div>
     <h1 class="post-title entry-hint-parent">
-      Julia
+      What is this?
     </h1>
     <div class="post-meta"><span title='2023-12-18 15:18:36 +0100 CET'>December 18, 2023</span>&nbsp;·&nbsp;1 min
 
 </div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
+  </header> 
 
-        <div class="inner"><nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#everything-can-be-known-at-compile-time-if-the-compiler-is-smart-enough">``Everything can be known at compile time if the compiler is smart enough&quot;</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        </div>
-    </details>
-</div>
-
-  <div class="post-content"><p>We want to optimize Julia performance through type-inference analysis.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span>julia<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">@benchmark</span> sim <span style="color:#f92672">=</span> InitSim(L, N, type)
-</span></span><span style="display:flex;"><span>BenchmarkTools<span style="color:#f92672">.</span>Trial<span style="color:#f92672">:</span> <span style="color:#ae81ff">10000</span> samples with <span style="color:#ae81ff">1</span> evaluation<span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span> Range (min <span style="color:#f92672">…</span> max)<span style="color:#f92672">:</span>  <span style="color:#ae81ff">17.467</span> μs <span style="color:#f92672">…</span>  <span style="color:#ae81ff">36.698</span> ms  ┊ GC (min <span style="color:#f92672">…</span> max)<span style="color:#f92672">:</span> <span style="color:#ae81ff">0.00</span><span style="color:#f92672">%</span> <span style="color:#f92672">…</span> <span style="color:#ae81ff">45.39</span><span style="color:#f92672">%</span>
-</span></span><span style="display:flex;"><span> Time  (median)<span style="color:#f92672">:</span>     <span style="color:#ae81ff">21.256</span> μs               ┊ GC (median)<span style="color:#f92672">:</span>    <span style="color:#ae81ff">0.00</span><span style="color:#f92672">%</span>
-</span></span><span style="display:flex;"><span> Time  (mean <span style="color:#f92672">±</span> σ)<span style="color:#f92672">:</span>   <span style="color:#ae81ff">28.770</span> μs <span style="color:#f92672">±</span> <span style="color:#ae81ff">367.122</span> μs  ┊ GC (mean <span style="color:#f92672">±</span> σ)<span style="color:#f92672">:</span>  <span style="color:#ae81ff">5.79</span><span style="color:#f92672">%</span> <span style="color:#f92672">±</span>  <span style="color:#ae81ff">0.45</span><span style="color:#f92672">%</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>   ▁█▃                                                          
-</span></span><span style="display:flex;"><span>  ▂█████▇▅▄▄▃▃▃▂▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ ▂
-</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">17.5</span> μs         Histogram<span style="color:#f92672">:</span> frequency by time           <span style="color:#ae81ff">54</span> μs <span style="color:#f92672">&lt;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> Memory estimate<span style="color:#f92672">:</span> <span style="color:#ae81ff">14.03</span> KiB, allocs estimate<span style="color:#f92672">:</span> <span style="color:#ae81ff">220.</span>
-</span></span></code></pre></div><p>With type inference indicating</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span>     <span style="color:#f92672">%</span><span style="color:#ae81ff">306</span> <span style="color:#f92672">=</span> X<span style="color:#f92672">::</span><span style="color:#66d9ef">Tuple</span>{<span style="color:#66d9ef">Vararg</span>{<span style="color:#66d9ef">LinRange</span>{<span style="color:#66d9ef">Float64</span>, <span style="color:#66d9ef">Int64</span>}}}
-</span></span><span style="display:flex;"><span>│    <span style="color:#f92672">%</span><span style="color:#ae81ff">307</span> <span style="color:#f92672">=</span> K<span style="color:#f92672">::</span><span style="color:#66d9ef">Tuple</span>{<span style="color:#66d9ef">Vararg</span>{<span style="color:#66d9ef">AbstractFFTs</span><span style="color:#f92672">.</span><span style="color:#66d9ef">Frequencies</span>{<span style="color:#66d9ef">Float64</span>}}}
-</span></span><span style="display:flex;"><span>│    <span style="color:#f92672">%</span><span style="color:#ae81ff">308</span> <span style="color:#f92672">=</span> T<span style="color:#f92672">::</span><span style="color:#66d9ef">Transforms</span>{<span style="color:#66d9ef">_A</span>, <span style="color:#66d9ef">_B</span>, <span style="color:#66d9ef">Array</span>{<span style="color:#66d9ef">ComplexF64</span>}} <span style="color:#66d9ef">where</span> {<span style="color:#66d9ef">_A</span>, <span style="color:#66d9ef">_B</span>}
-</span></span><span style="display:flex;"><span>│    <span style="color:#f92672">%</span><span style="color:#ae81ff">309</span> <span style="color:#f92672">=</span> ksquared<span style="color:#f92672">::</span><span style="color:#66d9ef">Array</span>{<span style="color:#66d9ef">ComplexF64</span>}
-</span></span></code></pre></div><p>we obtain a load time of</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span>julia<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">@benchmark</span> sim <span style="color:#f92672">=</span> InitSim(L, N, type)
-</span></span><span style="display:flex;"><span>BenchmarkTools<span style="color:#f92672">.</span>Trial<span style="color:#f92672">:</span> <span style="color:#ae81ff">10000</span> samples with <span style="color:#ae81ff">1</span> evaluation<span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span>Range (min <span style="color:#f92672">…</span> max)<span style="color:#f92672">:</span>  <span style="color:#ae81ff">17.035</span> μs <span style="color:#f92672">…</span>  <span style="color:#ae81ff">27.692</span> ms  ┊ GC (min <span style="color:#f92672">…</span> max)<span style="color:#f92672">:</span> <span style="color:#ae81ff">0.00</span><span style="color:#f92672">%</span> <span style="color:#f92672">…</span> <span style="color:#ae81ff">42.74</span><span style="color:#f92672">%</span>
-</span></span><span style="display:flex;"><span>Time  (median)<span style="color:#f92672">:</span>     <span style="color:#ae81ff">18.392</span> μs               ┊ GC (median)<span style="color:#f92672">:</span>    <span style="color:#ae81ff">0.00</span><span style="color:#f92672">%</span>
-</span></span><span style="display:flex;"><span>Time  (mean <span style="color:#f92672">±</span> σ)<span style="color:#f92672">:</span>   <span style="color:#ae81ff">22.019</span> μs <span style="color:#f92672">±</span> <span style="color:#ae81ff">276.943</span> μs  ┊ GC (mean <span style="color:#f92672">±</span> σ)<span style="color:#f92672">:</span>  <span style="color:#ae81ff">5.38</span><span style="color:#f92672">%</span> <span style="color:#f92672">±</span>  <span style="color:#ae81ff">0.43</span><span style="color:#f92672">%</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  ▄▇██▇▅▄▃▃▂▂▁▁▁▁▁▁                                           ▂
-</span></span><span style="display:flex;"><span> ▇██████████████████▇▇▆▄▆▆▆▆▆▄▄▅▅▅▅▅▄▅▄▆▆▃▄▅▅▄▄▃▅▅▅▄▄▄▃▄▃▂▂▂▄ █
-</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">17</span> μs         Histogram<span style="color:#f92672">:</span> log(frequency) by time      <span style="color:#ae81ff">35.6</span> μs <span style="color:#f92672">&lt;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Memory estimate<span style="color:#f92672">:</span> <span style="color:#ae81ff">14.17</span> KiB, allocs estimate<span style="color:#f92672">:</span> <span style="color:#ae81ff">220.</span>
-</span></span></code></pre></div><h3 id="everything-can-be-known-at-compile-time-if-the-compiler-is-smart-enough">``Everything can be known at compile time if the compiler is smart enough&quot;<a hidden class="anchor" aria-hidden="true" href="#everything-can-be-known-at-compile-time-if-the-compiler-is-smart-enough">#</a></h3>
-<p>So what is the purpose of running Julia?</p>
+  <div class="post-content"><p>A very interesting piece for RF measurements! :)</p>
+<p><img loading="lazy" src="../../images/lab/DSCF1824.JPG" alt=""  />
+</p>
 
 
   </div>

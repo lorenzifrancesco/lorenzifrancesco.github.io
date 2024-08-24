@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Tags | Francesco Lorenzi</title>
+<title>Posts Overview | Francesco Lorenzi</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="Posts Overview - Francesco Lorenzi">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/tags/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
@@ -18,7 +18,6 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/">
 <noscript>
     <style>
@@ -49,7 +48,7 @@
 </script>
 </head>
 
-<body class="list dark" id="top">
+<body class=" dark" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
@@ -86,7 +85,7 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about/" title="Home">
+                <a href="http://localhost:1313/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
@@ -114,21 +113,73 @@
     </nav>
 </header>
 <main class="main">
-<header class="page-header">
-    <h1>Tags</h1>
-</header>
+<div class="tags-page">
+    <h1>Posts by Tag</h1>
+    <style>
+      .padded-element {
+        padding-bottom: 200px;  
+      }
+    </style>
 
-<ul class="terms-tags">
-    <li>
-        <a href="http://localhost:1313/tags/classical-mechanics/">classical mechanics <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/computer-programming/">computer programming <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/mathematics/">mathematics <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-</ul>
+    <ul class="tags-list">
+        
+        
+            <li class="tag-item">
+                <h2><a href="/tags/classical%20mechanics">classical mechanics</a></h2>
+                <ul class="posts-list">
+                    
+                        <li class="post-item">
+                            <a href="http://localhost:1313/post/relativistic/">Longitudinal and transverse relativistic dynamics</a>
+                        </li>
+                    
+                        <li class="post-item">
+                            <a href="http://localhost:1313/post/classical/kapitza/">The Kapitza pendulum</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li class="tag-item">
+                <h2><a href="/tags/computer%20programming">computer programming</a></h2>
+                <ul class="posts-list">
+                    
+                        <li class="post-item">
+                            <a href="http://localhost:1313/post/numerics/simple_vectorization/">Simple (but nontrivial) vectorization in Numpy</a>
+                        </li>
+                    
+                        <li class="post-item">
+                            <a href="http://localhost:1313/post/numerics/simple_multiprocessing/">Simple Multiprocessing in Julia</a>
+                        </li>
+                    
+                        <li class="post-item">
+                            <a href="http://localhost:1313/post/numerics/linux-admin-tools/">Linux Admin Tools</a>
+                        </li>
+                    
+                        <li class="post-item">
+                            <a href="http://localhost:1313/post/numerics/slurm/">A clean installation of SLURM scheduler</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li class="tag-item">
+                <h2><a href="/tags/mathematics">mathematics</a></h2>
+                <ul class="posts-list">
+                    
+                        <li class="post-item">
+                            <a href="http://localhost:1313/post/mathematics/poisson/">Binomial from Poisson in composite process</a>
+                        </li>
+                    
+                        <li class="post-item">
+                            <a href="http://localhost:1313/post/mathematics/canonical/">Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    </ul>
+</div>
+
     </main>
     
 <footer class="footer">
@@ -199,6 +250,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

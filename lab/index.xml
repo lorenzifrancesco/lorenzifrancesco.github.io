@@ -9,12 +9,26 @@
     <lastBuildDate>Mon, 18 Dec 2023 15:18:36 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Julia</title>
-      <link>http://localhost:1313/lab/julia/</link>
+      <title>Some microscopies</title>
+      <link>http://localhost:1313/lab/w2/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/julia/</guid>
-      <description>We want to optimize Julia performance through type-inference analysis.
-julia&amp;gt; @benchmark sim = InitSim(L, N, type) BenchmarkTools.Trial: 10000 samples with 1 evaluation. Range (min … max): 17.467 μs … 36.698 ms ┊ GC (min … max): 0.00% … 45.39% Time (median): 21.256 μs ┊ GC (median): 0.00% Time (mean ± σ): 28.770 μs ± 367.122 μs ┊ GC (mean ± σ): 5.79% ± 0.45% ▁█▃ ▂█████▇▅▄▄▃▃▃▂▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ ▂ 17.5 μs Histogram: frequency by time 54 μs &amp;lt; Memory estimate: 14.</description>
+      <guid>http://localhost:1313/lab/w2/</guid>
+      <description>Piece of LCD screen with pigments Who can guess this? Hover over the picture to see Section of an Intel (1975!) memory chip </description>
+    </item>
+    <item>
+      <title>What is this?</title>
+      <link>http://localhost:1313/lab/w1/</link>
+      <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
+      <guid>http://localhost:1313/lab/w1/</guid>
+      <description>A very interesting piece for RF measurements! :)</description>
+    </item>
+    <item>
+      <title>X-Y</title>
+      <link>http://localhost:1313/lab/w3/</link>
+      <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
+      <guid>http://localhost:1313/lab/w3/</guid>
+      <description>Evergreen Lissajous patterns.
+Also Lincoln Labs like them!</description>
     </item>
   </channel>
 </rss>
