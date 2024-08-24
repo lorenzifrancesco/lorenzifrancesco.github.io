@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Computer Programming on Francesco Lorenzi</title>
-    <link>http://localhost:1313/tags/computer-programming/</link>
+    <link>http://lorenzifrancesco.github.io/tags/computer-programming/</link>
     <description>Recent content in Computer Programming on Francesco Lorenzi</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 May 2024 19:11:37 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/computer-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://lorenzifrancesco.github.io/tags/computer-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple (but nontrivial) vectorization in Numpy</title>
-      <link>http://localhost:1313/post/numerics/simple_vectorization/</link>
+      <link>http://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</link>
       <pubDate>Thu, 09 May 2024 19:11:37 +0200</pubDate>
-      <guid>http://localhost:1313/post/numerics/simple_vectorization/</guid>
+      <guid>http://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</guid>
       <description>f(a, b, c, d) Let&amp;rsquo;s say we want to explore the behavior of f in some range of parameters.
 How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be very inefficient, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least. Let&amp;rsquo;s say the parameters have a definite number of samples (len(x) or np.shape(x) in pyhon, with x a parameter vector).</description>
     </item>
     <item>
       <title>Simple Multiprocessing in Julia</title>
-      <link>http://localhost:1313/post/numerics/simple_multiprocessing/</link>
+      <link>http://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/</link>
       <pubDate>Wed, 27 Mar 2024 10:28:58 +0100</pubDate>
-      <guid>http://localhost:1313/post/numerics/simple_multiprocessing/</guid>
+      <guid>http://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/</guid>
       <description>In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar
 using Distributed, Printf @info @sprintf(&amp;#34;Number of workers: %d&amp;#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x += sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&amp;#34;Single eval time [s]: %4.3e&amp;#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&amp;#34;pmap eval time [s] : %4.</description>
     </item>
     <item>
       <title>Linux Admin Tools</title>
-      <link>http://localhost:1313/post/numerics/linux-admin-tools/</link>
+      <link>http://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/</link>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/numerics/linux-admin-tools/</guid>
+      <guid>http://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/</guid>
       <description>This post is designed to be updated as soon as new tricks come handy.
 Useful commands Instruction Command Change user su - &amp;lt;username&amp;gt; Change owner chown user:group -R folder Check owner &amp;amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder</description>
     </item>
     <item>
       <title>A clean installation of SLURM scheduler</title>
-      <link>http://localhost:1313/post/numerics/slurm/</link>
+      <link>http://lorenzifrancesco.github.io/post/numerics/slurm/</link>
       <pubDate>Sun, 11 Feb 2024 16:12:36 +0100</pubDate>
-      <guid>http://localhost:1313/post/numerics/slurm/</guid>
+      <guid>http://lorenzifrancesco.github.io/post/numerics/slurm/</guid>
       <description>Desired topology and active services SLURM super quick start guide The guide is available here.
 On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package. Status of munge can be probed by
 munge -n | unmunge Installing the SLURM package is done manually
