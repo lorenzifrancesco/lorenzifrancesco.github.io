@@ -2,59 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-07-24T18:54:44+02:00</lastmod>
   </url><url>
-    <loc>/post/relativistic/</loc>
+    <loc>http://localhost:1313/post/relativistic/</loc>
     <lastmod>2024-07-24T18:54:44+02:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2024-07-24T18:54:44+02:00</lastmod>
   </url><url>
-    <loc>/post/numerics/simple_vectorization/</loc>
+    <loc>http://localhost:1313/post/numerics/simple_vectorization/</loc>
     <lastmod>2024-05-09T19:11:37+02:00</lastmod>
   </url><url>
-    <loc>/post/numerics/simple_multiprocessing/</loc>
+    <loc>http://localhost:1313/post/numerics/simple_multiprocessing/</loc>
     <lastmod>2024-03-27T10:28:58+01:00</lastmod>
   </url><url>
-    <loc>/post/numerics/linux-admin-tools/</loc>
+    <loc>http://localhost:1313/post/numerics/linux-admin-tools/</loc>
     <lastmod>2024-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/numerics/slurm/</loc>
+    <loc>http://localhost:1313/post/numerics/slurm/</loc>
     <lastmod>2024-02-11T16:12:36+01:00</lastmod>
   </url><url>
-    <loc>/post/classical/kapitza/</loc>
+    <loc>http://localhost:1313/post/classical/kapitza/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/other/</loc>
+    <loc>http://localhost:1313/other/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/readings/</loc>
+    <loc>http://localhost:1313/readings/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/other/interesting_bibliography/</loc>
+    <loc>http://localhost:1313/other/interesting_bibliography/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/readings/interesting_bibliography/</loc>
+    <loc>http://localhost:1313/readings/interesting_bibliography/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/mathematics/poisson/</loc>
+    <loc>http://localhost:1313/post/mathematics/poisson/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/quantum/second_quantization/</loc>
+    <loc>http://localhost:1313/post/quantum/second_quantization/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2023-08-14T16:56:10+02:00</lastmod>
   </url><url>
-    <loc>/about/about/</loc>
+    <loc>http://localhost:1313/about/about/</loc>
     <lastmod>2023-08-14T16:56:10+02:00</lastmod>
   </url><url>
-    <loc>/post/mathematics/canonical/</loc>
+    <loc>http://localhost:1313/post/mathematics/canonical/</loc>
     <lastmod>2023-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/series/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

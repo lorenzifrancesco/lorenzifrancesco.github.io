@@ -1,74 +1,85 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Post on </title>
-    <link>/post/</link>
-    <description>Recent content in Post on </description>
-    <generator>Hugo</generator>
+    <title>Posts on Francesco Lorenzi</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Francesco Lorenzi</description>
+    <generator>Hugo -- 0.133.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Jul 2024 18:54:44 +0200</lastBuildDate>
-    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Longitudinal and transverse relativistic dynamics</title>
-      <link>/post/relativistic/</link>
+      <link>http://localhost:1313/post/relativistic/</link>
       <pubDate>Wed, 24 Jul 2024 18:54:44 +0200</pubDate>
-      <guid>/post/relativistic/</guid>
+      <guid>http://localhost:1313/post/relativistic/</guid>
       <description>A very simple calculation in relativistic dynamics show an impressive aspect that differentiates the momentum change due to a force in the direction of movement of the body and the transverse ones. By using the definition of relativistic momentum $\mathbf{p}=\gamma m \mathbf{v}$, we can write $$ \frac{d\mathbf{p}}{dt} = \frac{d\gamma}{dt} m \mathbf{v} + \gamma m \frac{d\mathbf{v}}{dt}, $$ by defining the longitudinal and transverse acceleration, with respect to the vector $\mathbf{v}$ $$ \frac{d\mathbf{v}}{dt} = \mathbf{a}_L +\mathbf{a}_T, $$ it is simple to show that the first term in the first equation is only longitudinal $$ \frac{d\gamma}{dt} m \mathbf{v} = \frac{v^2}{c^2} \gamma^3 m \mathbf{a}_L , $$ and the second term is composed of longitudinal and transverse parts $$ \gamma m \frac{d\mathbf{v}}{dt}=\gamma m (\mathbf{a}_L+\mathbf{a}_T).</description>
     </item>
     <item>
       <title>Simple (but nontrivial) vectorization in Numpy</title>
-      <link>/post/numerics/simple_vectorization/</link>
+      <link>http://localhost:1313/post/numerics/simple_vectorization/</link>
       <pubDate>Thu, 09 May 2024 19:11:37 +0200</pubDate>
-      <guid>/post/numerics/simple_vectorization/</guid>
-      <description>f(a, b, c, d) Let&amp;rsquo;s say we want to explore the behavior of f in some range of parameters.&#xA;How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be very inefficient, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least. Let&amp;rsquo;s say the parameters have a definite number of samples (len(x) or np.shape(x) in pyhon, with x a parameter vector).</description>
+      <guid>http://localhost:1313/post/numerics/simple_vectorization/</guid>
+      <description>f(a, b, c, d) Let&amp;rsquo;s say we want to explore the behavior of f in some range of parameters.
+How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be very inefficient, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least. Let&amp;rsquo;s say the parameters have a definite number of samples (len(x) or np.shape(x) in pyhon, with x a parameter vector).</description>
     </item>
     <item>
       <title>Simple Multiprocessing in Julia</title>
-      <link>/post/numerics/simple_multiprocessing/</link>
+      <link>http://localhost:1313/post/numerics/simple_multiprocessing/</link>
       <pubDate>Wed, 27 Mar 2024 10:28:58 +0100</pubDate>
-      <guid>/post/numerics/simple_multiprocessing/</guid>
-      <description>In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar&#xA;using Distributed, Printf @info @sprintf(&amp;#34;Number of workers: %d&amp;#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x += sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&amp;#34;Single eval time [s]: %4.3e&amp;#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&amp;#34;pmap eval time [s] : %4.</description>
+      <guid>http://localhost:1313/post/numerics/simple_multiprocessing/</guid>
+      <description>In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar
+using Distributed, Printf @info @sprintf(&amp;#34;Number of workers: %d&amp;#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x += sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&amp;#34;Single eval time [s]: %4.3e&amp;#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&amp;#34;pmap eval time [s] : %4.</description>
     </item>
     <item>
       <title>Linux Admin Tools</title>
-      <link>/post/numerics/linux-admin-tools/</link>
+      <link>http://localhost:1313/post/numerics/linux-admin-tools/</link>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/post/numerics/linux-admin-tools/</guid>
-      <description>This post is designed to be updated as soon as new tricks come handy.&#xA;Useful commands Instruction Command Change user su - &amp;lt;username&amp;gt; Change owner chown user:group -R folder Check owner &amp;amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder</description>
+      <guid>http://localhost:1313/post/numerics/linux-admin-tools/</guid>
+      <description>This post is designed to be updated as soon as new tricks come handy.
+Useful commands Instruction Command Change user su - &amp;lt;username&amp;gt; Change owner chown user:group -R folder Check owner &amp;amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder</description>
     </item>
     <item>
       <title>A clean installation of SLURM scheduler</title>
-      <link>/post/numerics/slurm/</link>
+      <link>http://localhost:1313/post/numerics/slurm/</link>
       <pubDate>Sun, 11 Feb 2024 16:12:36 +0100</pubDate>
-      <guid>/post/numerics/slurm/</guid>
-      <description>Desired topology and active services SLURM super quick start guide The guide is available here.&#xA;On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package. Status of munge can be probed by&#xA;munge -n | unmunge Installing the SLURM package is done manually&#xA;wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2 We then unzip, configure, and build SLURM&#xA;We then need to create, by the SLURM user &amp;ldquo;slurm&amp;rdquo;, the directories of&#xA;log files PID files State save and make them writable.</description>
+      <guid>http://localhost:1313/post/numerics/slurm/</guid>
+      <description>Desired topology and active services SLURM super quick start guide The guide is available here.
+On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package. Status of munge can be probed by
+munge -n | unmunge Installing the SLURM package is done manually
+wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2 We then unzip, configure, and build SLURM
+We then need to create, by the SLURM user &amp;ldquo;slurm&amp;rdquo;, the directories of
+log files PID files State save and make them writable.</description>
     </item>
     <item>
       <title>The Kapitza pendulum</title>
-      <link>/post/classical/kapitza/</link>
+      <link>http://localhost:1313/post/classical/kapitza/</link>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/post/classical/kapitza/</guid>
-      <description>The Kapitza pendulum is a model in classical mechanics that exhibits counterintuitive behaviour. It is a pendulum with a pivot point that oscillates vertically.&#xA;If $\phi$ is the angle the pendulum have with respect to the vertical downward position, for some values of the driving frequency and amplitude, it can be stable in the inverted position $\phi = \pi$, and unstable in the upright position $\phi = 0$.&#xA;This is the opposite of what happens for a normal pendulum, which has always a stable equilibrium point with $\phi=0$ and unstable one with $\phi=\pi$.</description>
+      <guid>http://localhost:1313/post/classical/kapitza/</guid>
+      <description>The Kapitza pendulum is a model in classical mechanics that exhibits counterintuitive behaviour. It is a pendulum with a pivot point that oscillates vertically.
+If $\phi$ is the angle the pendulum have with respect to the vertical downward position, for some values of the driving frequency and amplitude, it can be stable in the inverted position $\phi = \pi$, and unstable in the upright position $\phi = 0$.
+This is the opposite of what happens for a normal pendulum, which has always a stable equilibrium point with $\phi=0$ and unstable one with $\phi=\pi$.</description>
     </item>
     <item>
       <title>Binomial from Poisson in composite process</title>
-      <link>/post/mathematics/poisson/</link>
+      <link>http://localhost:1313/post/mathematics/poisson/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/post/mathematics/poisson/</guid>
-      <description>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.&#xA;Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as averave arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp;amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;amp;= n+k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.</description>
+      <guid>http://localhost:1313/post/mathematics/poisson/</guid>
+      <description>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.
+Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as averave arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp;amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;amp;= n+k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.</description>
     </item>
     <item>
       <title>Second quantization of the electromagnetic field</title>
-      <link>/post/quantum/second_quantization/</link>
+      <link>http://localhost:1313/post/quantum/second_quantization/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/post/quantum/second_quantization/</guid>
+      <guid>http://localhost:1313/post/quantum/second_quantization/</guid>
       <description>The procedure of quantization of a classical theory has its crucial passage in the promotion of the dynamical variables to operators in the Hilbert space of the quantum states of the system. The quantization is successful if these operators form a complete set of commuting observables (this set is called ICOC). In this case, every quantum state of the system can be expressed as a sum of eigenstates, and we can write the probability amplitudes, and take the averages of all the dynamical variables.</description>
     </item>
     <item>
       <title>Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation</title>
-      <link>/post/mathematics/canonical/</link>
+      <link>http://localhost:1313/post/mathematics/canonical/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>/post/mathematics/canonical/</guid>
+      <guid>http://localhost:1313/post/mathematics/canonical/</guid>
       <description>Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics. In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.</description>
     </item>
   </channel>
