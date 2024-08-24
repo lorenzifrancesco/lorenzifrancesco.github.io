@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
 <title>Simple Multiprocessing in Julia | Francesco Lorenzi</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="computer programming">
 <meta name="description" content="In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar
 using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x &#43;= sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&#34;Single eval time [s]: %4.3e&#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&#34;pmap eval time [s] : %4.">
 <meta name="author" content="">
@@ -91,7 +91,7 @@ using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="http://localhost:1313/tags/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
@@ -155,6 +155,7 @@ Keep also an eye on memory allocation.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/computer-programming/">Computer Programming</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="http://localhost:1313/post/numerics/simple_vectorization/">
