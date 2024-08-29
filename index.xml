@@ -104,19 +104,26 @@ Also Lincoln Labs like them!</description>
       <description> Introduzione alla Cibernetica, N. Wiener, Bollati Boringhieri (2012) Vortici e Colori - alle origini dell&amp;rsquo;opera di James Clerk Maxwell, G. Peruzzi, Dedalo (2010) </description>
     </item>
     <item>
+      <title>Readings in Mathematics</title>
+      <link>https://lorenzifrancesco.github.io/readings/mathematics/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://lorenzifrancesco.github.io/readings/mathematics/</guid>
+      <description>Real/complex analysis, functional analysis Operational Calculus, a theory of hyperfunctions, K. Yosida. Calculus on manifolds, M. Spivak. Information theory Information theory, inference and learning algorithms, D. J. C. MacKay. </description>
+    </item>
+    <item>
+      <title>Readings in Physics</title>
+      <link>https://lorenzifrancesco.github.io/readings/physics/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://lorenzifrancesco.github.io/readings/physics/</guid>
+      <description>Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.
+Photonics and Electromagnetics A book with which I am deeply in love and have followed me for many years is
+Electromagnetic Waves, C. G. Someda. Quantum optics and noise Quantum noise - a Handbook of Markovian and Non-Markovian methods with Applications to Quantum Optics, C. W. Gardiner and P. Zoller. Elements of Quantum Optics, P.</description>
+    </item>
+    <item>
       <title>Some interesting bibliography in physics</title>
       <link>https://lorenzifrancesco.github.io/other/interesting_bibliography/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://lorenzifrancesco.github.io/other/interesting_bibliography/</guid>
-      <description>Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.
-Photonics and Electromagnetics A book with which I am in love and have followed me for many years is
-Electromagnetic Waves, C. G. Someda, CRC Press (2006) Quantum optics and noise Quantum noise - a Handbook of Markovian and Non-Markovian methods with Applications to Quantum Optics, C. W. Gardiner and P. Zoller, Springer (1999) Elements of Quantum Optics, P.</description>
-    </item>
-    <item>
-      <title>Some interesting bibliography in physics</title>
-      <link>https://lorenzifrancesco.github.io/readings/physics/</link>
-      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://lorenzifrancesco.github.io/readings/physics/</guid>
       <description>Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.
 Photonics and Electromagnetics A book with which I am in love and have followed me for many years is
 Electromagnetic Waves, C. G. Someda, CRC Press (2006) Quantum optics and noise Quantum noise - a Handbook of Markovian and Non-Markovian methods with Applications to Quantum Optics, C. W. Gardiner and P. Zoller, Springer (1999) Elements of Quantum Optics, P.</description>
