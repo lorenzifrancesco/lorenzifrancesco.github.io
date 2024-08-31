@@ -6,8 +6,16 @@
     <description>Recent content on Francesco Lorenzi</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lorenzifrancesco.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conformal mapping and Helmholtz equation</title>
+      <link>https://lorenzifrancesco.github.io/post/pe/conformal-copy/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://lorenzifrancesco.github.io/post/pe/conformal-copy/</guid>
+      <description>Inspired by [10.1126/science.1126493].
+Conformal transformation and Helmholtz equation Consider the Helmholtz equation describing a scalar phasor field $\psi$ in a 2D space filled by a isotropic medium of index $n(\mathbf{r})$. $$ (\nabla^2 + n^2k_0^2)\psi = 0. $$ the phasor field is corresponding to a given light polarization. We can introduce the complex variable $z=x+iy$, and we have the relations $$ \partial_x = \partial_z+\partial_{\bar{z}}, $$ $$ \partial_y = i\left(\partial_z-\partial_{\bar{z}}\right). $$ By substitution, $\nabla^2 = 4\partial_z\partial_{\bar{z}}$.</description>
+    </item>
     <item>
       <title>Posts Overview</title>
       <link>https://lorenzifrancesco.github.io/posts/</link>
@@ -108,7 +116,7 @@ Also Lincoln Labs like them!</description>
       <link>https://lorenzifrancesco.github.io/readings/mathematics/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://lorenzifrancesco.github.io/readings/mathematics/</guid>
-      <description>Real/complex analysis, functional analysis Operational Calculus, a theory of hyperfunctions, K. Yosida. Calculus on manifolds, M. Spivak. Information theory Information theory, inference and learning algorithms, D. J. C. MacKay. </description>
+      <description>Real/complex analysis, functional analysis Operational Calculus, a theory of hyperfunctions, K. Yosida. Calculus on manifolds, M. Spivak. Information theory Information theory, inference and learning algorithms, D. J. C. MacKay. Elements of information theory, T.M. Cover, A.M. Thomas. </description>
     </item>
     <item>
       <title>Readings in Physics</title>
