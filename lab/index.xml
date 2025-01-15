@@ -2,33 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Labs on Francesco Lorenzi</title>
-    <link>https://lorenzifrancesco.github.io/lab/</link>
+    <link>http://localhost:1313/lab/</link>
     <description>Recent content in Labs on Francesco Lorenzi</description>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Dec 2023 15:18:36 +0100</lastBuildDate>
-    <atom:link href="https://lorenzifrancesco.github.io/lab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jan 2025 15:18:36 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LNB and fancy resonators</title>
+      <link>http://localhost:1313/lab/w4/</link>
+      <pubDate>Wed, 15 Jan 2025 15:18:36 +0100</pubDate>
+      <guid>http://localhost:1313/lab/w4/</guid>
+      <description>&lt;p&gt;Here is a Low Noise Block downconverter (LNB), a device used in satellite communications to receive signals from satellites. The LNB is connected to a dish antenna and receives the signal reflected by the dish.
+The device in particular has two high-frequency input (C-band/K-band?), that maybe correspond to the two polarization, that can be switched by cutting the power to the amplifiers. The mixer is kind of exotic, being that the LO is based on microstrip-coupled dielectric resonator, i.e. a Dielectric Resonator Oscillator (DRO). The DRO is believed to be made with ceramic high dielectric constant materials, like Barium Titanate.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Some microscopies</title>
-      <link>https://lorenzifrancesco.github.io/lab/w2/</link>
+      <link>http://localhost:1313/lab/w2/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>https://lorenzifrancesco.github.io/lab/w2/</guid>
-      <description>Piece of LCD screen with pigments Who can guess this? Hover over the picture to see Section of an Intel (1975!) memory chip </description>
+      <guid>http://localhost:1313/lab/w2/</guid>
+      <description>&lt;p&gt;Piece of LCD screen with pigments
+&lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/20240623_175300.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Who can guess this? Hover over the picture to see
+&lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/20240623_185103.jpg&#34; alt=&#34;grid of a vacuum fluorescent displat&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Section of an Intel (1975!) memory chip
+&lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/P_20200626_184712.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is this?</title>
-      <link>https://lorenzifrancesco.github.io/lab/w1/</link>
+      <link>http://localhost:1313/lab/w1/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>https://lorenzifrancesco.github.io/lab/w1/</guid>
-      <description>A very interesting piece for RF measurements! :)</description>
+      <guid>http://localhost:1313/lab/w1/</guid>
+      <description>&lt;p&gt;A very interesting piece for RF measurements! :)&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/DSCF1824.JPG&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>X-Y</title>
-      <link>https://lorenzifrancesco.github.io/lab/w3/</link>
+      <link>http://localhost:1313/lab/w3/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>https://lorenzifrancesco.github.io/lab/w3/</guid>
-      <description>Evergreen Lissajous patterns.
-Also Lincoln Labs like them!</description>
+      <guid>http://localhost:1313/lab/w3/</guid>
+      <description>&lt;p&gt;Evergreen Lissajous patterns.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/ezgif-5-fb4696505a.gif&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Also &lt;a href=&#34;https://www.ll.mit.edu/&#34;&gt;Lincoln Labs&lt;/a&gt; like them!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

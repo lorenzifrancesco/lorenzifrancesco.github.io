@@ -2,47 +2,113 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Computer Programming on Francesco Lorenzi</title>
-    <link>https://lorenzifrancesco.github.io/tags/computer-programming/</link>
+    <link>http://localhost:1313/tags/computer-programming/</link>
     <description>Recent content in Computer Programming on Francesco Lorenzi</description>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 May 2024 19:11:37 +0200</lastBuildDate>
-    <atom:link href="https://lorenzifrancesco.github.io/tags/computer-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/computer-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple (but nontrivial) vectorization in Numpy</title>
-      <link>https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</link>
+      <link>http://localhost:1313/post/numerics/simple_vectorization/</link>
       <pubDate>Thu, 09 May 2024 19:11:37 +0200</pubDate>
-      <guid>https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</guid>
-      <description>f(a, b, c, d) Let&amp;rsquo;s say we want to explore the behavior of f in some range of parameters.
-How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be very inefficient, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least. Let&amp;rsquo;s say the parameters have a definite number of samples (len(x) or np.shape(x) in pyhon, with x a parameter vector).</description>
+      <guid>http://localhost:1313/post/numerics/simple_vectorization/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f(a, b, c, d)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s say we want to explore the behavior of &lt;code&gt;f&lt;/code&gt; in some range of parameters.&lt;/p&gt;
+&lt;p&gt;How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be &lt;em&gt;very inefficient&lt;/em&gt;, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least.
+Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&gt;len(x)&lt;/code&gt;  or &lt;code&gt;np.shape(x)&lt;/code&gt; in pyhon, with &lt;code&gt;x&lt;/code&gt; a parameter vector). We change the axis of the numpy vectors, making them multi-dimensional vectors (or, respecting the notion of dimension in algebra, &lt;em&gt;multi-axial&lt;/em&gt;):&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simple Multiprocessing in Julia</title>
-      <link>https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/</link>
+      <link>http://localhost:1313/post/numerics/simple_multiprocessing/</link>
       <pubDate>Wed, 27 Mar 2024 10:28:58 +0100</pubDate>
-      <guid>https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/</guid>
-      <description>In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar
-using Distributed, Printf @info @sprintf(&amp;#34;Number of workers: %d&amp;#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x += sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&amp;#34;Single eval time [s]: %4.3e&amp;#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&amp;#34;pmap eval time [s] : %4.</description>
+      <guid>http://localhost:1313/post/numerics/simple_multiprocessing/</guid>
+      <description>&lt;p&gt;In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Distributed, Printf
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@info&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;@sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Number of workers: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, nprocs())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@everywhere&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; loop_compute(x)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100000000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		x &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; sin(x)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;t0 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;@elapsed&lt;/span&gt; loop_compute(&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@info&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;@sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Single eval time [s]: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%4.3e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, t0) 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mat &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;t_pmap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;@elapsed&lt;/span&gt; pmap(loop_compute, mat)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@info&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;@sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pmap   eval time [s] : &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%4.3e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, t_pmap)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;t_sing &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;@elapsed&lt;/span&gt; loop_compute&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(mat)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@info&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;@sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;serial eval time [s] : &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%4.3e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, t_sing)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@info&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;@sprintf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Speeup ratio: %4444&amp;#34;&lt;/span&gt;, t_sing&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;t_pmap)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Try to run this simple script using&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux Admin Tools</title>
-      <link>https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/</link>
+      <link>http://localhost:1313/post/numerics/linux-admin-tools/</link>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/</guid>
-      <description>This post is designed to be updated as soon as new tricks come handy.
-Useful commands Instruction Command Change user su - &amp;lt;username&amp;gt; Change owner chown user:group -R folder Check owner &amp;amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder</description>
+      <guid>http://localhost:1313/post/numerics/linux-admin-tools/</guid>
+      <description>&lt;p&gt;This post is designed to be updated as soon as new tricks come handy.&lt;/p&gt;
+&lt;h2 id=&#34;useful-commands&#34;&gt;Useful commands&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Command&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change user&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;su - &amp;lt;username&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change owner&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;chown user:group -R folder&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Check owner &amp;amp; permissions&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;stat filename&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;List all users with UID&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;cut -d: -f1,3 /etc/passwd&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;List all groups with GID&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;getent group&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;linux-ownership-system&#34;&gt;Linux ownership system&lt;/h2&gt;
+&lt;h3 id=&#34;rwx&#34;&gt;rwx&lt;/h3&gt;
+&lt;p&gt;Owner and permissions: typing &lt;code&gt;la&lt;/code&gt; we get informations about the pemissions about a file or a folder&lt;/p&gt;</description>
     </item>
     <item>
       <title>A clean installation of SLURM scheduler</title>
-      <link>https://lorenzifrancesco.github.io/post/numerics/slurm/</link>
+      <link>http://localhost:1313/post/numerics/slurm/</link>
       <pubDate>Sun, 11 Feb 2024 16:12:36 +0100</pubDate>
-      <guid>https://lorenzifrancesco.github.io/post/numerics/slurm/</guid>
-      <description>Desired topology and active services SLURM super quick start guide The guide is available here.
-On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package. Status of munge can be probed by
-munge -n | unmunge Installing the SLURM package is done manually
-wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2 We then unzip, configure, and build SLURM
-We then need to create, by the SLURM user &amp;ldquo;slurm&amp;rdquo;, the directories of
-log files PID files State save and make them writable.</description>
+      <guid>http://localhost:1313/post/numerics/slurm/</guid>
+      <description>&lt;h2 id=&#34;desired-topology-and-active-services&#34;&gt;Desired topology and active services&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/slurm/SLURM.jpg&#34; alt=&#34;topology&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;slurm-super-quick-start-guide&#34;&gt;SLURM super quick start guide&lt;/h2&gt;
+&lt;p&gt;The guide is available &lt;a href=&#34;https://slurm.schedmd.com/quickstart_admin.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package.
+Status of munge can be probed by&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;munge -n | unmunge
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Installing the SLURM package is done manually&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We then unzip, configure, and build SLURM&lt;/p&gt;
+&lt;p&gt;We then need to create, by the SLURM user &amp;ldquo;slurm&amp;rdquo;, the directories of&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; log files&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; PID files&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; State save&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and make them writable. We take inspiration from an existing &lt;code&gt;slurm.conf&lt;/code&gt; file.
+So the directories will be&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

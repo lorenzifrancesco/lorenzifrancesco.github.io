@@ -2,34 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Readings on Francesco Lorenzi</title>
-    <link>https://lorenzifrancesco.github.io/readings/</link>
+    <link>http://localhost:1313/readings/</link>
     <description>Recent content in Readings on Francesco Lorenzi</description>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lorenzifrancesco.github.io/readings/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/readings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Essays</title>
-      <link>https://lorenzifrancesco.github.io/readings/essays/</link>
+      <link>http://localhost:1313/readings/essays/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://lorenzifrancesco.github.io/readings/essays/</guid>
-      <description> Introduzione alla Cibernetica, N. Wiener, Bollati Boringhieri (2012) Vortici e Colori - alle origini dell&amp;rsquo;opera di James Clerk Maxwell, G. Peruzzi, Dedalo (2010) </description>
+      <guid>http://localhost:1313/readings/essays/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Introduzione alla Cibernetica&lt;/em&gt;, N. Wiener, Bollati Boringhieri (2012)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Vortici e Colori -  alle origini dell&amp;rsquo;opera di James Clerk Maxwell&lt;/em&gt;, G. Peruzzi, Dedalo (2010)&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Readings in Mathematics</title>
-      <link>https://lorenzifrancesco.github.io/readings/mathematics/</link>
+      <link>http://localhost:1313/readings/mathematics/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://lorenzifrancesco.github.io/readings/mathematics/</guid>
-      <description>Real/complex analysis, functional analysis Operational Calculus, a theory of hyperfunctions, K. Yosida. Calculus on manifolds, M. Spivak. Information theory Information theory, inference and learning algorithms, D. J. C. MacKay. Elements of information theory, T.M. Cover, A.M. Thomas. </description>
+      <guid>http://localhost:1313/readings/mathematics/</guid>
+      <description>&lt;h3 id=&#34;realcomplex-analysis-functional-analysis&#34;&gt;Real/complex analysis, functional analysis&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Operational Calculus, a theory of hyperfunctions&lt;/em&gt;, K. Yosida.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Calculus on manifolds&lt;/em&gt;, M. Spivak.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;information-theory&#34;&gt;Information theory&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Information theory, inference and learning algorithms&lt;/em&gt;,  D. J. C. MacKay.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Elements of information theory&lt;/em&gt;, T.M. Cover, A.M. Thomas.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Readings in Physics</title>
-      <link>https://lorenzifrancesco.github.io/readings/physics/</link>
+      <link>http://localhost:1313/readings/physics/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://lorenzifrancesco.github.io/readings/physics/</guid>
-      <description>Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.
-Photonics and Electromagnetics A book with which I am deeply in love and have followed me for many years is
-Electromagnetic Waves, C. G. Someda. Quantum optics and noise Quantum noise - a Handbook of Markovian and Non-Markovian methods with Applications to Quantum Optics, C. W. Gardiner and P. Zoller. Elements of Quantum Optics, P.</description>
+      <guid>http://localhost:1313/readings/physics/</guid>
+      <description>&lt;p&gt;Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.&lt;/p&gt;
+&lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and Electromagnetics&lt;/h3&gt;
+&lt;p&gt;A book with which I am deeply in love and have followed me for many years is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Electromagnetic Waves&lt;/em&gt;, C. G. Someda.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;quantum-optics-and-noise&#34;&gt;Quantum optics and noise&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Quantum noise - a Handbook of Markovian and Non-Markovian methods with Applications to Quantum Optics&lt;/em&gt;, C. W. Gardiner and P. Zoller.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Elements of Quantum Optics&lt;/em&gt;, P. Meystre and M. Sargent III.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Optical Coherence and Quantum Optics&lt;/em&gt;, L. Mandel and E. Wolf.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;condensed-matter-physics&#34;&gt;Condensed Matter Physics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Many-particle Physics&lt;/em&gt;, G. Mahan.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Superfluid states of matter&lt;/em&gt;, Svistunov, Babaev, Prokof&amp;rsquo;ev.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

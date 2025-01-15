@@ -5,36 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Binomial from Poisson in composite process | Francesco Lorenzi</title>
-<meta name="keywords" content="mathematics">
-<meta name="description" content="This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.
-Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as arrivals in a second. Let us consider the following conditional
-$$
-\begin{align}
-&amp; P[X_1(t)=k \ | \ X_1(t)&#43;X_2(t) &amp;= n&#43;k]
-\end{align}
-$$
-that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n&#43;k$.
-$$
-\begin{align}
-&amp; P[X_1(t)=k \ | \  X_1(t)&#43;X_2(t) &amp;= n&#43;k] = \\
-&amp;= \frac{P[X_1(t)=k, X_2(t)= n]}{P[X_1(t) &#43; X_2(t)= n&#43;k]} \\
-&amp;=\frac{(\lambda_1 t)^k (k!)^{-1} e^{-\lambda_1 t} (\lambda_2 t)^n (n!)^{-1} e^{-\lambda_2 t}}{((\lambda_1 &#43; \lambda_2) t)^{n&#43;k} ((n&#43;k)!)^{-1} e^{-(\lambda_1&#43;\lambda_2) t}} \\
-&amp;= \frac{(n&#43;k)!}{n! k!}\frac{\lambda_1^k \lambda_2^n}{((\lambda_1 &#43; \lambda_2))^{n&#43;k}} \\
-&amp;= \binom{n&#43;k}{k} \left(\frac{\lambda_1}{\lambda_1&#43;\lambda_2}\right)^k \left(\frac{\lambda_2}{\lambda_1&#43;\lambda_2}\right)^n.
-\end{align}
-$$
-Here we found that this probability distribution coincides to the one of a binomial variable
-$$
-Y \sim \text{Bin}(n&#43;k, p)
-$$
-where
-$$
-p = \frac{\lambda_1}{\lambda_1&#43; \lambda_2}
-$$
-This result is well rooted in our intuition: every arrival comes from process 1 or process 2, with a probability which is proportional to the arrival rate of the two processes. Expressing this results with the rates $\lambda_i$, we obtain a sum of Bernoulli variables, that boils down to the binomial variable we found.">
+<title>LNB and fancy resonators | Francesco Lorenzi</title>
+<meta name="keywords" content="">
+<meta name="description" content="Here is a Low Noise Block downconverter (LNB), a device used in satellite communications to receive signals from satellites. The LNB is connected to a dish antenna and receives the signal reflected by the dish.
+The device in particular has two high-frequency input (C-band/K-band?), that maybe correspond to the two polarization, that can be switched by cutting the power to the amplifiers. The mixer is kind of exotic, being that the LO is based on microstrip-coupled dielectric resonator, i.e. a Dielectric Resonator Oscillator (DRO). The DRO is believed to be made with ceramic high dielectric constant materials, like Barium Titanate.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/post/mathematics/poisson/">
+<link rel="canonical" href="http://localhost:1313/lab/w4/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -43,7 +19,7 @@ This result is well rooted in our intuition: every arrival comes from process 1 
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/post/mathematics/poisson/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/lab/w4/">
 <noscript>
     <style>
         #theme-toggle,
@@ -141,61 +117,26 @@ This result is well rooted in our intuition: every arrival comes from process 1 
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/lab/">Labs</a></div>
     <h1 class="post-title entry-hint-parent">
-      Binomial from Poisson in composite process
+      LNB and fancy resonators
     </h1>
-    <div class="post-meta"><span title='2023-10-27 00:00:00 +0000 UTC'>October 27, 2023</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2025-01-15 15:18:36 +0100 CET'>January 15, 2025</span>&nbsp;·&nbsp;1 min
 
 </div>
   </header> 
 
-  <div class="post-content"><p>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.</p>
-<p>Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as arrivals in a second. Let us consider the following conditional
-$$
-\begin{align}
-&amp; P[X_1(t)=k \ | \ X_1(t)+X_2(t) &amp;= n+k]
-\end{align}
-$$
-that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n+k$.
-$$
-\begin{align}
-&amp; P[X_1(t)=k \ | \  X_1(t)+X_2(t) &amp;= n+k] = \\
-&amp;= \frac{P[X_1(t)=k, X_2(t)= n]}{P[X_1(t) + X_2(t)= n+k]} \\
-&amp;=\frac{(\lambda_1 t)^k (k!)^{-1} e^{-\lambda_1 t} (\lambda_2 t)^n (n!)^{-1} e^{-\lambda_2 t}}{((\lambda_1 + \lambda_2) t)^{n+k} ((n+k)!)^{-1} e^{-(\lambda_1+\lambda_2) t}} \\
-&amp;= \frac{(n+k)!}{n! k!}\frac{\lambda_1^k \lambda_2^n}{((\lambda_1 + \lambda_2))^{n+k}} \\
-&amp;= \binom{n+k}{k} \left(\frac{\lambda_1}{\lambda_1+\lambda_2}\right)^k \left(\frac{\lambda_2}{\lambda_1+\lambda_2}\right)^n.
-\end{align}
-$$
-Here we found that this probability distribution coincides to the one of a binomial variable
-$$
-Y \sim \text{Bin}(n+k, p)
-$$
-where
-$$
-p = \frac{\lambda_1}{\lambda_1+ \lambda_2}
-$$
-This result is well rooted in our intuition: every arrival comes from process 1 or process 2, with a probability which is proportional to the arrival rate of the two processes. Expressing this results with the rates $\lambda_i$, we obtain a sum of Bernoulli variables, that boils down to the binomial variable we found.</p>
+  <div class="post-content"><p>Here is a Low Noise Block downconverter (LNB), a device used in satellite communications to receive signals from satellites. The LNB is connected to a dish antenna and receives the signal reflected by the dish.
+The device in particular has two high-frequency input (C-band/K-band?), that maybe correspond to the two polarization, that can be switched by cutting the power to the amplifiers. The mixer is kind of exotic, being that the LO is based on microstrip-coupled dielectric resonator, i.e. a Dielectric Resonator Oscillator (DRO). The DRO is believed to be made with ceramic high dielectric constant materials, like Barium Titanate.</p>
+<p><img loading="lazy" src="../../images/lab/lnb_reddit.png" alt=""  />
+</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
     </ul>
-<nav class="paginav">
-  <a class="prev" href="http://localhost:1313/post/classical/kapitza/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>The Kapitza pendulum</span>
-  </a>
-  <a class="next" href="http://localhost:1313/post/quantum/second_quantization/">
-    <span class="title">Next »</span>
-    <br>
-    <span>Second quantization of the electromagnetic field</span>
-  </a>
-</nav>
 
   </footer>
 </article>
