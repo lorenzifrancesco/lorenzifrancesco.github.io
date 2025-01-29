@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Conformal mapping and Helmholtz equation | Francesco Lorenzi</title>
 <meta name="keywords" content="Photonics and electromagnetics">
 <meta name="description" content="Inspired by [10.1126/science.1126493].
@@ -37,16 +37,16 @@ $$
 $$
 therefore mapping the previous electromagnetic problem into a new problem with a transformed index.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/post/pe/conformal-copy/">
+<link rel="canonical" href="https://lorenzifrancesco.github.io/post/pe/conformal-copy/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://lorenzifrancesco.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lorenzifrancesco.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lorenzifrancesco.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lorenzifrancesco.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lorenzifrancesco.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/post/pe/conformal-copy/">
+<link rel="alternate" hreflang="en" href="https://lorenzifrancesco.github.io/post/pe/conformal-copy/">
 <noscript>
     <style>
         #theme-toggle,
@@ -73,6 +73,122 @@ therefore mapping the previous electromagnetic problem into a new problem with a
           throwOnError : false
         });
     });
+</script><meta property="og:title" content="Conformal mapping and Helmholtz equation" />
+<meta property="og:description" content="Inspired by [10.1126/science.1126493].
+Conformal transformation and Helmholtz equation
+Consider the Helmholtz equation describing a scalar phasor field $\psi$ in a 2D space filled by a isotropic medium of index $n(\mathbf{r})$.
+$$
+(\nabla^2 &#43; n^2k_0^2)\psi = 0.
+$$
+the phasor field is corresponding to a given light polarization.
+We can introduce the complex variable $z=x&#43;iy$, and we have the relations
+$$
+\partial_x = \partial_z&#43;\partial_{\bar{z}},
+$$
+$$
+\partial_y = i\left(\partial_z-\partial_{\bar{z}}\right).
+$$
+By substitution, $\nabla^2 = 4\partial_z\partial_{\bar{z}}$.
+Consider now an analytical function $w(z)$. We have
+$$
+\partial_z\partial_{\bar{z}} = \left|\partial_z w\right|^2 \partial_w\partial_{\bar{w}}.
+$$
+We can map the Helmholtz equation into
+$$
+(4\partial_w\partial_{\bar{w}} &#43; n&rsquo;^2k_0^2)\psi = 0
+$$
+where the new index is $n&rsquo; = n |\partial_z w|$.
+Then, we can map again the Helmholtz equation into new variables $u, v$, having $w=u&#43;iv$, obtaining
+$$
+(\partial_u^2&#43;\partial_v^2 &#43; n&rsquo;^2k_0^2)\psi = 0
+$$
+therefore mapping the previous electromagnetic problem into a new problem with a transformed index." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lorenzifrancesco.github.io/post/pe/conformal-copy/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-08-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-08-31T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Conformal mapping and Helmholtz equation"/>
+<meta name="twitter:description" content="Inspired by [10.1126/science.1126493].
+Conformal transformation and Helmholtz equation
+Consider the Helmholtz equation describing a scalar phasor field $\psi$ in a 2D space filled by a isotropic medium of index $n(\mathbf{r})$.
+$$
+(\nabla^2 &#43; n^2k_0^2)\psi = 0.
+$$
+the phasor field is corresponding to a given light polarization.
+We can introduce the complex variable $z=x&#43;iy$, and we have the relations
+$$
+\partial_x = \partial_z&#43;\partial_{\bar{z}},
+$$
+$$
+\partial_y = i\left(\partial_z-\partial_{\bar{z}}\right).
+$$
+By substitution, $\nabla^2 = 4\partial_z\partial_{\bar{z}}$.
+Consider now an analytical function $w(z)$. We have
+$$
+\partial_z\partial_{\bar{z}} = \left|\partial_z w\right|^2 \partial_w\partial_{\bar{w}}.
+$$
+We can map the Helmholtz equation into
+$$
+(4\partial_w\partial_{\bar{w}} &#43; n&rsquo;^2k_0^2)\psi = 0
+$$
+where the new index is $n&rsquo; = n |\partial_z w|$.
+Then, we can map again the Helmholtz equation into new variables $u, v$, having $w=u&#43;iv$, obtaining
+$$
+(\partial_u^2&#43;\partial_v^2 &#43; n&rsquo;^2k_0^2)\psi = 0
+$$
+therefore mapping the previous electromagnetic problem into a new problem with a transformed index."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://lorenzifrancesco.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Conformal mapping and Helmholtz equation",
+      "item": "https://lorenzifrancesco.github.io/post/pe/conformal-copy/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Conformal mapping and Helmholtz equation",
+  "name": "Conformal mapping and Helmholtz equation",
+  "description": "Inspired by [10.1126/science.1126493].\nConformal transformation and Helmholtz equation Consider the Helmholtz equation describing a scalar phasor field $\\psi$ in a 2D space filled by a isotropic medium of index $n(\\mathbf{r})$. $$ (\\nabla^2 + n^2k_0^2)\\psi = 0. $$ the phasor field is corresponding to a given light polarization. We can introduce the complex variable $z=x+iy$, and we have the relations $$ \\partial_x = \\partial_z+\\partial_{\\bar{z}}, $$ $$ \\partial_y = i\\left(\\partial_z-\\partial_{\\bar{z}}\\right). $$ By substitution, $\\nabla^2 = 4\\partial_z\\partial_{\\bar{z}}$. Consider now an analytical function $w(z)$. We have $$ \\partial_z\\partial_{\\bar{z}} = \\left|\\partial_z w\\right|^2 \\partial_w\\partial_{\\bar{w}}. $$ We can map the Helmholtz equation into $$ (4\\partial_w\\partial_{\\bar{w}} + n\u0026rsquo;^2k_0^2)\\psi = 0 $$ where the new index is $n\u0026rsquo; = n |\\partial_z w|$. Then, we can map again the Helmholtz equation into new variables $u, v$, having $w=u+iv$, obtaining $$ (\\partial_u^2+\\partial_v^2 + n\u0026rsquo;^2k_0^2)\\psi = 0 $$ therefore mapping the previous electromagnetic problem into a new problem with a transformed index.\n",
+  "keywords": [
+    "Photonics and electromagnetics"
+  ],
+  "articleBody": "Inspired by [10.1126/science.1126493].\nConformal transformation and Helmholtz equation Consider the Helmholtz equation describing a scalar phasor field $\\psi$ in a 2D space filled by a isotropic medium of index $n(\\mathbf{r})$. $$ (\\nabla^2 + n^2k_0^2)\\psi = 0. $$ the phasor field is corresponding to a given light polarization. We can introduce the complex variable $z=x+iy$, and we have the relations $$ \\partial_x = \\partial_z+\\partial_{\\bar{z}}, $$ $$ \\partial_y = i\\left(\\partial_z-\\partial_{\\bar{z}}\\right). $$ By substitution, $\\nabla^2 = 4\\partial_z\\partial_{\\bar{z}}$. Consider now an analytical function $w(z)$. We have $$ \\partial_z\\partial_{\\bar{z}} = \\left|\\partial_z w\\right|^2 \\partial_w\\partial_{\\bar{w}}. $$ We can map the Helmholtz equation into $$ (4\\partial_w\\partial_{\\bar{w}} + n’^2k_0^2)\\psi = 0 $$ where the new index is $n’ = n |\\partial_z w|$. Then, we can map again the Helmholtz equation into new variables $u, v$, having $w=u+iv$, obtaining $$ (\\partial_u^2+\\partial_v^2 + n’^2k_0^2)\\psi = 0 $$ therefore mapping the previous electromagnetic problem into a new problem with a transformed index.\nRay equation We can perform the Geometrical optics approximation to Helmholtz equation. We define $$ \\psi(\\mathbf{r}) = C(\\mathbf{r})e^{ik_0S(\\mathbf{r})} $$ With $C$ and $S$ real functions. Substituting into Hemholtz equation, and approximating $C$ as a slowly varying function of space, namely $\\nabla C(\\mathbf{r})\\ll k_0 C(\\mathbf{r})$, we obtain the Eikonal equation (from the greek $\\varepsilon \\iota \\kappa \\tilde{\\omega}\\nu$, “image”), $$ |\\nabla S|^2 = n^2. $$ Introducing a curvilinear coordinate $u$ (the coordinate along the ray), with versor $\\hat{u} = \\frac{d u}{d\\mathbf{r}}$. The versor $\\hat{u}$ is everywhere normal to the constant-phase surface, therefore, $$ \\nabla S = n \\hat{u}, $$ from which, after some vector algebra (Someda sec. 5.4), we can derive the ray equation, $$ \\frac{d}{du} \\left(n\\frac{d\\mathbf{r}}{du}\\right) = \\nabla n. $$ We can solve for rays in both the original and the mapped problem! Also, the mapping function $w(z)$ can have branch cuts, and therefor it can be interesting to see what happens to rays going through Riemann sheets of the mapped space.\n",
+  "wordCount" : "311",
+  "inLanguage": "en",
+  "datePublished": "2024-08-31T00:00:00Z",
+  "dateModified": "2024-08-31T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lorenzifrancesco.github.io/post/pe/conformal-copy/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Francesco Lorenzi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lorenzifrancesco.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 
@@ -87,7 +203,7 @@ therefore mapping the previous electromagnetic problem into a new problem with a
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
+            <a href="https://lorenzifrancesco.github.io/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -113,27 +229,27 @@ therefore mapping the previous electromagnetic problem into a new problem with a
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="Home">
+                <a href="https://lorenzifrancesco.github.io/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Posts">
+                <a href="https://lorenzifrancesco.github.io/tags/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/post/" title="Archive">
+                <a href="https://lorenzifrancesco.github.io/post/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/readings/" title="Readings">
+                <a href="https://lorenzifrancesco.github.io/readings/" title="Readings">
                     <span>Readings</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/lab/" title="Sunday mornings in the lab">
+                <a href="https://lorenzifrancesco.github.io/lab/" title="Sunday mornings in the lab">
                     <span>Sunday mornings in the lab</span>
                 </a>
             </li>
@@ -144,7 +260,7 @@ therefore mapping the previous electromagnetic problem into a new problem with a
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://lorenzifrancesco.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://lorenzifrancesco.github.io/post/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Conformal mapping and Helmholtz equation
     </h1>
@@ -229,10 +345,10 @@ We can solve for rays in both the original and the mapped problem! Also, the map
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/photonics-and-electromagnetics/">Photonics and Electromagnetics</a></li>
+      <li><a href="https://lorenzifrancesco.github.io/tags/photonics-and-electromagnetics/">Photonics and Electromagnetics</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="http://localhost:1313/post/relativistic/">
+  <a class="next" href="https://lorenzifrancesco.github.io/post/relativistic/">
     <span class="title">Next »</span>
     <br>
     <span>Longitudinal and transverse relativistic dynamics</span>
@@ -244,7 +360,7 @@ We can solve for rays in both the original and the mapped problem! Also, the map
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Francesco Lorenzi</a></span> · 
+        <span>&copy; 2025 <a href="https://lorenzifrancesco.github.io/">Francesco Lorenzi</a></span> · 
 
     <span>
         Powered by

@@ -2,93 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://lorenzifrancesco.github.io/</loc>
     <lastmod>2025-01-15T15:18:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/lab/</loc>
+    <loc>https://lorenzifrancesco.github.io/lab/</loc>
     <lastmod>2025-01-15T15:18:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/lab/w4/</loc>
+    <loc>https://lorenzifrancesco.github.io/lab/w4/</loc>
     <lastmod>2025-01-15T15:18:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/</loc>
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/pe/conformal-copy/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/pe/conformal-copy/</loc>
     <lastmod>2024-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/photonics-and-electromagnetics/</loc>
+    <loc>https://lorenzifrancesco.github.io/tags/photonics-and-electromagnetics/</loc>
     <lastmod>2024-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://lorenzifrancesco.github.io/posts/</loc>
     <lastmod>2024-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://lorenzifrancesco.github.io/tags/</loc>
     <lastmod>2024-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/classical-mechanics/</loc>
+    <loc>https://lorenzifrancesco.github.io/tags/classical-mechanics/</loc>
     <lastmod>2024-07-24T18:54:44+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/relativistic/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/relativistic/</loc>
     <lastmod>2024-07-24T18:54:44+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/computer-programming/</loc>
+    <loc>https://lorenzifrancesco.github.io/tags/computer-programming/</loc>
     <lastmod>2024-05-09T19:11:37+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/numerics/simple_vectorization/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</loc>
     <lastmod>2024-05-09T19:11:37+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/numerics/simple_multiprocessing/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/</loc>
     <lastmod>2024-03-27T10:28:58+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/numerics/linux-admin-tools/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/</loc>
     <lastmod>2024-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/numerics/slurm/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/numerics/slurm/</loc>
     <lastmod>2024-02-11T16:12:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/classical/kapitza/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/classical/kapitza/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/lab/w2/</loc>
+    <loc>https://lorenzifrancesco.github.io/lab/w2/</loc>
     <lastmod>2023-12-18T15:18:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/lab/w1/</loc>
+    <loc>https://lorenzifrancesco.github.io/lab/w1/</loc>
     <lastmod>2023-12-18T15:18:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/lab/w3/</loc>
+    <loc>https://lorenzifrancesco.github.io/lab/w3/</loc>
     <lastmod>2023-12-18T15:18:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/readings/essays/</loc>
+    <loc>https://lorenzifrancesco.github.io/readings/essays/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/other/</loc>
+    <loc>https://lorenzifrancesco.github.io/other/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/readings/</loc>
+    <loc>https://lorenzifrancesco.github.io/readings/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/readings/mathematics/</loc>
+    <loc>https://lorenzifrancesco.github.io/readings/mathematics/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/readings/physics/</loc>
+    <loc>https://lorenzifrancesco.github.io/readings/physics/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/other/interesting_bibliography/</loc>
+    <loc>https://lorenzifrancesco.github.io/other/interesting_bibliography/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/mathematics/poisson/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/mathematics/poisson/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mathematics/</loc>
+    <loc>https://lorenzifrancesco.github.io/tags/mathematics/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/quantum/second_quantization/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/quantum/second_quantization/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/mathematics/canonical/</loc>
+    <loc>https://lorenzifrancesco.github.io/post/mathematics/canonical/</loc>
     <lastmod>2023-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://lorenzifrancesco.github.io/search/</loc>
   </url>
 </urlset>

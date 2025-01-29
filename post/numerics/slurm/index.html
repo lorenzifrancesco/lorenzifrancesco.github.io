@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>A clean installation of SLURM scheduler | Francesco Lorenzi</title>
 <meta name="keywords" content="computer programming">
 <meta name="description" content="Desired topology and active services
@@ -27,16 +27,16 @@ We then need to create, by the SLURM user &ldquo;slurm&rdquo;, the directories o
 and make them writable. We take inspiration from an existing slurm.conf file.
 So the directories will be">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/post/numerics/slurm/">
+<link rel="canonical" href="https://lorenzifrancesco.github.io/post/numerics/slurm/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://lorenzifrancesco.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lorenzifrancesco.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lorenzifrancesco.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lorenzifrancesco.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lorenzifrancesco.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/post/numerics/slurm/">
+<link rel="alternate" hreflang="en" href="https://lorenzifrancesco.github.io/post/numerics/slurm/">
 <noscript>
     <style>
         #theme-toggle,
@@ -63,6 +63,102 @@ So the directories will be">
           throwOnError : false
         });
     });
+</script><meta property="og:title" content="A clean installation of SLURM scheduler" />
+<meta property="og:description" content="Desired topology and active services
+
+
+SLURM super quick start guide
+The guide is available here.
+On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package.
+Status of munge can be probed by
+munge -n | unmunge
+Installing the SLURM package is done manually
+wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2
+We then unzip, configure, and build SLURM
+We then need to create, by the SLURM user &ldquo;slurm&rdquo;, the directories of
+
+ log files
+ PID files
+ State save
+
+and make them writable. We take inspiration from an existing slurm.conf file.
+So the directories will be" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lorenzifrancesco.github.io/post/numerics/slurm/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-02-11T16:12:36+01:00" />
+<meta property="article:modified_time" content="2024-02-11T16:12:36+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A clean installation of SLURM scheduler"/>
+<meta name="twitter:description" content="Desired topology and active services
+
+
+SLURM super quick start guide
+The guide is available here.
+On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package.
+Status of munge can be probed by
+munge -n | unmunge
+Installing the SLURM package is done manually
+wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2
+We then unzip, configure, and build SLURM
+We then need to create, by the SLURM user &ldquo;slurm&rdquo;, the directories of
+
+ log files
+ PID files
+ State save
+
+and make them writable. We take inspiration from an existing slurm.conf file.
+So the directories will be"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://lorenzifrancesco.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "A clean installation of SLURM scheduler",
+      "item": "https://lorenzifrancesco.github.io/post/numerics/slurm/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "A clean installation of SLURM scheduler",
+  "name": "A clean installation of SLURM scheduler",
+  "description": "Desired topology and active services SLURM super quick start guide The guide is available here.\nOn Centos8Stream, we first install MUNGE, then install SLURM by the bzip package. Status of munge can be probed by\nmunge -n | unmunge Installing the SLURM package is done manually\nwget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2 We then unzip, configure, and build SLURM\nWe then need to create, by the SLURM user \u0026ldquo;slurm\u0026rdquo;, the directories of\nlog files PID files State save and make them writable. We take inspiration from an existing slurm.conf file. So the directories will be\n",
+  "keywords": [
+    "computer programming"
+  ],
+  "articleBody": "Desired topology and active services SLURM super quick start guide The guide is available here.\nOn Centos8Stream, we first install MUNGE, then install SLURM by the bzip package. Status of munge can be probed by\nmunge -n | unmunge Installing the SLURM package is done manually\nwget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2 We then unzip, configure, and build SLURM\nWe then need to create, by the SLURM user “slurm”, the directories of\nlog files PID files State save and make them writable. We take inspiration from an existing slurm.conf file. So the directories will be\nFunction Directory PID files — SlurmdSpoolDir /var/spool/slurmd StateSaveLocation /var/spool/slurmctld Beware, slurm is not in the sudoers group (and it must not be!). If the directories are already there, we must chown them, and chmod them to writable by slurm. This can be done only by a sudoer.\nIn order to use the SLURM API, we must link to the libraries\nldconfig -n in our case is in the downloaded (and built) package.\nA handy alternative: RPM We can use rpmbuild to directly install and configure the directories and link the libraries. We do it in the slurm user.\nThis method show a missing dependency\nerror: Failed build dependencies: mariadb-devel \u003e= 5.0.0 is needed by slurm-23.11.3-1.el8.x86_64 that we can easily solve by\nsudo yum install mariadb-devel A warning in the rpmbuild suggest to run libtool --finish /lib64/security. We do it, installing libtool first\nWe still have the problem that the commands are not available. The SLURM services are not available.\nThe RPM files are loacated into\n~/rpmbuild/RPMS so we need to run\nrpm -i *.rpm inside the rpms folder.\nslurm.conf We use the generator tool to make the slurm.conf file\nWe can now enable the daemons\nsystemctl enable slurmctld systemctl enable slurmdbd systemctl enable slurmd and activate them\nsystemctl start slurmctld systemctl start slurmdbd systemctl start slurmd The order is important!\nWe have a problem in starting the slurmdbd service: Condition: start condition failed at Sun 2024-02-11 17:10:08 CET; 8min ago └─ ConditionPathExists=/etc/slurm/slurmdbd.conf was not met This is due to slurmdbd: error: s_p_parse_file: unable to read \"/etc/slurm/slurmdbd.conf\": Permission denied\nAlso, we got error\nFeb 11 17:26:11 slurph.novalocal slurmdbd[7414]: slurmdbd: error: mysql_real_connect failed: 2002 Can't connect to local MySQL server through socket '/var/lib/mys\u003e Seems like we have problems with the installation of MariaDB. Lets run\nsudo dnf install mariadb-server Finally we are able to start the service\nsystemctl start mariadb.service Who is running SLURM? Running\nslurmdbd -Dvvv We get errors like\nslurmdbd.conf owned by 1000 not SlurmUser(1003) Seems like we have problems in read from /var/run/ One can generate a folder inside /var/run and chown it, but since /var/run is tmpfs it will go after a system reboot. The solution seems to be to run a mkdir + chown script at startup. This is to be implemented. The script looks like (/home/centos/startup_pid.sh)\n#! /bin/bash mkdir /var/run/slurm chown slurm /var/run/slurm Still we have problems in connecting to the database. This is a problem also on the startup of slurmd.service. Obviously, we lack a DB configuration.\nDatabase configuration We follow commands from the previous link.\nUnable to determine this slurmd’s nodename This problem is related to the impossibility to detect runner01. Before running the slurmd daemon, we need to setup the computing nodes. Now our slurmctld and slurmdbd are running.\nConfiguraiton of the computing node(s) Follow instruction from youtube. After the configuration, and running the slurmd on runner01, the slurmctld.log file on the slurPh machine indicates a problem with\n[2024-02-12T17:57:04.216] error: Node runner01 appears to have a different slurm.conf than the slurmctld. This could cause issues with communication and functionality. Please review both files and make sure they are the same. If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf. and most importantly, an authentication problem by Munge\n[2024-02-12T17:57:18.718] error: Munge decode failed: Unauthorized credential for client UID=1003 GID=1003 We should check\nmunge -n | unmunge Both machines return a success code.\nrunner01:\nSTATUS: Success (0) ENCODE_HOST: runner01.novalocal (10.64.37.114) ENCODE_TIME: 2024-02-12 18:02:47 +0100 (1707757367) DECODE_TIME: 2024-02-12 18:02:47 +0100 (1707757367) TTL: 300 CIPHER: aes128 (4) MAC: sha256 (5) ZIP: none (0) UID: centos (1000) GID: centos (1000) LENGTH: 0 slurPh:\nSTATUS: Success (0) ENCODE_HOST: runner01.novalocal (10.64.37.114) ENCODE_TIME: 2024-02-12 18:02:47 +0100 (1707757367) DECODE_TIME: 2024-02-12 18:02:47 +0100 (1707757367) TTL: 300 CIPHER: aes128 (4) MAC: sha256 (5) ZIP: none (0) UID: centos (1000) GID: centos (1000) LENGTH: 0 The problem seems to be that UID and GID are not the same in the two machines runner01:\nFile: /etc/slurm Size: 4096 Blocks: 8 IO Block: 4096 directory Device: fc01h/64513d\tInode: 30103776 Links: 2 Access: (0777/drwxrwxrwx) Uid: ( 1001/ slurm) Gid: ( 1001/ slurm) slurPh:\nFile: /etc/slurm Size: 4096 Blocks: 8 IO Block: 4096 directory Device: fc01h/64513d\tInode: 25439750 Links: 2 Access: (0755/drwxr-xr-x) Uid: ( 1003/ slurm) Gid: ( 1003/ slurm) the id munge command returns, strangely:\nrunner01:\nuid=991(munge) gid=988(munge) groups=988(munge) slurPh:\nuid=991(munge) gid=988(munge) groups=988(munge) We need to set the right UID, and change the permissions to /etc/munge/munge.key on both machines. We run groupmod -g 1099 munge, and usermod -u 1004 -g 1099 munge. In order not to have conflicts with other users, we list all users by cut -d: -f1,3 /etc/passwd. To list all groups with GID: getent group. With the changed users, the munge daemon fails to start. In the log file, we also notice\n2024-02-12 17:57:18 +0100 Info: Unauthorized credential for client UID=1003 GID=1003 previous attempts by slurm user on runner01 (?) to authenticate. The change of user created ownership issues on log files and on the PRNG generator folder. We fix it by\nsudo chown munge:munge -R /etc/munge sudo chown munge:munge -R /var/lib/munge sudo chown munge:munge -R /var/log/munge Ok, we still have unable to determine this node name. scontrol ping on runner01 still gives\nSlurmctld(primary) at slurph is DOWN There is more: every execution of the ping on runner01 triggers the writing of\n2024-02-12 18:34:26 +0100 Info: Unauthorized credential for client UID=1003 GID=1003 in /var/log/munge/munged.log! Error bursts of the corresponding event in /var/log/slurm/slurmctld.log are like\n[2024-02-12T18:44:00.281] error: Munge decode failed: Unauthorized credential for client UID=1003 GID=1003 [2024-02-12T18:44:00.281] auth/munge: _print_cred: ENCODED: Thu Jan 01 01:00:00 1970 [2024-02-12T18:44:00.281] auth/munge: _print_cred: DECODED: Thu Jan 01 01:00:00 1970 [2024-02-12T18:44:00.281] error: slurm_unpack_received_msg: [[runner01]:50994] auth_g_verify: REQUEST_PING has authentication error: Unspecified error [2024-02-12T18:44:00.281] error: slurm_unpack_received_msg: [[runner01]:50994] Protocol authentication error [2024-02-12T18:44:00.291] error: slurm_receive_msg [10.64.37.114:50994]: Protocol authentication error Note that unauhtorized credential is very different from invalid credentials!\nChange to Ubuntu OS Due to the dubious status of CentOS in relationship to RHEL, we switch to Ubuntu. This would allow a clean installation of SLURM to be seamless.\nConnection aliases commands to the new instances are, in fish:\nalias runner01=\"ssh -L2082:10.64.37.221:22 florenzi@gate.cloudveneto.it\" alias slurPh=\"ssh -L2081:10.64.37.17:22 florenzi@gate.cloudveneto.it\" alias connect-slurPh=\"ssh -p 2081 -i ~/.ssh/certificates/slurPh-key.pem ubuntu@localhost\" alias connect-runner01=\"ssh -p 2082 -i ~/.ssh/certificates/slurPh-key.pem ubuntu@localhost\" slurmdbd.conf We need to insert here the credentials to the MySQL database. MySQL database is to be managed via SLURM using sacct. For example, for adding a new user, we have\nsacctmgr create user name= account= CGroups When launching a job, we immediately set the node state to drain, and the log file show\n[2024-02-20T16:06:16.263] error: slurmd error running JobId=50 on node(s)=runner01: Plugin initialization failed This is an error related to the Cgroups plugin. On the runner, we have in /var/log/slurmd.log\n[2024-02-20T16:06:16.269] [50.batch] error: unable to mount memory cgroup namespace: Device or resource busy [2024-02-20T16:06:16.269] [50.batch] error: unable to create memory cgroup namespace [2024-02-20T16:06:16.269] [50.batch] error: Couldn't load specified plugin name for jobacct_gather/cgroup: Plugin init() callback failed [2024-02-20T16:06:16.269] [50.batch] error: cannot create jobacct_gather context for jobacct_gather/cgroup [2024-02-20T16:06:16.273] [50.batch] error: unable to mount cpuset cgroup namespace: Device or resource busy [2024-02-20T16:06:16.273] [50.batch] error: unable to create cpuset cgroup namespace [2024-02-20T16:06:16.273] [50.batch] error: unable to mount memory cgroup namespace: Device or resource busy [2024-02-20T16:06:16.273] [50.batch] error: unable to create memory cgroup namespace [2024-02-20T16:06:16.273] [50.batch] error: failure enabling memory enforcement: Unspecified error [2024-02-20T16:06:16.273] [50.batch] error: Couldn't load specified plugin name for task/cgroup: Plugin init() callback failed [2024-02-20T16:06:16.273] [50.batch] error: cannot create task context for task/cgroup [2024-02-20T16:06:16.273] [50.batch] error: job_manager: exiting abnormally: Plugin initialization failed [2024-02-20T16:06:16.273] [50.batch] sending REQUEST_COMPLETE_BATCH_SCRIPT, error:1011 status:0 [2024-02-20T16:06:16.275] [50.batch] done with job Useful resources for SLURM management SLURM cheatsheet SLURM config file generator SLURM official debug guide Other installation guides @DISI_computational_pharmacology @niflheim Slides Utah uni ",
+  "wordCount" : "1366",
+  "inLanguage": "en",
+  "datePublished": "2024-02-11T16:12:36+01:00",
+  "dateModified": "2024-02-11T16:12:36+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lorenzifrancesco.github.io/post/numerics/slurm/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Francesco Lorenzi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lorenzifrancesco.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 
@@ -77,7 +173,7 @@ So the directories will be">
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
+            <a href="https://lorenzifrancesco.github.io/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -103,27 +199,27 @@ So the directories will be">
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="Home">
+                <a href="https://lorenzifrancesco.github.io/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Posts">
+                <a href="https://lorenzifrancesco.github.io/tags/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/post/" title="Archive">
+                <a href="https://lorenzifrancesco.github.io/post/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/readings/" title="Readings">
+                <a href="https://lorenzifrancesco.github.io/readings/" title="Readings">
                     <span>Readings</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/lab/" title="Sunday mornings in the lab">
+                <a href="https://lorenzifrancesco.github.io/lab/" title="Sunday mornings in the lab">
                     <span>Sunday mornings in the lab</span>
                 </a>
             </li>
@@ -134,7 +230,7 @@ So the directories will be">
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://lorenzifrancesco.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://lorenzifrancesco.github.io/post/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       A clean installation of SLURM scheduler
     </h1>
@@ -416,15 +512,15 @@ On the runner, we have in <code>/var/log/slurmd.log</code></p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/computer-programming/">Computer Programming</a></li>
+      <li><a href="https://lorenzifrancesco.github.io/tags/computer-programming/">Computer Programming</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/post/numerics/linux-admin-tools/">
+  <a class="prev" href="https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/">
     <span class="title">« Prev</span>
     <br>
     <span>Linux Admin Tools</span>
   </a>
-  <a class="next" href="http://localhost:1313/post/classical/kapitza/">
+  <a class="next" href="https://lorenzifrancesco.github.io/post/classical/kapitza/">
     <span class="title">Next »</span>
     <br>
     <span>The Kapitza pendulum</span>
@@ -436,7 +532,7 @@ On the runner, we have in <code>/var/log/slurmd.log</code></p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Francesco Lorenzi</a></span> · 
+        <span>&copy; 2025 <a href="https://lorenzifrancesco.github.io/">Francesco Lorenzi</a></span> · 
 
     <span>
         Powered by

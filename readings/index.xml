@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Readings on Francesco Lorenzi</title>
-    <link>http://localhost:1313/readings/</link>
+    <link>https://lorenzifrancesco.github.io/readings/</link>
     <description>Recent content in Readings on Francesco Lorenzi</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/readings/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lorenzifrancesco.github.io/readings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Essays</title>
-      <link>http://localhost:1313/readings/essays/</link>
+      <link>https://lorenzifrancesco.github.io/readings/essays/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/readings/essays/</guid>
+      <guid>https://lorenzifrancesco.github.io/readings/essays/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Introduzione alla Cibernetica&lt;/em&gt;, N. Wiener, Bollati Boringhieri (2012)&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Vortici e Colori -  alle origini dell&amp;rsquo;opera di James Clerk Maxwell&lt;/em&gt;, G. Peruzzi, Dedalo (2010)&lt;/li&gt;
@@ -20,9 +20,9 @@
     </item>
     <item>
       <title>Readings in Mathematics</title>
-      <link>http://localhost:1313/readings/mathematics/</link>
+      <link>https://lorenzifrancesco.github.io/readings/mathematics/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/readings/mathematics/</guid>
+      <guid>https://lorenzifrancesco.github.io/readings/mathematics/</guid>
       <description>&lt;h3 id=&#34;realcomplex-analysis-functional-analysis&#34;&gt;Real/complex analysis, functional analysis&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Operational Calculus, a theory of hyperfunctions&lt;/em&gt;, K. Yosida.&lt;/li&gt;
@@ -36,9 +36,9 @@
     </item>
     <item>
       <title>Readings in Physics</title>
-      <link>http://localhost:1313/readings/physics/</link>
+      <link>https://lorenzifrancesco.github.io/readings/physics/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/readings/physics/</guid>
+      <guid>https://lorenzifrancesco.github.io/readings/physics/</guid>
       <description>&lt;p&gt;Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.&lt;/p&gt;
 &lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and Electromagnetics&lt;/h3&gt;
 &lt;p&gt;A book with which I am deeply in love and have followed me for many years is&lt;/p&gt;

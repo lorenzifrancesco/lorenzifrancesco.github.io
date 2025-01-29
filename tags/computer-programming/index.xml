@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Computer Programming on Francesco Lorenzi</title>
-    <link>http://localhost:1313/tags/computer-programming/</link>
+    <link>https://lorenzifrancesco.github.io/tags/computer-programming/</link>
     <description>Recent content in Computer Programming on Francesco Lorenzi</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 May 2024 19:11:37 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/computer-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lorenzifrancesco.github.io/tags/computer-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple (but nontrivial) vectorization in Numpy</title>
-      <link>http://localhost:1313/post/numerics/simple_vectorization/</link>
+      <link>https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</link>
       <pubDate>Thu, 09 May 2024 19:11:37 +0200</pubDate>
-      <guid>http://localhost:1313/post/numerics/simple_vectorization/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f(a, b, c, d)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s say we want to explore the behavior of &lt;code&gt;f&lt;/code&gt; in some range of parameters.&lt;/p&gt;
 &lt;p&gt;How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be &lt;em&gt;very inefficient&lt;/em&gt;, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least.
@@ -20,9 +20,9 @@ Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&g
     </item>
     <item>
       <title>Simple Multiprocessing in Julia</title>
-      <link>http://localhost:1313/post/numerics/simple_multiprocessing/</link>
+      <link>https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/</link>
       <pubDate>Wed, 27 Mar 2024 10:28:58 +0100</pubDate>
-      <guid>http://localhost:1313/post/numerics/simple_multiprocessing/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/</guid>
       <description>&lt;p&gt;In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Distributed, Printf
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -46,9 +46,9 @@ Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&g
     </item>
     <item>
       <title>Linux Admin Tools</title>
-      <link>http://localhost:1313/post/numerics/linux-admin-tools/</link>
+      <link>https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/</link>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/numerics/linux-admin-tools/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/</guid>
       <description>&lt;p&gt;This post is designed to be updated as soon as new tricks come handy.&lt;/p&gt;
 &lt;h2 id=&#34;useful-commands&#34;&gt;Useful commands&lt;/h2&gt;
 &lt;table&gt;
@@ -87,9 +87,9 @@ Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&g
     </item>
     <item>
       <title>A clean installation of SLURM scheduler</title>
-      <link>http://localhost:1313/post/numerics/slurm/</link>
+      <link>https://lorenzifrancesco.github.io/post/numerics/slurm/</link>
       <pubDate>Sun, 11 Feb 2024 16:12:36 +0100</pubDate>
-      <guid>http://localhost:1313/post/numerics/slurm/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/numerics/slurm/</guid>
       <description>&lt;h2 id=&#34;desired-topology-and-active-services&#34;&gt;Desired topology and active services&lt;/h2&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/slurm/SLURM.jpg&#34; alt=&#34;topology&#34;  /&gt;
 &lt;/p&gt;

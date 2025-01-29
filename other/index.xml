@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Others on Francesco Lorenzi</title>
-    <link>http://localhost:1313/other/</link>
+    <link>https://lorenzifrancesco.github.io/other/</link>
     <description>Recent content in Others on Francesco Lorenzi</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/other/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lorenzifrancesco.github.io/other/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Some interesting bibliography in physics</title>
-      <link>http://localhost:1313/other/interesting_bibliography/</link>
+      <link>https://lorenzifrancesco.github.io/other/interesting_bibliography/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/other/interesting_bibliography/</guid>
+      <guid>https://lorenzifrancesco.github.io/other/interesting_bibliography/</guid>
       <description>&lt;p&gt;Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.&lt;/p&gt;
 &lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and Electromagnetics&lt;/h3&gt;
 &lt;p&gt;A book with which I am in love and have followed me for many years is&lt;/p&gt;

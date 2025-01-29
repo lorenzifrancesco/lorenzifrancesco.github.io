@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Francesco Lorenzi</title>
-    <link>http://localhost:1313/</link>
+    <link>https://lorenzifrancesco.github.io/</link>
     <description>Recent content on Francesco Lorenzi</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Jan 2025 15:18:36 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lorenzifrancesco.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LNB and fancy resonators</title>
-      <link>http://localhost:1313/lab/w4/</link>
+      <link>https://lorenzifrancesco.github.io/lab/w4/</link>
       <pubDate>Wed, 15 Jan 2025 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/w4/</guid>
+      <guid>https://lorenzifrancesco.github.io/lab/w4/</guid>
       <description>&lt;p&gt;Here is a Low Noise Block downconverter (LNB), a device used in satellite communications to receive signals from satellites. The LNB is connected to a dish antenna and receives the signal reflected by the dish.
 The device in particular has two high-frequency input (C-band/K-band?), that maybe correspond to the two polarization, that can be switched by cutting the power to the amplifiers. The mixer is kind of exotic, being that the LO is based on microstrip-coupled dielectric resonator, i.e. a Dielectric Resonator Oscillator (DRO). The DRO is believed to be made with ceramic high dielectric constant materials, like Barium Titanate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conformal mapping and Helmholtz equation</title>
-      <link>http://localhost:1313/post/pe/conformal-copy/</link>
+      <link>https://lorenzifrancesco.github.io/post/pe/conformal-copy/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/pe/conformal-copy/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/pe/conformal-copy/</guid>
       <description>&lt;p&gt;Inspired by &lt;strong&gt;[10.1126/science.1126493]&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;conformal-transformation-and-helmholtz-equation&#34;&gt;Conformal transformation and Helmholtz equation&lt;/h3&gt;
 &lt;p&gt;Consider the Helmholtz equation describing a scalar phasor field $\psi$ in a 2D space filled by a isotropic medium of index $n(\mathbf{r})$.
@@ -53,29 +53,29 @@ therefore mapping the previous electromagnetic problem into a new problem with a
     </item>
     <item>
       <title>Posts Overview</title>
-      <link>http://localhost:1313/posts/</link>
+      <link>https://lorenzifrancesco.github.io/posts/</link>
       <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/</guid>
+      <guid>https://lorenzifrancesco.github.io/posts/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/classical&#34;&gt;Classical Mechanics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/content/post/quantum&#34;&gt;Quantum mechanics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/content/post//mathematics&#34;&gt;Mathematics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/content/post/numerics&#34;&gt;Numerics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/content/post/pe&#34;&gt;Photonics and Electromagnetics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/post/classical&#34;&gt;Classical Mechanics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/content/post/quantum&#34;&gt;Quantum mechanics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/content/post//mathematics&#34;&gt;Mathematics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/content/post/numerics&#34;&gt;Numerics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/content/post/pe&#34;&gt;Photonics and Electromagnetics&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
       <title>Posts Overview</title>
-      <link>http://localhost:1313/tags/</link>
+      <link>https://lorenzifrancesco.github.io/tags/</link>
       <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/</guid>
+      <guid>https://lorenzifrancesco.github.io/tags/</guid>
       <description></description>
     </item>
     <item>
       <title>Longitudinal and transverse relativistic dynamics</title>
-      <link>http://localhost:1313/post/relativistic/</link>
+      <link>https://lorenzifrancesco.github.io/post/relativistic/</link>
       <pubDate>Wed, 24 Jul 2024 18:54:44 +0200</pubDate>
-      <guid>http://localhost:1313/post/relativistic/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/relativistic/</guid>
       <description>&lt;p&gt;A very simple calculation in relativistic dynamics show an impressive aspect that differentiates the momentum change
 due to a force in the direction of movement of the body and the transverse ones.
 By using the definition of relativistic momentum $\mathbf{p}=\gamma m \mathbf{v}$, we can write
@@ -101,9 +101,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simple (but nontrivial) vectorization in Numpy</title>
-      <link>http://localhost:1313/post/numerics/simple_vectorization/</link>
+      <link>https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</link>
       <pubDate>Thu, 09 May 2024 19:11:37 +0200</pubDate>
-      <guid>http://localhost:1313/post/numerics/simple_vectorization/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f(a, b, c, d)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s say we want to explore the behavior of &lt;code&gt;f&lt;/code&gt; in some range of parameters.&lt;/p&gt;
 &lt;p&gt;How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be &lt;em&gt;very inefficient&lt;/em&gt;, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least.
@@ -111,9 +111,9 @@ Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&g
     </item>
     <item>
       <title>Simple Multiprocessing in Julia</title>
-      <link>http://localhost:1313/post/numerics/simple_multiprocessing/</link>
+      <link>https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/</link>
       <pubDate>Wed, 27 Mar 2024 10:28:58 +0100</pubDate>
-      <guid>http://localhost:1313/post/numerics/simple_multiprocessing/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/</guid>
       <description>&lt;p&gt;In this short post, we analyze the computation of a two-variable function on a grid, that is a common task for exploring physical properties of systems through phase diagrams, and similar&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Distributed, Printf
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -137,9 +137,9 @@ Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&g
     </item>
     <item>
       <title>Linux Admin Tools</title>
-      <link>http://localhost:1313/post/numerics/linux-admin-tools/</link>
+      <link>https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/</link>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/numerics/linux-admin-tools/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/</guid>
       <description>&lt;p&gt;This post is designed to be updated as soon as new tricks come handy.&lt;/p&gt;
 &lt;h2 id=&#34;useful-commands&#34;&gt;Useful commands&lt;/h2&gt;
 &lt;table&gt;
@@ -178,9 +178,9 @@ Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&g
     </item>
     <item>
       <title>A clean installation of SLURM scheduler</title>
-      <link>http://localhost:1313/post/numerics/slurm/</link>
+      <link>https://lorenzifrancesco.github.io/post/numerics/slurm/</link>
       <pubDate>Sun, 11 Feb 2024 16:12:36 +0100</pubDate>
-      <guid>http://localhost:1313/post/numerics/slurm/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/numerics/slurm/</guid>
       <description>&lt;h2 id=&#34;desired-topology-and-active-services&#34;&gt;Desired topology and active services&lt;/h2&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/slurm/SLURM.jpg&#34; alt=&#34;topology&#34;  /&gt;
 &lt;/p&gt;
@@ -203,9 +203,9 @@ So the directories will be&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Kapitza pendulum</title>
-      <link>http://localhost:1313/post/classical/kapitza/</link>
+      <link>https://lorenzifrancesco.github.io/post/classical/kapitza/</link>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/classical/kapitza/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/classical/kapitza/</guid>
       <description>&lt;p&gt;The Kapitza pendulum is a model in classical mechanics that exhibits counterintuitive behaviour. It is a pendulum with a pivot point that oscillates vertically.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../images/kapitza/kapitza.jpg&#34; alt=&#34;Normal pendulum and Kapitza pendulum&#34;  /&gt;
 &lt;/p&gt;
@@ -213,9 +213,9 @@ So the directories will be&lt;/p&gt;</description>
     </item>
     <item>
       <title>Some microscopies</title>
-      <link>http://localhost:1313/lab/w2/</link>
+      <link>https://lorenzifrancesco.github.io/lab/w2/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/w2/</guid>
+      <guid>https://lorenzifrancesco.github.io/lab/w2/</guid>
       <description>&lt;p&gt;Piece of LCD screen with pigments
 &lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/20240623_175300.jpg&#34; alt=&#34;&#34;  /&gt;
 &lt;/p&gt;
@@ -228,18 +228,18 @@ So the directories will be&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is this?</title>
-      <link>http://localhost:1313/lab/w1/</link>
+      <link>https://lorenzifrancesco.github.io/lab/w1/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/w1/</guid>
+      <guid>https://lorenzifrancesco.github.io/lab/w1/</guid>
       <description>&lt;p&gt;A very interesting piece for RF measurements! :)&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/DSCF1824.JPG&#34; alt=&#34;&#34;  /&gt;
 &lt;/p&gt;</description>
     </item>
     <item>
       <title>X-Y</title>
-      <link>http://localhost:1313/lab/w3/</link>
+      <link>https://lorenzifrancesco.github.io/lab/w3/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/w3/</guid>
+      <guid>https://lorenzifrancesco.github.io/lab/w3/</guid>
       <description>&lt;p&gt;Evergreen Lissajous patterns.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/ezgif-5-fb4696505a.gif&#34; alt=&#34;&#34;  /&gt;
 &lt;/p&gt;
@@ -247,9 +247,9 @@ So the directories will be&lt;/p&gt;</description>
     </item>
     <item>
       <title>Essays</title>
-      <link>http://localhost:1313/readings/essays/</link>
+      <link>https://lorenzifrancesco.github.io/readings/essays/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/readings/essays/</guid>
+      <guid>https://lorenzifrancesco.github.io/readings/essays/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Introduzione alla Cibernetica&lt;/em&gt;, N. Wiener, Bollati Boringhieri (2012)&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Vortici e Colori -  alle origini dell&amp;rsquo;opera di James Clerk Maxwell&lt;/em&gt;, G. Peruzzi, Dedalo (2010)&lt;/li&gt;
@@ -257,9 +257,9 @@ So the directories will be&lt;/p&gt;</description>
     </item>
     <item>
       <title>Readings in Mathematics</title>
-      <link>http://localhost:1313/readings/mathematics/</link>
+      <link>https://lorenzifrancesco.github.io/readings/mathematics/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/readings/mathematics/</guid>
+      <guid>https://lorenzifrancesco.github.io/readings/mathematics/</guid>
       <description>&lt;h3 id=&#34;realcomplex-analysis-functional-analysis&#34;&gt;Real/complex analysis, functional analysis&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Operational Calculus, a theory of hyperfunctions&lt;/em&gt;, K. Yosida.&lt;/li&gt;
@@ -273,9 +273,9 @@ So the directories will be&lt;/p&gt;</description>
     </item>
     <item>
       <title>Readings in Physics</title>
-      <link>http://localhost:1313/readings/physics/</link>
+      <link>https://lorenzifrancesco.github.io/readings/physics/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/readings/physics/</guid>
+      <guid>https://lorenzifrancesco.github.io/readings/physics/</guid>
       <description>&lt;p&gt;Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.&lt;/p&gt;
 &lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and Electromagnetics&lt;/h3&gt;
 &lt;p&gt;A book with which I am deeply in love and have followed me for many years is&lt;/p&gt;
@@ -296,9 +296,9 @@ So the directories will be&lt;/p&gt;</description>
     </item>
     <item>
       <title>Some interesting bibliography in physics</title>
-      <link>http://localhost:1313/other/interesting_bibliography/</link>
+      <link>https://lorenzifrancesco.github.io/other/interesting_bibliography/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/other/interesting_bibliography/</guid>
+      <guid>https://lorenzifrancesco.github.io/other/interesting_bibliography/</guid>
       <description>&lt;p&gt;Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.&lt;/p&gt;
 &lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and Electromagnetics&lt;/h3&gt;
 &lt;p&gt;A book with which I am in love and have followed me for many years is&lt;/p&gt;
@@ -327,9 +327,9 @@ So the directories will be&lt;/p&gt;</description>
     </item>
     <item>
       <title>Binomial from Poisson in composite process</title>
-      <link>http://localhost:1313/post/mathematics/poisson/</link>
+      <link>https://lorenzifrancesco.github.io/post/mathematics/poisson/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/mathematics/poisson/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/mathematics/poisson/</guid>
       <description>&lt;p&gt;This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.&lt;/p&gt;
 &lt;p&gt;Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as arrivals in a second. Let us consider the following conditional
 $$
@@ -359,9 +359,9 @@ This result is well rooted in our intuition: every arrival comes from process 1 
     </item>
     <item>
       <title>Second quantization of the electromagnetic field</title>
-      <link>http://localhost:1313/post/quantum/second_quantization/</link>
+      <link>https://lorenzifrancesco.github.io/post/quantum/second_quantization/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/quantum/second_quantization/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/quantum/second_quantization/</guid>
       <description>&lt;p&gt;The procedure of quantization of a classical theory has its crucial passage in the promotion of the dynamical variables to operators in the Hilbert space of the quantum states of the system. The quantization is successful if these operators form a complete set of commuting observables (this set is called ICOC). In this case, every quantum state of the system can be expressed as a sum of eigenstates, and we can write the probability amplitudes, and take the averages of all the dynamical variables.
 The quantized description of the electromagnetic field in the vacuum is obtained by expressing the field hamiltonian in a finite volume $V$, and then taking the limit for $V \to \infty$. The promotion to operators is performed by the position and conjugate momentum operators, which are introduced by writing the field hamiltonian in terms of a sum, possibly infinite, of uncoupled harmonic oscillators.
 We start by expressing the hamiltonian of the field in a volume of space $V$.
@@ -386,9 +386,9 @@ We have that&lt;/p&gt;</description>
     </item>
     <item>
       <title>Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation</title>
-      <link>http://localhost:1313/post/mathematics/canonical/</link>
+      <link>https://lorenzifrancesco.github.io/post/mathematics/canonical/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/mathematics/canonical/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/mathematics/canonical/</guid>
       <description>&lt;p&gt;Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics.
 In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.&lt;/p&gt;</description>
     </item>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Classical Mechanics on Francesco Lorenzi</title>
-    <link>http://localhost:1313/tags/classical-mechanics/</link>
+    <link>https://lorenzifrancesco.github.io/tags/classical-mechanics/</link>
     <description>Recent content in Classical Mechanics on Francesco Lorenzi</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Jul 2024 18:54:44 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/classical-mechanics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lorenzifrancesco.github.io/tags/classical-mechanics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Longitudinal and transverse relativistic dynamics</title>
-      <link>http://localhost:1313/post/relativistic/</link>
+      <link>https://lorenzifrancesco.github.io/post/relativistic/</link>
       <pubDate>Wed, 24 Jul 2024 18:54:44 +0200</pubDate>
-      <guid>http://localhost:1313/post/relativistic/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/relativistic/</guid>
       <description>&lt;p&gt;A very simple calculation in relativistic dynamics show an impressive aspect that differentiates the momentum change
 due to a force in the direction of movement of the body and the transverse ones.
 By using the definition of relativistic momentum $\mathbf{p}=\gamma m \mathbf{v}$, we can write
@@ -38,9 +38,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Kapitza pendulum</title>
-      <link>http://localhost:1313/post/classical/kapitza/</link>
+      <link>https://lorenzifrancesco.github.io/post/classical/kapitza/</link>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/classical/kapitza/</guid>
+      <guid>https://lorenzifrancesco.github.io/post/classical/kapitza/</guid>
       <description>&lt;p&gt;The Kapitza pendulum is a model in classical mechanics that exhibits counterintuitive behaviour. It is a pendulum with a pivot point that oscillates vertically.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../images/kapitza/kapitza.jpg&#34; alt=&#34;Normal pendulum and Kapitza pendulum&#34;  /&gt;
 &lt;/p&gt;
