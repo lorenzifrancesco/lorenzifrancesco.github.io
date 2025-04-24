@@ -114,12 +114,12 @@
                 </a>
             </li>
             <li>
-                <a href="https://lorenzifrancesco.github.io/tags/" title="Posts">
+                <a href="https://lorenzifrancesco.github.io/tags/" title="Posts Overview">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="https://lorenzifrancesco.github.io/post/" title="Archive">
+                <a href="https://lorenzifrancesco.github.io/post/" title="Posts">
                     <span class="active">Archive</span>
                 </a>
             </li>
@@ -129,7 +129,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://lorenzifrancesco.github.io/lab/" title="Sunday mornings in the lab">
+                <a href="https://lorenzifrancesco.github.io/lab/" title="Labs">
                     <span>Sunday mornings in the lab</span>
                 </a>
             </li>
@@ -142,6 +142,19 @@
     Posts
   </h1>
 </header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Poisson-Boltzmann equation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How are the ions in a solution distributed in a region of space subjected to an external electric field? The Poisson-Boltzmann equation gives us a way to answer this question. The equation is basically the Poisson equation from electrostatics $$ \nabla^2 \phi = -\frac{\rho}{\varepsilon} , , $$ where $\varepsilon$ is the dielectric constant of the solvent, but with a suitable choice of the charge density, in a self-consistent way. The charge density is given by the requirement that the solution is thermalized, and the ions distribute in the potential in a way described by the Boltzmann distribution. Assuming that the electrostatic potential is the dominant part of the energy, we have $$ n_i = a_i\exp[-\beta z_i\phi] , . $$ where $\beta = 1/k_BT$ is the inverse temperature, $z_i$ is the charge of the charge of the $i$-species present, and $a_i$ are a proportionality constant, such that $$ \sum_i \int dV \ n_i = N , , $$ the total number of ions. Because of charge neutrality, $$ \sum_i a_i z_i = 0 , . $$ We take the charge density to be $$ \rho = \sum_i z_i n_i , , $$ and therefore the Poisson-Boltzmann equation reads $$ \nabla^2 \phi = \frac{1}{\varepsilon} \sum_i z_i a_i \exp[-\beta z_i \phi] , . $$ Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-28 00:00:00 +0000 UTC'>February 28, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Poisson-Boltzmann equation" href="https://lorenzifrancesco.github.io/post/classical/poisson-boltzmann/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -270,90 +283,13 @@ Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_
   <footer class="entry-footer"><span title='2023-10-27 00:00:00 +0000 UTC'>October 27, 2023</span>&nbsp;·&nbsp;5 min</footer>
   <a class="entry-link" aria-label="post link to Second quantization of the electromagnetic field" href="https://lorenzifrancesco.github.io/post/quantum/second_quantization/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics. In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-08-14 00:00:00 +0000 UTC'>August 14, 2023</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation" href="https://lorenzifrancesco.github.io/post/mathematics/canonical/"></a>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="https://lorenzifrancesco.github.io/">Francesco Lorenzi</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://lorenzifrancesco.github.io/post/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
+    </main>
+    <div id="sfc8jr97ap3p1f55qhq7yrzsyd2d4fb62rk"></div><script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="website counter widget"><img src="https://counter2.optistats.ovh/private/freecounterstat.php?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk" border="0" title="website counter widget" alt="website counter widget"></a></noscript></body>
 
 </html>
