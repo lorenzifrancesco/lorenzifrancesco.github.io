@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Poisson-Boltzmann equation | Francesco Lorenzi</title>
 <meta name="keywords" content="classical mechanics">
 <meta name="description" content="How are the ions in a solution distributed in a region of space subjected to an external electric field? The Poisson-Boltzmann equation gives us a way to answer this question.
@@ -34,16 +34,16 @@ $$
 $$
 Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/post/classical/poisson-boltzmann/">
+<link rel="canonical" href="https://lorenzifrancesco.github.io/post/classical/poisson-boltzmann/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a8501b4e1544bf104a4e2647be64df3637f95b6ac25a4298047d87fe0eacffa1.css" integrity="sha256-qFAbThVEvxBKTiZHvmTfNjf5W2rCWkKYBH2H/g6s/6E=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://lorenzifrancesco.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lorenzifrancesco.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lorenzifrancesco.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lorenzifrancesco.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lorenzifrancesco.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/post/classical/poisson-boltzmann/">
+<link rel="alternate" hreflang="en" href="https://lorenzifrancesco.github.io/post/classical/poisson-boltzmann/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,6 +70,118 @@ Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods
           throwOnError : false
         });
     });
+</script><meta property="og:title" content="Poisson-Boltzmann equation" />
+<meta property="og:description" content="How are the ions in a solution distributed in a region of space subjected to an external electric field? The Poisson-Boltzmann equation gives us a way to answer this question.
+The equation is basically the Poisson equation from electrostatics
+$$
+\nabla^2 \phi = -\frac{\rho}{\varepsilon} , ,
+$$
+where $\varepsilon$ is the dielectric constant of the solvent, but with a suitable choice of the charge density, in a self-consistent way. The charge density is given by the requirement that the solution is thermalized, and the ions distribute in the potential in a way described by the Boltzmann distribution. Assuming that the electrostatic potential is the dominant part of the energy, we have
+$$
+n_i = a_i\exp[-\beta z_i\phi] , .
+$$
+where $\beta = 1/k_BT$ is the inverse temperature, $z_i$ is the charge of the charge of the $i$-species present, and $a_i$ are a proportionality constant, such that
+$$
+\sum_i \int dV \ n_i = N , ,
+$$
+the total number of ions. Because of charge neutrality,
+$$
+\sum_i a_i z_i = 0 , .
+$$
+We take the charge density to be
+$$
+\rho = \sum_i z_i n_i , ,
+$$
+and therefore the Poisson-Boltzmann equation reads
+$$
+\nabla^2 \phi = \frac{1}{\varepsilon} \sum_i z_i a_i \exp[-\beta z_i \phi] , .
+$$
+Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lorenzifrancesco.github.io/post/classical/poisson-boltzmann/" />
+
+<meta property="article:section" content="post" />
+<meta property="article:published_time" content="2025-02-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-02-28T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Poisson-Boltzmann equation"/>
+<meta name="twitter:description" content="How are the ions in a solution distributed in a region of space subjected to an external electric field? The Poisson-Boltzmann equation gives us a way to answer this question.
+The equation is basically the Poisson equation from electrostatics
+$$
+\nabla^2 \phi = -\frac{\rho}{\varepsilon} , ,
+$$
+where $\varepsilon$ is the dielectric constant of the solvent, but with a suitable choice of the charge density, in a self-consistent way. The charge density is given by the requirement that the solution is thermalized, and the ions distribute in the potential in a way described by the Boltzmann distribution. Assuming that the electrostatic potential is the dominant part of the energy, we have
+$$
+n_i = a_i\exp[-\beta z_i\phi] , .
+$$
+where $\beta = 1/k_BT$ is the inverse temperature, $z_i$ is the charge of the charge of the $i$-species present, and $a_i$ are a proportionality constant, such that
+$$
+\sum_i \int dV \ n_i = N , ,
+$$
+the total number of ions. Because of charge neutrality,
+$$
+\sum_i a_i z_i = 0 , .
+$$
+We take the charge density to be
+$$
+\rho = \sum_i z_i n_i , ,
+$$
+and therefore the Poisson-Boltzmann equation reads
+$$
+\nabla^2 \phi = \frac{1}{\varepsilon} \sum_i z_i a_i \exp[-\beta z_i \phi] , .
+$$
+Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://lorenzifrancesco.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Poisson-Boltzmann equation",
+      "item": "https://lorenzifrancesco.github.io/post/classical/poisson-boltzmann/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Poisson-Boltzmann equation",
+  "name": "Poisson-Boltzmann equation",
+  "description": "How are the ions in a solution distributed in a region of space subjected to an external electric field? The Poisson-Boltzmann equation gives us a way to answer this question. The equation is basically the Poisson equation from electrostatics $$ \\nabla^2 \\phi = -\\frac{\\rho}{\\varepsilon} , , $$ where $\\varepsilon$ is the dielectric constant of the solvent, but with a suitable choice of the charge density, in a self-consistent way. The charge density is given by the requirement that the solution is thermalized, and the ions distribute in the potential in a way described by the Boltzmann distribution. Assuming that the electrostatic potential is the dominant part of the energy, we have $$ n_i = a_i\\exp[-\\beta z_i\\phi] , . $$ where $\\beta = 1/k_BT$ is the inverse temperature, $z_i$ is the charge of the charge of the $i$-species present, and $a_i$ are a proportionality constant, such that $$ \\sum_i \\int dV \\ n_i = N , , $$ the total number of ions. Because of charge neutrality, $$ \\sum_i a_i z_i = 0 , . $$ We take the charge density to be $$ \\rho = \\sum_i z_i n_i , , $$ and therefore the Poisson-Boltzmann equation reads $$ \\nabla^2 \\phi = \\frac{1}{\\varepsilon} \\sum_i z_i a_i \\exp[-\\beta z_i \\phi] , . $$ Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods.\n",
+  "keywords": [
+    "classical mechanics"
+  ],
+  "articleBody": "How are the ions in a solution distributed in a region of space subjected to an external electric field? The Poisson-Boltzmann equation gives us a way to answer this question. The equation is basically the Poisson equation from electrostatics $$ \\nabla^2 \\phi = -\\frac{\\rho}{\\varepsilon} , , $$ where $\\varepsilon$ is the dielectric constant of the solvent, but with a suitable choice of the charge density, in a self-consistent way. The charge density is given by the requirement that the solution is thermalized, and the ions distribute in the potential in a way described by the Boltzmann distribution. Assuming that the electrostatic potential is the dominant part of the energy, we have $$ n_i = a_i\\exp[-\\beta z_i\\phi] , . $$ where $\\beta = 1/k_BT$ is the inverse temperature, $z_i$ is the charge of the charge of the $i$-species present, and $a_i$ are a proportionality constant, such that $$ \\sum_i \\int dV \\ n_i = N , , $$ the total number of ions. Because of charge neutrality, $$ \\sum_i a_i z_i = 0 , . $$ We take the charge density to be $$ \\rho = \\sum_i z_i n_i , , $$ and therefore the Poisson-Boltzmann equation reads $$ \\nabla^2 \\phi = \\frac{1}{\\varepsilon} \\sum_i z_i a_i \\exp[-\\beta z_i \\phi] , . $$ Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods.\nA nice experiment can be tried at home, involving the surface distribution of polar molecules. In this case, the Poisson-Boltzmann equation needs to be modified to take into account the dipole field and the dipole energy in the electrostatic field.\n",
+  "wordCount" : "265",
+  "inLanguage": "en",
+  "datePublished": "2025-02-28T00:00:00Z",
+  "dateModified": "2025-02-28T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lorenzifrancesco.github.io/post/classical/poisson-boltzmann/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Francesco Lorenzi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lorenzifrancesco.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 
@@ -78,38 +190,38 @@ Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
+            <a href="https://lorenzifrancesco.github.io/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
             <div class="logo-switches">
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="Home">
+                <a href="https://lorenzifrancesco.github.io/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Posts Overview">
+                <a href="https://lorenzifrancesco.github.io/tags/" title="Posts Overview">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/post/" title="Posts">
+                <a href="https://lorenzifrancesco.github.io/post/" title="Posts">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/readings/" title="Readings">
+                <a href="https://lorenzifrancesco.github.io/readings/" title="Readings">
                     <span>Readings</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://lorenzifrancesco.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/lab/" title="Labs">
+                <a href="https://lorenzifrancesco.github.io/lab/" title="Labs">
                     <span>Sunday mornings in the lab</span>
                 </a>
             </li>
@@ -120,7 +232,7 @@ Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://lorenzifrancesco.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://lorenzifrancesco.github.io/post/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Poisson-Boltzmann equation
     </h1>
@@ -162,10 +274,10 @@ Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/classical-mechanics/">Classical Mechanics</a></li>
+      <li><a href="https://lorenzifrancesco.github.io/tags/classical-mechanics/">Classical Mechanics</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="http://localhost:1313/post/pe/conformal-copy/">
+  <a class="next" href="https://lorenzifrancesco.github.io/post/pe/conformal-copy/">
     <span class="title">Next »</span>
     <br>
     <span>Conformal mapping and Helmholtz equation</span>

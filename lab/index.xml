@@ -2,30 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Labs on Francesco Lorenzi</title>
-    <link>http://localhost:1313/lab/</link>
+    <link>https://lorenzifrancesco.github.io/lab/</link>
     <description>Recent content in Labs on Francesco Lorenzi</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Jun 2025 15:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/lab/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Repair of an analog oscilloscope</title>
-      <link>http://localhost:1313/lab/w6/</link>
-      <pubDate>Wed, 25 Jun 2025 15:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/lab/w6/</guid>
-      <description>&lt;div style=&#34;text-align: justify;&#34;&gt;
-Some time ago I repaired with a friend an old oscilloscope: a Grunding Oszilloskop GO10, rated 10MHz, dual channel, single trigger.
-&lt;img src=&#34;../../images/lab/labw6/06.jpg&#34; style=&#34;width:80%;  margin:auto&#34;&gt;
-&lt;img src=&#34;../../images/lab/labw6/01.jpg&#34; style=&#34;width:50%; float:right; margin:1rem;&#34;&gt;
-A quite standard design, but with an important difference compared to typical analog oscilloscopes: it is all made with discrete components.
-&lt;p&gt;The oscilloscope was retrieved from old equipment, and had the following problem.
-While the horizontal circuit seemed alright, with correct speeping of the beam position, and triggering, the vertical circuit was insensible to controls, displaying in the screen a vertical band occupying the whole screen.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Wed, 29 Jan 2025 15:18:36 +0100</lastBuildDate>
+    <atom:link href="https://lorenzifrancesco.github.io/lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Superfone Cordless Telephone CT-505</title>
-      <link>http://localhost:1313/lab/w5/</link>
+      <link>https://lorenzifrancesco.github.io/lab/w5/</link>
       <pubDate>Wed, 29 Jan 2025 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/w5/</guid>
+      <guid>https://lorenzifrancesco.github.io/lab/w5/</guid>
       <description>&lt;p&gt;Here is a very interesting piece of vintage radio technology.
 &lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/alltogether.jpg&#34; alt=&#34;&#34;  /&gt;
 
@@ -41,17 +28,17 @@ Nice infos about it can be found here &lt;a href=&#34;https://www.radiomuseum.or
     </item>
     <item>
       <title>LNB and fancy resonators</title>
-      <link>http://localhost:1313/lab/w4/</link>
+      <link>https://lorenzifrancesco.github.io/lab/w4/</link>
       <pubDate>Wed, 15 Jan 2025 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/w4/</guid>
+      <guid>https://lorenzifrancesco.github.io/lab/w4/</guid>
       <description>&lt;p&gt;Here is a Low Noise Block downconverter (LNB), a device used in satellite communications to receive signals from satellites. The LNB is connected to a dish antenna and receives the signal reflected by the dish.
 The device in particular has two high-frequency input (C-band/K-band?), that maybe correspond to the two polarization, that can be switched by cutting the power to the amplifiers. The mixer is kind of exotic, being that the LO is based on microstrip-coupled dielectric resonator, i.e. a Dielectric Resonator Oscillator (DRO). The DRO is believed to be made with ceramic high dielectric constant materials, like Barium Titanate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Some microscopies</title>
-      <link>http://localhost:1313/lab/w2/</link>
+      <link>https://lorenzifrancesco.github.io/lab/w2/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/w2/</guid>
+      <guid>https://lorenzifrancesco.github.io/lab/w2/</guid>
       <description>&lt;p&gt;Piece of LCD screen with pigments
 &lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/20240623_175300.jpg&#34; alt=&#34;&#34;  /&gt;
 &lt;/p&gt;
@@ -64,18 +51,18 @@ The device in particular has two high-frequency input (C-band/K-band?), that may
     </item>
     <item>
       <title>What is this?</title>
-      <link>http://localhost:1313/lab/w1/</link>
+      <link>https://lorenzifrancesco.github.io/lab/w1/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/w1/</guid>
+      <guid>https://lorenzifrancesco.github.io/lab/w1/</guid>
       <description>&lt;p&gt;A very interesting piece for RF measurements! :)&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/DSCF1824.JPG&#34; alt=&#34;&#34;  /&gt;
 &lt;/p&gt;</description>
     </item>
     <item>
       <title>X-Y</title>
-      <link>http://localhost:1313/lab/w3/</link>
+      <link>https://lorenzifrancesco.github.io/lab/w3/</link>
       <pubDate>Mon, 18 Dec 2023 15:18:36 +0100</pubDate>
-      <guid>http://localhost:1313/lab/w3/</guid>
+      <guid>https://lorenzifrancesco.github.io/lab/w3/</guid>
       <description>&lt;p&gt;Evergreen Lissajous patterns.&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/lab/ezgif-5-fb4696505a.gif&#34; alt=&#34;&#34;  /&gt;
 &lt;/p&gt;
