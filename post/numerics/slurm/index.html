@@ -309,7 +309,8 @@ We do it in the <code>slurm</code> user.</p>
 </code></pre><p>A warning in the <code>rpmbuild</code> suggest to run <code>libtool --finish /lib64/security</code>. We do it, installing <code>libtool</code> first</p>
 <blockquote>
 <p>We still have the problem that the commands are not available.
-The SLURM services are not available.</p></blockquote>
+The SLURM services are not available.</p>
+</blockquote>
 <p>The RPM files are loacated into</p>
 <pre tabindex="0"><code>~/rpmbuild/RPMS
 </code></pre><p>so we need to run</p>
@@ -331,7 +332,8 @@ systemctl start slurmd
 <code>Condition: start condition failed at Sun 2024-02-11 17:10:08 CET; 8min ago</code>
 <code>          └─ ConditionPathExists=/etc/slurm/slurmdbd.conf was not met</code>
 This is due to
-<code>slurmdbd: error: s_p_parse_file: unable to read &quot;/etc/slurm/slurmdbd.conf&quot;: Permission denied</code></p></blockquote>
+<code>slurmdbd: error: s_p_parse_file: unable to read &quot;/etc/slurm/slurmdbd.conf&quot;: Permission denied</code></p>
+</blockquote>
 <p>Also, we got error</p>
 <pre tabindex="0"><code>Feb 11 17:26:11 slurph.novalocal slurmdbd[7414]: slurmdbd: error: mysql_real_connect failed: 2002 Can&#39;t connect to local MySQL server through socket &#39;/var/lib/mys&gt;
 </code></pre><p>Seems like we have problems with the installation of MariaDB.
