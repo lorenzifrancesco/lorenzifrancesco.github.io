@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Mathematics | Francesco Lorenzi</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/tags/mathematics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9c645a1057f3d80ba627a2b05dea7993bdcf142445f5c7267c33751a16898bbb.css" integrity="sha256-nGRaEFfz2AumJ6KwXep5k73PFCRF9ccmfDN1GhaJi7s=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/mathematics/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/mathematics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+</head>
+
+<body class="list" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Posts Overview">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/post/" title="Posts">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/readings/" title="Readings">
+                    <span>Readings</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+  <h1>
+    Mathematics
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Binomial from Poisson in composite process
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is a classical calculation in Poisson processes, indicating how to obtain a binomial variable from two Poisson processes.
+Let $X_1(t) \sim \mathcal{P}(\lambda_1 t)$ and $X_2(t) \sim \mathcal{P}(\lambda_2 t)$ be two independent Poisson processes, with parameters $\lambda_1$ and $\lambda_2$ respectively, that can be interpreted as arrivals in a second. Let us consider the following conditional $$ \begin{align} &amp; P[X_1(t)=k \ | \ X_1(t)&#43;X_2(t) &amp;= n&#43;k] \end{align} $$ that is the probability that there are $k$ arrivals from the variable 1, conditioned on the number of total arrivals being $n&#43;k$. $$ \begin{align} &amp; P[X_1(t)=k \ | \ X_1(t)&#43;X_2(t) &amp;= n&#43;k] = \\ &amp;= \frac{P[X_1(t)=k, X_2(t)= n]}{P[X_1(t) &#43; X_2(t)= n&#43;k]} \\ &amp;=\frac{(\lambda_1 t)^k (k!)^{-1} e^{-\lambda_1 t} (\lambda_2 t)^n (n!)^{-1} e^{-\lambda_2 t}}{((\lambda_1 &#43; \lambda_2) t)^{n&#43;k} ((n&#43;k)!)^{-1} e^{-(\lambda_1&#43;\lambda_2) t}} \\ &amp;= \frac{(n&#43;k)!}{n! k!}\frac{\lambda_1^k \lambda_2^n}{((\lambda_1 &#43; \lambda_2))^{n&#43;k}} \\ &amp;= \binom{n&#43;k}{k} \left(\frac{\lambda_1}{\lambda_1&#43;\lambda_2}\right)^k \left(\frac{\lambda_2}{\lambda_1&#43;\lambda_2}\right)^n. \end{align} $$ Here we found that this probability distribution coincides to the one of a binomial variable $$ Y \sim \text{Bin}(n&#43;k, p) $$ where $$ p = \frac{\lambda_1}{\lambda_1&#43; \lambda_2} $$ This result is well rooted in our intuition: every arrival comes from process 1 or process 2, with a probability which is proportional to the arrival rate of the two processes. Expressing this results with the rates $\lambda_i$, we obtain a sum of Bernoulli variables, that boils down to the binomial variable we found.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-27 00:00:00 +0000 UTC'>October 27, 2023</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Binomial from Poisson in composite process" href="http://localhost:1313/post/mathematics/poisson/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics. In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-14 00:00:00 +0000 UTC'>August 14, 2023</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation" href="http://localhost:1313/post/mathematics/canonical/"></a>
+</article>
+    </main>
+    <div id="sfc8jr97ap3p1f55qhq7yrzsyd2d4fb62rk"></div><script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="website counter widget"><img src="https://counter2.optistats.ovh/private/freecounterstat.php?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk" border="0" title="website counter widget" alt="website counter widget"></a></noscript></body>
+
+</html>

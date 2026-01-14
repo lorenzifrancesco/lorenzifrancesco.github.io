@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>A clean installation of SLURM scheduler | Francesco Lorenzi</title>
+<meta name="keywords" content="Computer programming">
+<meta name="description" content="Desired topology and active services
+
+
+SLURM super quick start guide
+The guide is available here.
+On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package.
+Status of munge can be probed by
+munge -n | unmunge
+Installing the SLURM package is done manually
+wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2
+We then unzip, configure, and build SLURM
+We then need to create, by the SLURM user &ldquo;slurm&rdquo;, the directories of
+
+ log files
+ PID files
+ State save
+
+and make them writable. We take inspiration from an existing slurm.conf file.
+So the directories will be">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/post/numerics/slurm/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9c645a1057f3d80ba627a2b05dea7993bdcf142445f5c7267c33751a16898bbb.css" integrity="sha256-nGRaEFfz2AumJ6KwXep5k73PFCRF9ccmfDN1GhaJi7s=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/numerics/slurm/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Posts Overview">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/post/" title="Posts">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/readings/" title="Readings">
+                    <span>Readings</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      A clean installation of SLURM scheduler
+    </h1>
+    <div class="post-meta"><span title='2024-02-11 16:12:36 +0100 CET'>February 11, 2024</span>&nbsp;·&nbsp;7 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#desired-topology-and-active-services">Desired topology and active services</a></li>
+        <li><a href="#slurm-super-quick-start-guide">SLURM super quick start guide</a></li>
+        <li><a href="#a-handy-alternative-rpm">A handy alternative: RPM</a></li>
+        <li><a href="#slurmconf">slurm.conf</a></li>
+        <li><a href="#who-is-running-slurm">Who is running SLURM?</a></li>
+        <li><a href="#database-configuration">Database configuration</a></li>
+        <li><a href="#unable-to-determine-this-slurmds-nodename">Unable to determine this slurmd&rsquo;s nodename</a></li>
+        <li><a href="#configuraiton-of-the-computing-nodes">Configuraiton of the computing node(s)</a></li>
+      </ul>
+    </li>
+    <li><a href="#change-to-ubuntu-os">Change to Ubuntu OS</a>
+      <ul>
+        <li><a href="#slurmdbdconf">slurmdbd.conf</a></li>
+        <li><a href="#cgroups">CGroups</a></li>
+        <li><a href="#useful-resources-for-slurm-management">Useful resources for SLURM management</a>
+          <ul>
+            <li><a href="#other-installation-guides">Other installation guides</a></li>
+            <li><a href="#slides">Slides</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="desired-topology-and-active-services">Desired topology and active services<a hidden class="anchor" aria-hidden="true" href="#desired-topology-and-active-services">#</a></h2>
+<p><img loading="lazy" src="../../images/slurm/SLURM.jpg" alt="topology"  />
+</p>
+<h2 id="slurm-super-quick-start-guide">SLURM super quick start guide<a hidden class="anchor" aria-hidden="true" href="#slurm-super-quick-start-guide">#</a></h2>
+<p>The guide is available <a href="https://slurm.schedmd.com/quickstart_admin.html">here</a>.</p>
+<p>On Centos8Stream, we first install MUNGE, then install SLURM by the bzip package.
+Status of munge can be probed by</p>
+<pre tabindex="0"><code>munge -n | unmunge
+</code></pre><p>Installing the SLURM package is done manually</p>
+<pre tabindex="0"><code>wget https://download.schedmd.com/slurm/slurm-23.11.3.tar.bz2
+</code></pre><p>We then unzip, configure, and build SLURM</p>
+<p>We then need to create, by the SLURM user &ldquo;slurm&rdquo;, the directories of</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> log files</li>
+<li><input disabled="" type="checkbox"> PID files</li>
+<li><input checked="" disabled="" type="checkbox"> State save</li>
+</ul>
+<p>and make them writable. We take inspiration from an existing <code>slurm.conf</code> file.
+So the directories will be</p>
+<table>
+  <thead>
+      <tr>
+          <th>Function</th>
+          <th>Directory</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>PID files</td>
+          <td>&mdash;</td>
+      </tr>
+      <tr>
+          <td>SlurmdSpoolDir</td>
+          <td>/var/spool/slurmd</td>
+      </tr>
+      <tr>
+          <td>StateSaveLocation</td>
+          <td>/var/spool/slurmctld</td>
+      </tr>
+  </tbody>
+</table>
+<p>Beware, <code>slurm</code> is not in the sudoers group (and it must not be!).
+If the directories are already there, we must <code>chown</code> them, and <code>chmod</code> them to writable by <code>slurm</code>.
+This can be done only by a sudoer.</p>
+<p>In order to use the SLURM API, we must link to the libraries</p>
+<pre tabindex="0"><code>ldconfig -n &lt;library-location&gt;
+</code></pre><p>in our case <code>&lt;library-location&gt;</code> is in the downloaded (and built) package.</p>
+<h2 id="a-handy-alternative-rpm">A handy alternative: RPM<a hidden class="anchor" aria-hidden="true" href="#a-handy-alternative-rpm">#</a></h2>
+<p>We can use  <code>rpmbuild</code> to directly install and configure the directories and link the libraries.
+We do it in the <code>slurm</code> user.</p>
+<p>This method show a missing dependency</p>
+<pre tabindex="0"><code>error: Failed build dependencies:
+	mariadb-devel &gt;= 5.0.0 is needed by slurm-23.11.3-1.el8.x86_64
+</code></pre><p>that we can easily solve by</p>
+<pre tabindex="0"><code>sudo yum install mariadb-devel  
+</code></pre><p>A warning in the <code>rpmbuild</code> suggest to run <code>libtool --finish /lib64/security</code>. We do it, installing <code>libtool</code> first</p>
+<blockquote>
+<p>We still have the problem that the commands are not available.
+The SLURM services are not available.</p>
+</blockquote>
+<p>The RPM files are loacated into</p>
+<pre tabindex="0"><code>~/rpmbuild/RPMS
+</code></pre><p>so we need to run</p>
+<pre tabindex="0"><code>rpm -i *.rpm
+</code></pre><p>inside the rpms folder.</p>
+<h2 id="slurmconf">slurm.conf<a hidden class="anchor" aria-hidden="true" href="#slurmconf">#</a></h2>
+<p>We use the generator tool to make the <code>slurm.conf</code> file</p>
+<p>We can now enable the daemons</p>
+<pre tabindex="0"><code>systemctl enable slurmctld
+systemctl enable slurmdbd
+systemctl enable slurmd 
+</code></pre><p>and activate them</p>
+<pre tabindex="0"><code>systemctl start slurmctld
+systemctl start slurmdbd
+systemctl start slurmd 
+</code></pre><p>The order is important!</p>
+<blockquote>
+<p>We have a problem in starting the <code>slurmdbd</code> service:
+<code>Condition: start condition failed at Sun 2024-02-11 17:10:08 CET; 8min ago</code>
+<code>          └─ ConditionPathExists=/etc/slurm/slurmdbd.conf was not met</code>
+This is due to
+<code>slurmdbd: error: s_p_parse_file: unable to read &quot;/etc/slurm/slurmdbd.conf&quot;: Permission denied</code></p>
+</blockquote>
+<p>Also, we got error</p>
+<pre tabindex="0"><code>Feb 11 17:26:11 slurph.novalocal slurmdbd[7414]: slurmdbd: error: mysql_real_connect failed: 2002 Can&#39;t connect to local MySQL server through socket &#39;/var/lib/mys&gt;
+</code></pre><p>Seems like we have problems with the installation of MariaDB.
+Lets run</p>
+<pre tabindex="0"><code> sudo dnf install mariadb-server 
+</code></pre><p>Finally we are able to start the service</p>
+<pre tabindex="0"><code>systemctl start mariadb.service
+</code></pre><h2 id="who-is-running-slurm">Who is running SLURM?<a hidden class="anchor" aria-hidden="true" href="#who-is-running-slurm">#</a></h2>
+<p>Running</p>
+<pre tabindex="0"><code>slurmdbd -Dvvv
+</code></pre><p>We get errors like</p>
+<pre tabindex="0"><code>slurmdbd.conf owned by 1000 not SlurmUser(1003)
+</code></pre><p>Seems like we have problems in read from <code>/var/run/&lt;PID files&gt;</code>
+One can <a href="https://serverfault.com/questions/159334/what-permissions-are-needed-to-write-a-pid-file-in-var-run">generate a folder inside <code>/var/run</code> and chown it</a>, but since <code>/var/run</code> is <code>tmpfs</code> it will go after a system reboot.
+The solution seems to be to run a <code>mkdir + chown</code> script at startup. This is to be implemented.
+The script looks like (<code>/home/centos/startup_pid.sh</code>)</p>
+<pre tabindex="0"><code>#! /bin/bash
+mkdir /var/run/slurm
+chown slurm /var/run/slurm
+</code></pre><p>Still we have problems in connecting to the database. This is a problem also on the startup of <code>slurmd.service</code>.
+Obviously, we lack a <a href="https://wiki.fysik.dtu.dk/Niflheim_system/Slurm_installation/">DB configuration</a>.</p>
+<h2 id="database-configuration">Database configuration<a hidden class="anchor" aria-hidden="true" href="#database-configuration">#</a></h2>
+<p>We follow commands from the previous link.</p>
+<h2 id="unable-to-determine-this-slurmds-nodename">Unable to determine this slurmd&rsquo;s nodename<a hidden class="anchor" aria-hidden="true" href="#unable-to-determine-this-slurmds-nodename">#</a></h2>
+<p>This problem is related to the impossibility to detect <code>runner01</code>.
+Before running the <code>slurmd</code> daemon, we need to setup the computing nodes.
+Now our <code>slurmctld</code> and <code>slurmdbd</code> are running.</p>
+<h2 id="configuraiton-of-the-computing-nodes">Configuraiton of the computing node(s)<a hidden class="anchor" aria-hidden="true" href="#configuraiton-of-the-computing-nodes">#</a></h2>
+<p>Follow instruction from <a href="https://www.youtube.com/watch?v=Fm5RIE3NSN8&amp;t=322s&amp;pp=ygULc2x1cm0gbXVuZ2U%3D">youtube</a>.
+After the configuration, and running the <code>slurmd</code> on <code>runner01</code>, the <code>slurmctld.log</code> file on the <code>slurPh</code> machine indicates a problem with</p>
+<pre tabindex="0"><code>[2024-02-12T17:57:04.216] error: Node runner01 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+</code></pre><p>and most importantly, an authentication problem by Munge</p>
+<pre tabindex="0"><code>[2024-02-12T17:57:18.718] error: Munge decode failed: Unauthorized credential for client UID=1003 GID=1003
+</code></pre><p>We should check</p>
+<pre tabindex="0"><code>munge -n | unmunge
+</code></pre><p>Both machines return a success code.</p>
+<p>runner01:</p>
+<pre tabindex="0"><code>STATUS:           Success (0)
+ENCODE_HOST:      runner01.novalocal (10.64.37.114)
+ENCODE_TIME:      2024-02-12 18:02:47 +0100 (1707757367)
+DECODE_TIME:      2024-02-12 18:02:47 +0100 (1707757367)
+TTL:              300
+CIPHER:           aes128 (4)
+MAC:              sha256 (5)
+ZIP:              none (0)
+UID:              centos (1000)
+GID:              centos (1000)
+LENGTH:           0
+</code></pre><p>slurPh:</p>
+<pre tabindex="0"><code>STATUS:           Success (0)
+ENCODE_HOST:      runner01.novalocal (10.64.37.114)
+ENCODE_TIME:      2024-02-12 18:02:47 +0100 (1707757367)
+DECODE_TIME:      2024-02-12 18:02:47 +0100 (1707757367)
+TTL:              300
+CIPHER:           aes128 (4)
+MAC:              sha256 (5)
+ZIP:              none (0)
+UID:              centos (1000)
+GID:              centos (1000)
+LENGTH:           0
+</code></pre><p>The problem seems to be that UID and GID are not the same in the two machines
+runner01:</p>
+<pre tabindex="0"><code>File: /etc/slurm
+Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: fc01h/64513d	Inode: 30103776    Links: 2
+Access: (0777/drwxrwxrwx)  Uid: ( 1001/   slurm)   Gid: ( 1001/   slurm)
+</code></pre><p>slurPh:</p>
+<pre tabindex="0"><code>File: /etc/slurm
+Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: fc01h/64513d	Inode: 25439750    Links: 2
+Access: (0755/drwxr-xr-x)  Uid: ( 1003/   slurm)   Gid: ( 1003/   slurm)
+</code></pre><p>the <code>id munge</code> command returns, strangely:</p>
+<p>runner01:</p>
+<pre tabindex="0"><code>uid=991(munge) gid=988(munge) groups=988(munge)
+</code></pre><p>slurPh:</p>
+<pre tabindex="0"><code>uid=991(munge) gid=988(munge) groups=988(munge)
+</code></pre><p>We need to set the right UID, and change the permissions to <code>/etc/munge/munge.key</code> on both machines.
+We run <code>groupmod -g 1099 munge</code>, and <code>usermod -u 1004 -g 1099 munge</code>. In order not to have conflicts with other users, we list all users by <code>cut -d: -f1,3 /etc/passwd</code>. To list all groups with GID: <code>getent group</code>.
+With the changed users, the munge daemon fails to start.
+In the log file, we also notice</p>
+<pre tabindex="0"><code>2024-02-12 17:57:18 +0100 Info:      Unauthorized credential for client UID=1003 GID=1003
+</code></pre><p>previous attempts by slurm user on runner01 (?) to authenticate.
+The change of user created ownership issues on log files and on the PRNG generator folder.
+We fix it by</p>
+<pre tabindex="0"><code>sudo chown munge:munge -R /etc/munge
+sudo chown munge:munge -R /var/lib/munge
+sudo chown munge:munge -R /var/log/munge
+</code></pre><p>Ok, we still have <code>unable to determine this node name</code>.
+<code>scontrol ping</code> on runner01 still gives</p>
+<pre tabindex="0"><code>Slurmctld(primary) at slurph is DOWN
+</code></pre><p>There is more: every execution of the ping on runner01 triggers the writing of</p>
+<pre tabindex="0"><code>2024-02-12 18:34:26 +0100 Info:      Unauthorized credential for client UID=1003 GID=1003
+</code></pre><p>in <code>/var/log/munge/munged.log</code>!
+Error bursts of the corresponding event in <code>/var/log/slurm/slurmctld.log</code> are like</p>
+<pre tabindex="0"><code>[2024-02-12T18:44:00.281] error: Munge decode failed: Unauthorized credential for client UID=1003 GID=1003
+[2024-02-12T18:44:00.281] auth/munge: _print_cred: ENCODED: Thu Jan 01 01:00:00 1970
+[2024-02-12T18:44:00.281] auth/munge: _print_cred: DECODED: Thu Jan 01 01:00:00 1970
+[2024-02-12T18:44:00.281] error: slurm_unpack_received_msg: [[runner01]:50994] auth_g_verify: REQUEST_PING has authentication error: Unspecified error
+[2024-02-12T18:44:00.281] error: slurm_unpack_received_msg: [[runner01]:50994] Protocol authentication error
+[2024-02-12T18:44:00.291] error: slurm_receive_msg [10.64.37.114:50994]: Protocol authentication error
+</code></pre><p>Note that <strong>unauhtorized</strong> credential is very different from <strong>invalid</strong> credentials!</p>
+<h1 id="change-to-ubuntu-os">Change to Ubuntu OS<a hidden class="anchor" aria-hidden="true" href="#change-to-ubuntu-os">#</a></h1>
+<p>Due to the dubious status of CentOS in relationship to RHEL, we switch to Ubuntu.
+This would allow a clean installation of SLURM to be seamless.</p>
+<p>Connection aliases commands to the new instances are, in fish:</p>
+<pre tabindex="0"><code>alias runner01=&#34;ssh -L2082:10.64.37.221:22 florenzi@gate.cloudveneto.it&#34;
+alias slurPh=&#34;ssh -L2081:10.64.37.17:22 florenzi@gate.cloudveneto.it&#34;
+alias connect-slurPh=&#34;ssh -p 2081 -i ~/.ssh/certificates/slurPh-key.pem ubuntu@localhost&#34;
+alias connect-runner01=&#34;ssh -p 2082 -i ~/.ssh/certificates/slurPh-key.pem ubuntu@localhost&#34;
+</code></pre><h2 id="slurmdbdconf">slurmdbd.conf<a hidden class="anchor" aria-hidden="true" href="#slurmdbdconf">#</a></h2>
+<p>We need to insert here the credentials to the MySQL database.
+MySQL database is to be managed via SLURM using <code>sacct</code>.
+For example, for adding a new user, we have</p>
+<pre tabindex="0"><code>sacctmgr create user name=&lt;USERNAME&gt; account=&lt;GROUP&gt;
+</code></pre><h2 id="cgroups">CGroups<a hidden class="anchor" aria-hidden="true" href="#cgroups">#</a></h2>
+<p>When launching a job, we immediately set the node state to <code>drain</code>, and the log file show</p>
+<pre tabindex="0"><code>[2024-02-20T16:06:16.263] error: slurmd error running JobId=50 on node(s)=runner01: Plugin initialization failed
+</code></pre><p>This is an error related to the Cgroups plugin.
+On the runner, we have in <code>/var/log/slurmd.log</code></p>
+<pre tabindex="0"><code>[2024-02-20T16:06:16.269] [50.batch] error: unable to mount memory cgroup namespace: Device or resource busy
+[2024-02-20T16:06:16.269] [50.batch] error: unable to create memory cgroup namespace
+[2024-02-20T16:06:16.269] [50.batch] error: Couldn&#39;t load specified plugin name for jobacct_gather/cgroup: Plugin init() callback failed
+[2024-02-20T16:06:16.269] [50.batch] error: cannot create jobacct_gather context for jobacct_gather/cgroup
+[2024-02-20T16:06:16.273] [50.batch] error: unable to mount cpuset cgroup namespace: Device or resource busy
+[2024-02-20T16:06:16.273] [50.batch] error: unable to create cpuset cgroup namespace
+[2024-02-20T16:06:16.273] [50.batch] error: unable to mount memory cgroup namespace: Device or resource busy
+[2024-02-20T16:06:16.273] [50.batch] error: unable to create memory cgroup namespace
+[2024-02-20T16:06:16.273] [50.batch] error: failure enabling memory enforcement: Unspecified error
+[2024-02-20T16:06:16.273] [50.batch] error: Couldn&#39;t load specified plugin name for task/cgroup: Plugin init() callback failed
+[2024-02-20T16:06:16.273] [50.batch] error: cannot create task context for task/cgroup
+[2024-02-20T16:06:16.273] [50.batch] error: job_manager: exiting abnormally: Plugin initialization failed
+[2024-02-20T16:06:16.273] [50.batch] sending REQUEST_COMPLETE_BATCH_SCRIPT, error:1011 status:0
+[2024-02-20T16:06:16.275] [50.batch] done with job
+</code></pre><h2 id="useful-resources-for-slurm-management">Useful resources for SLURM management<a hidden class="anchor" aria-hidden="true" href="#useful-resources-for-slurm-management">#</a></h2>
+<ul>
+<li><a href="https://www.carc.usc.edu/user-information/user-guides/hpc-basics/slurm-cheatsheet">SLURM cheatsheet</a></li>
+<li><a href="https://slurm.schedmd.com/configurator.html">SLURM config file generator</a></li>
+<li><a href="https://slurm.schedmd.com/troubleshoot.html">SLURM official debug guide</a></li>
+</ul>
+<h3 id="other-installation-guides">Other installation guides<a hidden class="anchor" aria-hidden="true" href="#other-installation-guides">#</a></h3>
+<ul>
+<li><a href="https://wiki.docking.org/index.php/Slurm_Installation_Guide">@DISI_computational_pharmacology</a></li>
+<li><a href="https://wiki.fysik.dtu.dk/Niflheim_system/Slurm_installation/">@niflheim</a></li>
+</ul>
+<h3 id="slides">Slides<a hidden class="anchor" aria-hidden="true" href="#slides">#</a></h3>
+<ul>
+<li><a href="https://linuxclustersinstitute.org/wp-content/uploads/2021/08/9-Slurm.pdf">Utah uni</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/computer-programming/">Computer Programming</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/post/numerics/linux-admin-tools/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Linux Admin Tools</span>
+  </a>
+  <a class="next" href="http://localhost:1313/post/classical/kapitza/">
+    <span class="title">Next »</span>
+    <br>
+    <span>The Kapitza pendulum</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    <div id="sfc8jr97ap3p1f55qhq7yrzsyd2d4fb62rk"></div><script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="website counter widget"><img src="https://counter2.optistats.ovh/private/freecounterstat.php?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk" border="0" title="website counter widget" alt="website counter widget"></a></noscript></body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Classical Mechanics | Francesco Lorenzi</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/tags/classical-mechanics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9c645a1057f3d80ba627a2b05dea7993bdcf142445f5c7267c33751a16898bbb.css" integrity="sha256-nGRaEFfz2AumJ6KwXep5k73PFCRF9ccmfDN1GhaJi7s=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/classical-mechanics/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/classical-mechanics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+</head>
+
+<body class="list" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Posts Overview">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/post/" title="Posts">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/readings/" title="Readings">
+                    <span>Readings</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+  <h1>
+    Classical Mechanics
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Poisson-Boltzmann equation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How are the ions in a solution distributed in a region of space subjected to an external electric field? The Poisson-Boltzmann equation gives us a way to answer this question. The equation is basically the Poisson equation from electrostatics $$ \nabla^2 \phi = -\frac{\rho}{\varepsilon} , , $$ where $\varepsilon$ is the dielectric constant of the solvent, but with a suitable choice of the charge density, in a self-consistent way. The charge density is given by the requirement that the solution is thermalized, and the ions distribute in the potential in a way described by the Boltzmann distribution. Assuming that the electrostatic potential is the dominant part of the energy, we have $$ n_i = a_i\exp[-\beta z_i\phi] , . $$ where $\beta = 1/k_BT$ is the inverse temperature, $z_i$ is the charge of the charge of the $i$-species present, and $a_i$ are a proportionality constant, such that $$ \sum_i \int dV \ n_i = N , , $$ the total number of ions. Because of charge neutrality, $$ \sum_i a_i z_i = 0 , . $$ We take the charge density to be $$ \rho = \sum_i z_i n_i , , $$ and therefore the Poisson-Boltzmann equation reads $$ \nabla^2 \phi = \frac{1}{\varepsilon} \sum_i z_i a_i \exp[-\beta z_i \phi] , . $$ Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-28 00:00:00 +0000 UTC'>February 28, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Poisson-Boltzmann equation" href="http://localhost:1313/post/classical/poisson-boltzmann/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Longitudinal and transverse relativistic dynamics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A very simple calculation in relativistic dynamics show an impressive aspect that differentiates the momentum change due to a force in the direction of movement of the body and the transverse ones. By using the definition of relativistic momentum $\mathbf{p}=\gamma m \mathbf{v}$, we can write $$ \frac{d\mathbf{p}}{dt} = \frac{d\gamma}{dt} m \mathbf{v} &#43; \gamma m \frac{d\mathbf{v}}{dt}, $$ by defining the longitudinal and transverse acceleration, with respect to the vector $\mathbf{v}$ $$ \frac{d\mathbf{v}}{dt} = \mathbf{a}_L &#43;\mathbf{a}_T, $$ it is simple to show that the first term in the first equation is only longitudinal $$ \frac{d\gamma}{dt} m \mathbf{v} = \frac{v^2}{c^2} \gamma^3 m \mathbf{a}_L , $$ and the second term is composed of longitudinal and transverse parts $$ \gamma m \frac{d\mathbf{v}}{dt}=\gamma m (\mathbf{a}_L&#43;\mathbf{a}_T). $$ Summing the contributions, we can separate the Newton equation with respect to transverse and longitudinal forces, obtaining $$ \frac{d\mathbf{p}}{dt}=\gamma^3m \mathbf{a}_L&#43;\gamma m \mathbf{a}_T. $$
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-24 18:54:44 +0200 CEST'>July 24, 2024</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Longitudinal and transverse relativistic dynamics" href="http://localhost:1313/post/relativistic/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Kapitza pendulum
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Kapitza pendulum is a model in Classical mechanics that exhibits counterintuitive behaviour. It is a pendulum with a pivot point that oscillates vertically.
+If $\phi$ is the angle the pendulum have with respect to the vertical downward position, for some values of the driving frequency and amplitude, it can be stable in the inverted position $\phi = \pi$, and unstable in the upright position $\phi = 0$.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-11 00:00:00 +0000 UTC'>February 11, 2024</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to The Kapitza pendulum" href="http://localhost:1313/post/classical/kapitza/"></a>
+</article>
+    </main>
+    <div id="sfc8jr97ap3p1f55qhq7yrzsyd2d4fb62rk"></div><script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="website counter widget"><img src="https://counter2.optistats.ovh/private/freecounterstat.php?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk" border="0" title="website counter widget" alt="website counter widget"></a></noscript></body>
+
+</html>

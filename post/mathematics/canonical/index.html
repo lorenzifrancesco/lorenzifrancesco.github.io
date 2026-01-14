@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation | Francesco Lorenzi</title>
+<meta name="keywords" content="Mathematics">
+<meta name="description" content="Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics.
+In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/post/mathematics/canonical/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9c645a1057f3d80ba627a2b05dea7993bdcf142445f5c7267c33751a16898bbb.css" integrity="sha256-nGRaEFfz2AumJ6KwXep5k73PFCRF9ccmfDN1GhaJi7s=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/mathematics/canonical/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Francesco Lorenzi (Alt + H)">Francesco Lorenzi</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Posts Overview">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/post/" title="Posts">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/readings/" title="Readings">
+                    <span>Readings</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Canonical nonlinear dynamics is described by Nonlinear Schrödinger equation
+    </h1>
+    <div class="post-meta"><span title='2023-08-14 00:00:00 +0000 UTC'>August 14, 2023</span>&nbsp;·&nbsp;2 min
+
+</div>
+  </header> 
+
+  <div class="post-content"><p>Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics.
+In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.</p>
+<p>In this post we explore a method to derive the NLSE in general, starting from a generic partial differential equation and assuming properties of the evolution operator.</p>
+<p>Let us condiser a partial differential equation in $d$ dimensions for a scalar field $u$,
+$$
+L(\partial_t, \nabla)u = G(u),
+$$
+where $L$ is a linear operator, and $G$ a generic (nonlinear) function of $u$ and its derivatives.
+For low-amplitude solutions, the nonlienar term can be neglected, so solutions are
+$$
+u = \epsilon\psi \exp[i(\mathbf{k} \cdot \mathbf{r} - \omega t)],
+$$
+with $\omega$ and $\mathbf{k}$ linked by the dispersion relation
+$$
+L(-i\omega, i\mathbf{k}) = 0.
+$$
+in general, this relation admits a number of solutions $\omega$ given a fixed $\mathbf{k}$. Let $\omega(\mathbf{k})$ be one of those solutions.
+Considering the solution in Eq. (\ref{solution}), the dispersion relation can be written as
+$$
+[i\partial_t - \omega(i\partial_{\mathbf{r}})] \ \epsilon\psi\exp[i(\mathbf{k} \cdot \mathbf{r} - \omega t)],
+$$
+by promoting $\omega$ to an operator.
+We now introduce a correction: for small nonlinearity, the angular frequency will depend on $\epsilon^2 |\psi|^2$. Therefore we substitute $\omega(\mathbf{k})$ with $\Omega(\mathbf{k}, \epsilon^2|\psi|^2)$. Notice that  $\Omega(\mathbf{k}, 0)=\omega(\mathbf{k})$.
+Moreover, the amplitude $\psi$ becomes dependent on the slow variables $T=\epsilon t$ and $\mathbf{X} = \epsilon \mathbf{x}$. We can formally substitute $\partial_t \longrightarrow \partial_t + \epsilon\partial_T$ and $\partial_{\mathbf{x}} \longrightarrow \partial_{x}+\epsilon \nabla$, where $\nabla$  is the gradient with respect to the slow variable.
+The dispersion relation Eq. (\ref{dispersion}) becomes</p>
+<p>$$
+[i\omega + \epsilon \partial_T - \Omega(\mathbf{k}-i\epsilon\nabla, \epsilon^2|\psi|^2)]\psi = 0.
+$$</p>
+<p>Since $\epsilon$ is considered small, we can expand the equation in power series around $\epsilon=0$, writing</p>
+<p>$$
+i(\partial_T + \mathbf{v}_g \cdot \nabla)\psi + \epsilon[\nabla \cdot (D\nabla\psi) + \gamma|\psi|^2\psi]=0
+$$</p>
+<p>where $ \mathbf{v}_g=\nabla\mathbf{k} \omega $ is the group velocity, and $D$ the half Hessian matrix of $\omega$.
+Furthermore, by scaling the spatial coordinate $\mathbf{\zeta} = \mathbf{X} - T\mathbf{v}_g$, and $\tau = \epsilon T$, we obtain</p>
+<p>$$
+i\partial_\tau +\nabla \cdot (D\nabla\psi) + \gamma |\psi|^2 \psi = 0
+$$</p>
+<p>that is exactly the NLSE in a generic medium. In isotropic media, $ \nabla \cdot (D\nabla) = \nabla^2 $ .</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mathematics/">Mathematics</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/post/quantum/second_quantization/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Second quantization of the electromagnetic field</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    <div id="sfc8jr97ap3p1f55qhq7yrzsyd2d4fb62rk"></div><script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="website counter widget"><img src="https://counter2.optistats.ovh/private/freecounterstat.php?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk" border="0" title="website counter widget" alt="website counter widget"></a></noscript></body>
+
+</html>
