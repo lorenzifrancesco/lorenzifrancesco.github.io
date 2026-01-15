@@ -250,9 +250,14 @@ So the directories will be&lt;/p&gt;</description>
       <link>https://lorenzifrancesco.github.io/readings/essays/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://lorenzifrancesco.github.io/readings/essays/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Introduzione alla Cibernetica&lt;/em&gt;, N. Wiener, Bollati Boringhieri (2012)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Vortici e Colori -  alle origini dell&amp;rsquo;opera di James Clerk Maxwell&lt;/em&gt;, G. Peruzzi, Dedalo (2010)&lt;/li&gt;
+      <description>&lt;h3 id=&#34;particularly-inspiring-essays&#34;&gt;Particularly inspiring essays&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Wiener, Norbert. &lt;em&gt;Cybernetics or Control and Communication in the Animal and the Machine, Reissue of the 1961 Second Edition&lt;/em&gt;. MIT Press, 2019.&lt;/li&gt;
+&lt;li&gt;Brillouin, Leon. &lt;em&gt;Science and Information Theory: Second Edition&lt;/em&gt;. Courier Corporation, 2013.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;interesting-essays-on-specific-topics&#34;&gt;Interesting essays on specific topics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Peruzzi, Giulio. &lt;em&gt;Vortici e colori: alle origini dell’opera di James Clerk Maxwell&lt;/em&gt;. EDIZIONI DEDALO, 2010.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
@@ -262,13 +267,17 @@ So the directories will be&lt;/p&gt;</description>
       <guid>https://lorenzifrancesco.github.io/readings/mathematics/</guid>
       <description>&lt;h3 id=&#34;realcomplex-analysis-functional-analysis&#34;&gt;Real/complex analysis, functional analysis&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Operational Calculus, a theory of hyperfunctions&lt;/em&gt;, K. Yosida.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Calculus on manifolds&lt;/em&gt;, M. Spivak.&lt;/li&gt;
+&lt;li&gt;Yosida, Kosaku. &lt;em&gt;Operational Calculus: A Theory of Hyperfunctions&lt;/em&gt;. Springer Science &amp;amp; Business Media, 2012.&lt;/li&gt;
+&lt;li&gt;Spivak, Michael. &lt;em&gt;Calculus On Manifolds: A Modern Approach To Classical Theorems Of Advanced Calculus&lt;/em&gt;. CRC Press, 2018. &lt;a href=&#34;https://doi.org/10.1201/9780429501906&#34;&gt;https://doi.org/10.1201/9780429501906&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;information-theory&#34;&gt;Information theory&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Information theory, inference and learning algorithms&lt;/em&gt;,  D. J. C. MacKay.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Elements of information theory&lt;/em&gt;, T.M. Cover, A.M. Thomas.&lt;/li&gt;
+&lt;li&gt;MacKay, David J. C. &lt;em&gt;Information Theory, Inference and Learning Algorithms&lt;/em&gt;. Cambridge University Press, 2003.&lt;/li&gt;
+&lt;li&gt;Cover, Thomas M., and Joy A. Thomas. &lt;em&gt;Elements of Information Theory&lt;/em&gt;. John Wiley &amp;amp; Sons, 2012.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;algebra&#34;&gt;Algebra&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Lang, Serge. &lt;em&gt;Algebra&lt;/em&gt;. Springer Science &amp;amp; Business Media, 2012.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
@@ -280,18 +289,25 @@ So the directories will be&lt;/p&gt;</description>
 &lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and Electromagnetics&lt;/h3&gt;
 &lt;p&gt;A book with which I am deeply in love and have followed me for many years is&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Electromagnetic Waves&lt;/em&gt;, C. G. Someda.&lt;/li&gt;
+&lt;li&gt;Someda, Carlo G. &lt;em&gt;Electromagnetic Waves&lt;/em&gt;. 2nd ed. CRC Press, 2017. &lt;a href=&#34;https://doi.org/10.4324/9781420009545&#34;&gt;https://doi.org/10.4324/9781420009545&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;quantum-optics-and-noise&#34;&gt;Quantum optics and noise&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Quantum noise - a Handbook of Markovian and Non-Markovian methods with Applications to Quantum Optics&lt;/em&gt;, C. W. Gardiner and P. Zoller.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Elements of Quantum Optics&lt;/em&gt;, P. Meystre and M. Sargent III.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Optical Coherence and Quantum Optics&lt;/em&gt;, L. Mandel and E. Wolf.&lt;/li&gt;
+&lt;li&gt;Gardiner, Crispin, and Peter Zoller. &lt;em&gt;Quantum Noise: A Handbook of Markovian and Non-Markovian Quantum Stochastic Methods with Applications to Quantum Optics&lt;/em&gt;. Springer Science &amp;amp; Business Media, 2004.&lt;/li&gt;
+&lt;li&gt;Mandel, Leonard, and Emil Wolf. &lt;em&gt;Optical Coherence and Quantum Optics&lt;/em&gt;. Cambridge University Press, 1995.&lt;/li&gt;
+&lt;li&gt;Meystre, Pierre, and Murray Sargent. &lt;em&gt;Elements of Quantum Optics&lt;/em&gt;. Springer Science &amp;amp; Business Media, 2007.&lt;/li&gt;
+&lt;li&gt;Altland, Alexander, and Ben D. Simons. &lt;em&gt;Condensed Matter Field Theory&lt;/em&gt;. Cambridge University Press, 2010.&lt;/li&gt;
+&lt;li&gt;Nagaosa, Naoto. &lt;em&gt;Quantum Field Theory in Condensed Matter Physics&lt;/em&gt;. Springer Science &amp;amp; Business Media, 2013.&lt;/li&gt;
+&lt;li&gt;Negele, John W. &lt;em&gt;Quantum Many-Particle Systems&lt;/em&gt;. CRC Press, 2018. &lt;a href=&#34;https://doi.org/10.1201/9780429497926&#34;&gt;https://doi.org/10.1201/9780429497926&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;condensed-matter-physics&#34;&gt;Condensed Matter Physics&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Many-particle Physics&lt;/em&gt;, G. Mahan.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Superfluid states of matter&lt;/em&gt;, Svistunov, Babaev, Prokof&amp;rsquo;ev.&lt;/li&gt;
+&lt;li&gt;Mahan, Gerald D. &lt;em&gt;Many-Particle Physics&lt;/em&gt;. Springer Science &amp;amp; Business Media, 2013.&lt;/li&gt;
+&lt;li&gt;Svistunov, Boris V., Egor S. Babaev, and Nikolay V. Prokof’ev. &lt;em&gt;Superfluid States of Matter&lt;/em&gt;. CRC Press, 2015.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;general-wave-phenomena&#34;&gt;General wave phenomena&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Brillouin, Léon. &lt;em&gt;Wave Propagation and Group Velocity&lt;/em&gt;. Academic Press, 2013.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
