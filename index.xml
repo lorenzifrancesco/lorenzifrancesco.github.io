@@ -460,5 +460,23 @@ $$&lt;/p&gt;</description>
       <description>&lt;p&gt;Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics.
 In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Pics</title>
+      <link>https://lorenzifrancesco.github.io/pics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lorenzifrancesco.github.io/pics/</guid>
+      <description>&lt;p&gt;I collected quite a few visualizations, scientific and non scientific, across the years. These figures are a playful subset patchwork of them, collected and arranged just for fun.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://lorenzifrancesco.github.io/images/pics/chelsea_shape_propagation.gif&#34;
+         alt=&#34;Diffractive propagation of a cat.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Diffractive propagation of a cat.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://lorenzifrancesco.github.io/images/pics/Fantasmi_MALEVOLI_tran.png&#34;
+         alt=&#34;This is what is means to have race conditions in Julia. Every point there corresponds to a full 3D Gross-Pitaevskii solution, taking minutes. What an adventure to have to manage these ghosts!&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;This is what is means to have race conditions in Julia. Every point there corresponds to a full 3D Gross-Pitaevskii solution, taking minutes. What an adventure to have to manage these ghosts!&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
