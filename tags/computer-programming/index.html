@@ -8,7 +8,7 @@
 <title>Computer Programming | Francesco Lorenzi</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
-<meta name="author" content="">
+<meta name="author" content="Francesco Lorenzi">
 <link rel="canonical" href="https://lorenzifrancesco.github.io/tags/computer-programming/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.9c645a1057f3d80ba627a2b05dea7993bdcf142445f5c7267c33751a16898bbb.css" integrity="sha256-nGRaEFfz2AumJ6KwXep5k73PFCRF9ccmfDN1GhaJi7s=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://lorenzifrancesco.github.io/fava.png">
@@ -117,7 +117,7 @@
 How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be very inefficient, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least. Let’s say the parameters have a definite number of samples (len(x) or np.shape(x) in pyhon, with x a parameter vector). We change the axis of the numpy vectors, making them multi-dimensional vectors (or, respecting the notion of dimension in algebra, multi-axial):
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-09 19:11:37 +0200 CEST'>May 9, 2024</span>&nbsp;·&nbsp;2 min</footer>
+  <footer class="entry-footer"><span title='2024-05-09 19:11:37 +0200 CEST'>May 9, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Francesco Lorenzi</footer>
   <a class="entry-link" aria-label="post link to Simple (but nontrivial) vectorization in Numpy" href="https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/"></a>
 </article>
 
@@ -131,7 +131,7 @@ How can we vectorize the function and iterate over all possible combinations? Is
 using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x &#43;= sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&#34;Single eval time [s]: %4.3e&#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&#34;pmap eval time [s] : %4.3e&#34;, t_pmap) t_sing = @elapsed loop_compute.(mat) @info @sprintf(&#34;serial eval time [s] : %4.3e&#34;, t_sing) @info @sprintf(&#34;Speeup ratio: %4444&#34;, t_sing/t_pmap) Try to run this simple script using
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-03-27 10:28:58 +0100 CET'>March 27, 2024</span>&nbsp;·&nbsp;1 min</footer>
+  <footer class="entry-footer"><span title='2024-03-27 10:28:58 +0100 CET'>March 27, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Francesco Lorenzi</footer>
   <a class="entry-link" aria-label="post link to Simple Multiprocessing in Julia" href="https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/"></a>
 </article>
 
@@ -145,7 +145,7 @@ using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs
 Useful commands Instruction Command Change user su - &lt;username&gt; Change owner chown user:group -R folder Check owner &amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-02-12 00:00:00 +0000 UTC'>February 12, 2024</span>&nbsp;·&nbsp;1 min</footer>
+  <footer class="entry-footer"><span title='2024-02-12 00:00:00 +0000 UTC'>February 12, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Francesco Lorenzi</footer>
   <a class="entry-link" aria-label="post link to Linux Admin Tools" href="https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/"></a>
 </article>
 
@@ -163,7 +163,7 @@ We then need to create, by the SLURM user “slurm”, the directories of
 log files PID files State save and make them writable. We take inspiration from an existing slurm.conf file. So the directories will be
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-02-11 16:12:36 +0100 CET'>February 11, 2024</span>&nbsp;·&nbsp;7 min</footer>
+  <footer class="entry-footer"><span title='2024-02-11 16:12:36 +0100 CET'>February 11, 2024</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Francesco Lorenzi</footer>
   <a class="entry-link" aria-label="post link to A clean installation of SLURM scheduler" href="https://lorenzifrancesco.github.io/post/numerics/slurm/"></a>
 </article>
     </main>

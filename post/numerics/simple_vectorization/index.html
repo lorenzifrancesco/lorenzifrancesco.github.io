@@ -11,7 +11,7 @@
 Let&rsquo;s say we want to explore the behavior of f in some range of parameters.
 How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be very inefficient, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least.
 Let&rsquo;s say the parameters have a definite number of samples (len(x)  or np.shape(x) in pyhon, with x a parameter vector). We change the axis of the numpy vectors, making them multi-dimensional vectors (or, respecting the notion of dimension in algebra, multi-axial):">
-<meta name="author" content="">
+<meta name="author" content="Francesco Lorenzi">
 <link rel="canonical" href="https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.9c645a1057f3d80ba627a2b05dea7993bdcf142445f5c7267c33751a16898bbb.css" integrity="sha256-nGRaEFfz2AumJ6KwXep5k73PFCRF9ccmfDN1GhaJi7s=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://lorenzifrancesco.github.io/fava.png">
@@ -101,6 +101,10 @@ Let&rsquo;s say the parameters have a definite number of samples (len(x)  or np.
   "inLanguage": "en",
   "datePublished": "2024-05-09T19:11:37+02:00",
   "dateModified": "2024-05-09T19:11:37+02:00",
+  "author":{
+    "@type": "Person",
+    "name": "Francesco Lorenzi"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/"
@@ -168,7 +172,7 @@ Let&rsquo;s say the parameters have a definite number of samples (len(x)  or np.
     <h1 class="post-title entry-hint-parent">
       Simple (but nontrivial) vectorization in Numpy
     </h1>
-    <div class="post-meta"><span title='2024-05-09 19:11:37 +0200 CEST'>May 9, 2024</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2024-05-09 19:11:37 +0200 CEST'>May 9, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Francesco Lorenzi
 
 </div>
   </header> <div class="toc">
