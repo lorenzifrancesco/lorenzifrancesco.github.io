@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="Francesco Lorenzi">
 <link rel="canonical" href="https://lorenzifrancesco.github.io/tags/computer-programming/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.34945ba044a5de6bb73d2991a21c017673406448f5619a50c6ef55eb589d4c98.css" integrity="sha256-NJRboESl3mu3PSmRohwBdnNAZEj1YZpQxu9V61idTJg=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.92e9a57b89d6ce1dbd3d4727e8f08309c48f1d47ef381d3aeb3b59116ca74ad7.css" integrity="sha256-kumle4nWzh29PUcn6PCDCcSPHUfvOB066ztZEWynStc=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://lorenzifrancesco.github.io/fava.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://lorenzifrancesco.github.io/fava.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://lorenzifrancesco.github.io/fava.png">
@@ -73,28 +73,23 @@
                 </a>
             </li>
             <li>
-                <a href="https://lorenzifrancesco.github.io/tags/posts-overview/" title="Posts Overview">
-                    <span>Posts</span>
+                <a href="https://lorenzifrancesco.github.io/bio/" title="Bio">
+                    <span>Bio</span>
                 </a>
             </li>
             <li>
-                <a href="https://lorenzifrancesco.github.io/post/" title="Posts">
-                    <span>Archive</span>
+                <a href="https://lorenzifrancesco.github.io/research/" title="Research">
+                    <span>Research</span>
                 </a>
             </li>
             <li>
-                <a href="https://lorenzifrancesco.github.io/pics/" title="Pics">
-                    <span>Pics</span>
+                <a href="https://lorenzifrancesco.github.io/talks/" title="Talks and seminars">
+                    <span>Talks and seminars</span>
                 </a>
             </li>
             <li>
-                <a href="https://lorenzifrancesco.github.io/readings/" title="Readings">
-                    <span>Readings</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://lorenzifrancesco.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
+                <a href="https://lorenzifrancesco.github.io/posts/" title="Scientific posts">
+                    <span>Scientific posts</span>
                 </a>
             </li>
         </ul>
@@ -117,7 +112,6 @@
 How can we vectorize the function and iterate over all possible combinations? Is building a Cartesian product the best way? We expect this to be very inefficient, like $O(n^2)$ with respect to $O(n)$ inefficient in memory, at least. Let’s say the parameters have a definite number of samples (len(x) or np.shape(x) in pyhon, with x a parameter vector). We change the axis of the numpy vectors, making them multi-dimensional vectors (or, respecting the notion of dimension in algebra, multi-axial):
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-09 19:11:37 +0200 CEST'>May 9, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Francesco Lorenzi</footer>
   <a class="entry-link" aria-label="post link to Simple (but nontrivial) vectorization in Numpy" href="https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/"></a>
 </article>
 
@@ -131,7 +125,6 @@ How can we vectorize the function and iterate over all possible combinations? Is
 using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs()) @everywhere function loop_compute(x) for i in 1:100000000 x &#43;= sin(x) end return x end t0 = @elapsed loop_compute(1.0) @info @sprintf(&#34;Single eval time [s]: %4.3e&#34;, t0) mat = rand(10, 10) t_pmap = @elapsed pmap(loop_compute, mat) @info @sprintf(&#34;pmap eval time [s] : %4.3e&#34;, t_pmap) t_sing = @elapsed loop_compute.(mat) @info @sprintf(&#34;serial eval time [s] : %4.3e&#34;, t_sing) @info @sprintf(&#34;Speeup ratio: %4444&#34;, t_sing/t_pmap) Try to run this simple script using
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-03-27 10:28:58 +0100 CET'>March 27, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Francesco Lorenzi</footer>
   <a class="entry-link" aria-label="post link to Simple Multiprocessing in Julia" href="https://lorenzifrancesco.github.io/post/numerics/simple_multiprocessing/"></a>
 </article>
 
@@ -145,7 +138,6 @@ using Distributed, Printf @info @sprintf(&#34;Number of workers: %d&#34;, nprocs
 Useful commands Instruction Command Change user su - &lt;username&gt; Change owner chown user:group -R folder Check owner &amp; permissions stat filename List all users with UID cut -d: -f1,3 /etc/passwd List all groups with GID getent group Linux ownership system rwx Owner and permissions: typing la we get informations about the pemissions about a file or a folder
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-02-12 00:00:00 +0000 UTC'>February 12, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Francesco Lorenzi</footer>
   <a class="entry-link" aria-label="post link to Linux Admin Tools" href="https://lorenzifrancesco.github.io/post/numerics/linux-admin-tools/"></a>
 </article>
 
@@ -163,10 +155,9 @@ We then need to create, by the SLURM user “slurm”, the directories of
 log files PID files State save and make them writable. We take inspiration from an existing slurm.conf file. So the directories will be
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-02-11 16:12:36 +0100 CET'>February 11, 2024</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Francesco Lorenzi</footer>
   <a class="entry-link" aria-label="post link to A clean installation of SLURM scheduler" href="https://lorenzifrancesco.github.io/post/numerics/slurm/"></a>
 </article>
     </main>
-    <div id="sfc8jr97ap3p1f55qhq7yrzsyd2d4fb62rk"></div><script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="website counter widget"><img src="https://counter2.optistats.ovh/private/freecounterstat.php?c=8jr97ap3p1f55qhq7yrzsyd2d4fb62rk" border="0" title="website counter widget" alt="website counter widget"></a></noscript></body>
+    </body>
 
 </html>

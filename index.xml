@@ -6,8 +6,81 @@
     <description>Recent content on Francesco Lorenzi</description>
     <generator>Hugo -- 0.161.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lorenzifrancesco.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bio</title>
+      <link>https://lorenzifrancesco.github.io/bio/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://lorenzifrancesco.github.io/bio/</guid>
+      <description>&lt;div class=&#34;profile-block&#34;&gt;
+  &lt;div class=&#34;profile-copy&#34;&gt;
+    &lt;h3&gt;Francesco Lorenzi&lt;/h3&gt;
+    &lt;p&gt;Postdoctoral researcher&lt;br&gt;
+    Department of Information Engineering&lt;br&gt;
+    University of Padova&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Padova, Italy&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;mailto:francesco.lorenzi.2@phd.unipd.it&#34;&gt;Email&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;https://github.com/lorenzifrancesco&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;https://scholar.google.it/citations?user=zZfA3VcAAAAJ&amp;hl=en&amp;oi=ao&#34;&gt;Google Scholar&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/academic_cv_lorenzi.pdf&#34;&gt;CV&lt;/a&gt;, April 2026&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;img src=&#34;https://lorenzifrancesco.github.io/images/email.jpg&#34; alt=&#34;Francesco Lorenzi&#34; class=&#34;profile-photo&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt;I did my Ph.D. in Theoretical Physics of Matter, completed in September 2025. During the Ph.D. I worked on matter-wave solitons, nonlinear phenomena in Bose-Einstein condensates such as Josephson oscillations, and quantum scattering theory for ultracold atomic collisions.&lt;/p&gt;
+&lt;h3 id=&#34;academic-experience-and-education&#34;&gt;Academic experience and education&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Postdoctoral researcher&lt;/strong&gt;, Department of Information Engineering, University of Padova. Current work on photonics, electromagnetics, nonlinear wave propagation, and realistic simulations for optical communications.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ph.D. in Theoretical Physics of Matter&lt;/strong&gt;, University of Padova, completed in September 2025. Thesis: &lt;em&gt;Nonlinear physics of ultracold quantum gases and optical fields in media&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;M.Sc. thesis&lt;/strong&gt;, &lt;em&gt;Nonlinear noise in WDM systems: study of classical and quantum channel interaction and capacity&lt;/em&gt;, September 2022. &lt;a href=&#34;https://lorenzifrancesco.github.io/docs/Lorenzi_NLIN_BW.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;B.Sc. thesis&lt;/strong&gt;, &lt;em&gt;Dispersione cromatica e non linearita in fibra ottica, un&amp;rsquo;analisi simulativa&lt;/em&gt;. &lt;a href=&#34;https://lorenzifrancesco.github.io/docs/tesina.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;other-interests&#34;&gt;Other interests&lt;/h3&gt;
+&lt;p&gt;My personal interests include mathematics, especially analysis and geometry, philosophy of science, RF and microwave electronics, and music.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>https://lorenzifrancesco.github.io/research/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://lorenzifrancesco.github.io/research/</guid>
+      <description>&lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and electromagnetics&lt;/h3&gt;
+&lt;p&gt;My current research interests are in theoretical aspects of light propagation and in the use of methods from quantum mechanics to understand photonic phenomena. I am currently working on material and structural slow light, nonlinear effects in waveguides, geometric algebra for classical electrodynamics, and optical solitons.&lt;/p&gt;
+&lt;p&gt;Some relevant publications:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2606.22553&#34;&gt;&lt;em&gt;Dimensional reduction for optical beams with thermal nonlocal nonlinearity&lt;/em&gt;&lt;/a&gt;, accepted in Frontiers of Physics (2026).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://doi.org/10.1088/2515-7647/ae271c&#34;&gt;&lt;em&gt;Variational treatment of the electromagnetic field in an optical cavity with a moving mirror&lt;/em&gt;&lt;/a&gt;, Journal of Physics: Photonics &lt;strong&gt;8&lt;/strong&gt;, 015023 (2026).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://doi.org/10.1103/pkn5-9mb4&#34;&gt;&lt;em&gt;Optical cavity in the relativistic regime for laser propulsion&lt;/em&gt;&lt;/a&gt;, Physical Review Applied &lt;strong&gt;24&lt;/strong&gt;, 034033 (2025).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://doi.org/10.1515/nanoph-2024-0591&#34;&gt;&lt;em&gt;Variational approach to multimode nonlinear optical fibers&lt;/em&gt;&lt;/a&gt;, Nanophotonics &lt;strong&gt;14&lt;/strong&gt;, 805-813 (2025).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;optical-communications-and-simulations&#34;&gt;Optical communications and simulations&lt;/h2&gt;
+&lt;p&gt;I also like to work close to implementation details and numerical modelling. In particular, I perform realistic simulations for the evaluation of noise in high-throughput optical communications, including scenarios where classical channels coexist with QKD channels.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talks and seminars</title>
+      <link>https://lorenzifrancesco.github.io/talks/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://lorenzifrancesco.github.io/talks/</guid>
+      <description>&lt;h3 id=&#34;presentations-at-conferences-and-workshops&#34;&gt;Presentations at conferences and workshops&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/icop2026.pdf&#34;&gt;ICOP2026&lt;/a&gt;, Italian Conference of Optics and Photonics, L&amp;rsquo;Aquila, Italy, 15-17 June 2026, presentation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/poster_QTech2.pdf&#34;&gt;QSnow-QTech 2026&lt;/a&gt;, QSnow-QTech workshop, January 2026, poster.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/badHonnef2025.pdf&#34;&gt;Bad Honnef 2025&lt;/a&gt;, Bad Honnef physics school on Ultracold Quantum Matter, August 2025, &lt;a href=&#34;https://lorenzifrancesco.github.io/docs/badHonnefposter.pdf&#34;&gt;poster&lt;/a&gt; and flash presentation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/CAPS.pdf&#34;&gt;CAPS24&lt;/a&gt;, Cold Atom Workshop, Barcelona, January 2024, poster.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/cmd30.pdf&#34;&gt;CMD30/FisMat2023&lt;/a&gt;, Milan, September 2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/ecoc.pdf&#34;&gt;ECOC22&lt;/a&gt;, European Conference on Optical Communications, Basel, September 2022.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;seminars&#34;&gt;Seminars&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/peg-presentation.pdf&#34;&gt;&lt;em&gt;A couple of algorithms for numerical optics: Gerchberg-Saxton phase retrieval and &amp;ldquo;Fast&amp;rdquo; Hankel transform&lt;/em&gt;&lt;/a&gt;, PEG meeting presentation, to be given in 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/bqmc.pdf&#34;&gt;&lt;em&gt;Matter-wave soliton dynamics @ BQMC&lt;/em&gt;&lt;/a&gt;, October 2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/RG1_mixtures_Lorenzi.pdf&#34;&gt;&lt;em&gt;Study of the lambda and phase separation transitions in 3He-4He mixtures&lt;/em&gt;&lt;/a&gt;, Ph.D. course &lt;em&gt;Renormalization Group in Statistical Mechanics&lt;/em&gt;, October 2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/RG2_scaling_Lorenzi.pdf&#34;&gt;&lt;em&gt;Renormalization group study of first-order phase transitions: scaling properties and finite-size effects&lt;/em&gt;&lt;/a&gt;, Ph.D. course &lt;em&gt;Renormalization Group in Statistical Mechanics&lt;/em&gt;, October 2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/scattering.pdf&#34;&gt;&lt;em&gt;Scattering theory&lt;/em&gt;&lt;/a&gt;, Ph.D. course &lt;em&gt;Quantum physics with atoms and ions&lt;/em&gt;, April 2023.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Within the &lt;a href=&#34;https://fnip.dfa.unipd.it&#34;&gt;FNIP initiative&lt;/a&gt;, I co-organized the seminar &lt;em&gt;Open source tools for classical and quantum optics&lt;/em&gt; in October 2025 and the FNIPday 2026 in March 2026.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Poisson-Boltzmann equation</title>
       <link>https://lorenzifrancesco.github.io/post/classical/poisson-boltzmann/</link>
@@ -77,33 +150,17 @@ therefore mapping the previous electromagnetic problem into a new problem with a
     </item>
     <item>
       <title>Posts Overview</title>
-      <link>https://lorenzifrancesco.github.io/posts/</link>
-      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://lorenzifrancesco.github.io/posts/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/post/classical&#34;&gt;Classical Mechanics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/content/post/quantum&#34;&gt;Quantum mechanics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/content/post//Mathematics&#34;&gt;Mathematics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/content/post/numerics&#34;&gt;Numerics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/content/post/pe&#34;&gt;Photonics and Electromagnetics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Posts Overview</title>
       <link>https://lorenzifrancesco.github.io/tags/posts-overview/</link>
       <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://lorenzifrancesco.github.io/tags/posts-overview/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Scientific posts</title>
+      <link>https://lorenzifrancesco.github.io/posts/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://lorenzifrancesco.github.io/posts/</guid>
+      <description>&lt;p&gt;Here I collect my scientific and technical notes, ordered from newest to oldest.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Longitudinal and transverse relativistic dynamics</title>
@@ -216,7 +273,7 @@ Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&g
       <pubDate>Sun, 11 Feb 2024 16:12:36 +0100</pubDate>
       <guid>https://lorenzifrancesco.github.io/post/numerics/slurm/</guid>
       <description>&lt;h2 id=&#34;desired-topology-and-active-services&#34;&gt;Desired topology and active services&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/slurm/SLURM.jpg&#34; alt=&#34;topology&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lorenzifrancesco.github.io/images/slurm/SLURM.jpg&#34; alt=&#34;topology&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;slurm-super-quick-start-guide&#34;&gt;SLURM super quick start guide&lt;/h2&gt;
 &lt;p&gt;The guide is available &lt;a href=&#34;https://slurm.schedmd.com/quickstart_admin.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -241,7 +298,7 @@ So the directories will be&lt;/p&gt;</description>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://lorenzifrancesco.github.io/post/classical/kapitza/</guid>
       <description>&lt;p&gt;The Kapitza pendulum is a model in Classical mechanics that exhibits counterintuitive behaviour. It is a pendulum with a pivot point that oscillates vertically.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../images/kapitza/kapitza.jpg&#34; alt=&#34;Normal pendulum and Kapitza pendulum&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lorenzifrancesco.github.io/images/kapitza/kapitza.jpg&#34; alt=&#34;Normal pendulum and Kapitza pendulum&#34;  /&gt;
 &lt;/p&gt;
 &lt;p&gt;If $\phi$ is the angle the pendulum have with respect to the vertical downward position, for some values of the driving frequency and amplitude, it can be stable in the inverted position $\phi = \pi$, and unstable in the upright position $\phi = 0$.&lt;/p&gt;</description>
     </item>

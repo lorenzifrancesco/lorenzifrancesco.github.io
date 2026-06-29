@@ -74,7 +74,7 @@ $$&lt;/p&gt;</description>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://lorenzifrancesco.github.io/post/classical/kapitza/</guid>
       <description>&lt;p&gt;The Kapitza pendulum is a model in Classical mechanics that exhibits counterintuitive behaviour. It is a pendulum with a pivot point that oscillates vertically.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../../images/kapitza/kapitza.jpg&#34; alt=&#34;Normal pendulum and Kapitza pendulum&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lorenzifrancesco.github.io/images/kapitza/kapitza.jpg&#34; alt=&#34;Normal pendulum and Kapitza pendulum&#34;  /&gt;
 &lt;/p&gt;
 &lt;p&gt;If $\phi$ is the angle the pendulum have with respect to the vertical downward position, for some values of the driving frequency and amplitude, it can be stable in the inverted position $\phi = \pi$, and unstable in the upright position $\phi = 0$.&lt;/p&gt;</description>
     </item>

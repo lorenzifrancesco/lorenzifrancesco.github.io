@@ -91,7 +91,7 @@ Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&g
       <pubDate>Sun, 11 Feb 2024 16:12:36 +0100</pubDate>
       <guid>https://lorenzifrancesco.github.io/post/numerics/slurm/</guid>
       <description>&lt;h2 id=&#34;desired-topology-and-active-services&#34;&gt;Desired topology and active services&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../../images/slurm/SLURM.jpg&#34; alt=&#34;topology&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lorenzifrancesco.github.io/images/slurm/SLURM.jpg&#34; alt=&#34;topology&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;slurm-super-quick-start-guide&#34;&gt;SLURM super quick start guide&lt;/h2&gt;
 &lt;p&gt;The guide is available &lt;a href=&#34;https://slurm.schedmd.com/quickstart_admin.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
