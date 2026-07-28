@@ -4,7 +4,7 @@
     <title>Computer Programming on Francesco Lorenzi</title>
     <link>https://lorenzifrancesco.github.io/tags/computer-programming/</link>
     <description>Recent content in Computer Programming on Francesco Lorenzi</description>
-    <generator>Hugo -- 0.161.1</generator>
+    <generator>Hugo -- 0.164.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 May 2024 19:11:37 +0200</lastBuildDate>
     <atom:link href="https://lorenzifrancesco.github.io/tags/computer-programming/index.xml" rel="self" type="application/rss+xml" />
@@ -52,34 +52,34 @@ Let&amp;rsquo;s say the parameters have a definite number of samples (&lt;code&g
       <description>&lt;p&gt;This post is designed to be updated as soon as new tricks come handy.&lt;/p&gt;
 &lt;h2 id=&#34;useful-commands&#34;&gt;Useful commands&lt;/h2&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Instruction&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Change user&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;su - &amp;lt;username&amp;gt;&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Change owner&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;chown user:group -R folder&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Check owner &amp;amp; permissions&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;stat filename&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;List all users with UID&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;cut -d: -f1,3 /etc/passwd&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;List all groups with GID&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;getent group&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Instruction&lt;/th&gt;
+					&lt;th&gt;Command&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Change user&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;su - &amp;lt;username&amp;gt;&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Change owner&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;chown user:group -R folder&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Check owner &amp;amp; permissions&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;stat filename&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;List all users with UID&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;cut -d: -f1,3 /etc/passwd&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;List all groups with GID&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;getent group&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;linux-ownership-system&#34;&gt;Linux ownership system&lt;/h2&gt;
 &lt;h3 id=&#34;rwx&#34;&gt;rwx&lt;/h3&gt;

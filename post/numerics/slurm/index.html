@@ -233,26 +233,26 @@ Status of munge can be probed by</p>
 <p>and make them writable. We take inspiration from an existing <code>slurm.conf</code> file.
 So the directories will be</p>
 <table>
-  <thead>
-      <tr>
-          <th>Function</th>
-          <th>Directory</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>PID files</td>
-          <td>&mdash;</td>
-      </tr>
-      <tr>
-          <td>SlurmdSpoolDir</td>
-          <td>/var/spool/slurmd</td>
-      </tr>
-      <tr>
-          <td>StateSaveLocation</td>
-          <td>/var/spool/slurmctld</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Function</th>
+					<th>Directory</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>PID files</td>
+					<td>&mdash;</td>
+			</tr>
+			<tr>
+					<td>SlurmdSpoolDir</td>
+					<td>/var/spool/slurmd</td>
+			</tr>
+			<tr>
+					<td>StateSaveLocation</td>
+					<td>/var/spool/slurmctld</td>
+			</tr>
+	</tbody>
 </table>
 <p>Beware, <code>slurm</code> is not in the sudoers group (and it must not be!).
 If the directories are already there, we must <code>chown</code> them, and <code>chmod</code> them to writable by <code>slurm</code>.
