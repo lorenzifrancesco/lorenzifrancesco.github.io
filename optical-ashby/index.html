@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Optical Ashby Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <div><p class="eyebrow">OPTICAL MATERIALS / SOURCE DATASETS</p><h1>Optical Ashby Explorer</h1></div>
+      <div class="masthead-meta"><span class="system-badge">STATIC BLOG BUILD</span><p class="subtitle">Explore source-resolved optical constants in your browser.</p></div>
+    </header>
+    <section class="spectral-strip">
+      <div><label for="spectral-mode">Coordinate</label><select id="spectral-mode"><option value="wavelength">Wavelength</option><option value="frequency">Frequency</option></select></div>
+      <div><label for="band-preset">Band</label><select id="band-preset"></select></div>
+      <div><label id="spectral-input-label" for="wavelength-input">Wavelength [um]</label><input id="wavelength-input" type="number" min="0.000001" step="any"></div>
+      <div class="dual-readout"><strong id="wavelength-display"></strong><span id="frequency-display"></span></div>
+      <div class="slider-wrap"><input id="wavelength-slider" type="range" step="0.0001"></div>
+    </section>
+    <main class="workspace">
+      <aside class="control-panel">
+        <div class="rail-heading"><p class="rail-index">MAP</p><h2>Axes</h2></div>
+        <div class="axis-block"><label for="x-property">Horizontal</label><select id="x-property"></select><div class="segmented"><label><input type="radio" name="x-scale" value="linear" checked> Linear</label><label><input type="radio" name="x-scale" value="log"> Log</label></div></div>
+        <div class="axis-block"><label for="y-property">Vertical</label><select id="y-property"></select><div class="segmented"><label><input type="radio" name="y-scale" value="linear" checked> Linear</label><label><input type="radio" name="y-scale" value="log"> Log</label></div></div>
+        <label>Point identity</label><div class="stacked-choice"><label><input type="radio" name="point-mode" value="dataset" checked> Source datasets</label><label><input type="radio" name="point-mode" value="material"> One per material</label></div>
+        <details class="filter-disclosure"><summary><span>Filters & bounds</span><span class="disclosure-icon">+</span></summary><div class="filter-body">
+          <label for="material-search">Material name</label><input id="material-search" type="search" placeholder="Search names">
+          <label for="category-filter">Categories</label><select id="category-filter" multiple></select>
+          <label>Horizontal range</label><div class="bounds"><input id="x-min" type="number" placeholder="min"><input id="x-max" type="number" placeholder="max"></div>
+          <label>Vertical range</label><div class="bounds"><input id="y-min" type="number" placeholder="min"><input id="y-max" type="number" placeholder="max"></div>
+          <div class="requirements"><label><input id="require-k" type="checkbox"> Known extinction coefficient</label><label><input id="require-density" type="checkbox"> Known density</label></div>
+        </div></details>
+        <button id="export-csv" class="export-button">Export current rows as CSV</button>
+      </aside>
+      <section class="plot-panel">
+        <div class="status-row"><div id="point-count" class="status-primary"></div><div id="warning-box" class="warning-box"></div></div>
+        <div id="ashby-graph"></div>
+        <section id="detail-panel" class="detail-panel"></section>
+      </section>
+    </main>
+    <footer>Optical data format: refractiveindex.info. Cite Polyanskiy (2024), <a href="https://doi.org/10.1038/s41597-023-02898-2" target="_blank" rel="noopener noreferrer">10.1038/s41597-023-02898-2</a>.</footer>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
