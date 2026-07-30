@@ -45,7 +45,7 @@
       <link>https://lorenzifrancesco.github.io/research/</link>
       <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://lorenzifrancesco.github.io/research/</guid>
-      <description>&lt;h2 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and electromagnetics&lt;/h2&gt;
+      <description>&lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and electromagnetics&lt;/h3&gt;
 &lt;p&gt;My current research interests are in theoretical aspects of light propagation and in the use of methods from quantum mechanics to understand photonic phenomena. I am currently working on material and structural slow light, nonlinear effects in waveguides, geometric algebra for classical electrodynamics, and optical solitons.&lt;/p&gt;
 &lt;p&gt;Some relevant publications:&lt;/p&gt;
 &lt;ul&gt;
@@ -54,7 +54,7 @@
 &lt;li&gt;&lt;a href=&#34;https://doi.org/10.1103/pkn5-9mb4&#34;&gt;&lt;em&gt;Optical cavity in the relativistic regime for laser propulsion&lt;/em&gt;&lt;/a&gt;, Physical Review Applied &lt;strong&gt;24&lt;/strong&gt;, 034033 (2025).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://doi.org/10.1515/nanoph-2024-0591&#34;&gt;&lt;em&gt;Variational approach to multimode nonlinear optical fibers&lt;/em&gt;&lt;/a&gt;, Nanophotonics &lt;strong&gt;14&lt;/strong&gt;, 805-813 (2025).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;optical-communications-and-simulations&#34;&gt;Optical communications and simulations&lt;/h2&gt;
+&lt;h3 id=&#34;optical-communications-and-simulations&#34;&gt;Optical communications and simulations&lt;/h3&gt;
 &lt;p&gt;I also like to work close to implementation details and numerical modelling. In particular, I perform realistic simulations for the evaluation of noise in high-throughput optical communications, including scenarios where classical channels coexist with QKD channels.&lt;/p&gt;</description>
     </item>
     <item>
