@@ -47,15 +47,11 @@
       <guid>https://lorenzifrancesco.github.io/research/</guid>
       <description>&lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and electromagnetics&lt;/h3&gt;
 &lt;p&gt;My current research interests are in theoretical aspects of light propagation and in the use of methods from quantum mechanics to understand photonic phenomena. I am currently working on material and structural slow light, nonlinear effects in waveguides, geometric algebra for classical electrodynamics, and optical solitons.&lt;/p&gt;
-&lt;p&gt;Some relevant publications:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2606.22553&#34;&gt;&lt;em&gt;Dimensional reduction for optical beams with thermal nonlocal nonlinearity&lt;/em&gt;&lt;/a&gt;, accepted in Frontiers of Physics (2026).&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://doi.org/10.1088/2515-7647/ae271c&#34;&gt;&lt;em&gt;Variational treatment of the electromagnetic field in an optical cavity with a moving mirror&lt;/em&gt;&lt;/a&gt;, Journal of Physics: Photonics &lt;strong&gt;8&lt;/strong&gt;, 015023 (2026).&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://doi.org/10.1103/pkn5-9mb4&#34;&gt;&lt;em&gt;Optical cavity in the relativistic regime for laser propulsion&lt;/em&gt;&lt;/a&gt;, Physical Review Applied &lt;strong&gt;24&lt;/strong&gt;, 034033 (2025).&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://doi.org/10.1515/nanoph-2024-0591&#34;&gt;&lt;em&gt;Variational approach to multimode nonlinear optical fibers&lt;/em&gt;&lt;/a&gt;, Nanophotonics &lt;strong&gt;14&lt;/strong&gt;, 805-813 (2025).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;optical-communications-and-simulations&#34;&gt;Optical communications and simulations&lt;/h3&gt;
-&lt;p&gt;I also like to work close to implementation details and numerical modelling. In particular, I perform realistic simulations for the evaluation of noise in high-throughput optical communications, including scenarios where classical channels coexist with QKD channels.&lt;/p&gt;</description>
+&lt;figure class=&#34;research-figure&#34;&gt;
+  &lt;img src=&#34;https://lorenzifrancesco.github.io/images/research/laser-propulsion-cavity.png&#34; alt=&#34;Photon-recycling laser-propulsion cavity with a lightsail and a drive mirror&#34;&gt;
+  &lt;figcaption&gt;Photon-recycling cavity for laser propulsion: repeated reflections between a drive mirror and a lightsail enhance the radiation pressure. Adapted from Lorenzi &lt;em&gt;et al.&lt;/em&gt;, Physical Review Applied &lt;strong&gt;24&lt;/strong&gt;, 034033 (2025).&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Some relevant publications:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Talks and seminars</title>
