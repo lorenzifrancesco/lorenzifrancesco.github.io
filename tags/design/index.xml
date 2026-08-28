@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Design on Francesco Lorenzi</title>
+    <link>https://lorenzifrancesco.github.io/tags/design/</link>
+    <description>Recent content in Design on Francesco Lorenzi</description>
+    <generator>Hugo -- 0.165.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lorenzifrancesco.github.io/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I make posters for scientific events</title>
+      <link>https://lorenzifrancesco.github.io/post/misc/designing-event-posters/</link>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://lorenzifrancesco.github.io/post/misc/designing-event-posters/</guid>
+      <description>&lt;p&gt;A poster for an event has a difficult job. It must attract attention, explain what the event is, and give the practical information in a few seconds. At the same time, it may need to contain portraits, talk titles, logos, a timetable, and a QR code.&lt;/p&gt;
+&lt;p&gt;I learned most of my workflow while preparing posters for &lt;strong&gt;PRAPI&lt;/strong&gt; (Ph.D. Research Activity Presentation) and &lt;strong&gt;FNIP&lt;/strong&gt; (Focus on Optical Neuro-Imaging and Photonics). I make the final composition in &lt;a href=&#34;https://inkscape.org/&#34;&gt;Inkscape&lt;/a&gt;, but I also use small scripts when a background or a repeated layout can be generated more easily than it can be drawn.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

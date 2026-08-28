@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lorenzifrancesco.github.io/</loc>
-    <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lorenzifrancesco.github.io/tags/computer-programming/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lorenzifrancesco.github.io/tags/design/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lorenzifrancesco.github.io/post/misc/designing-event-posters/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lorenzifrancesco.github.io/post/</loc>
+    <lastmod>2026-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lorenzifrancesco.github.io/bio/</loc>
     <lastmod>2026-06-29T00:00:00+00:00</lastmod>
@@ -20,26 +32,20 @@
     <loc>https://lorenzifrancesco.github.io/post/classical/poisson-boltzmann/</loc>
     <lastmod>2025-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://lorenzifrancesco.github.io/post/</loc>
-    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://lorenzifrancesco.github.io/post/pe/conformal-copy/</loc>
     <lastmod>2024-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lorenzifrancesco.github.io/tags/photonics-and-electromagnetics/</loc>
     <lastmod>2024-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://lorenzifrancesco.github.io/tags/posts-overview/</loc>
+    <loc>https://lorenzifrancesco.github.io/posts/</loc>
     <lastmod>2024-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://lorenzifrancesco.github.io/posts/</loc>
+    <loc>https://lorenzifrancesco.github.io/tags/posts-overview/</loc>
     <lastmod>2024-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lorenzifrancesco.github.io/post/relativistic/</loc>
     <lastmod>2024-07-24T18:54:44+02:00</lastmod>
-  </url><url>
-    <loc>https://lorenzifrancesco.github.io/tags/computer-programming/</loc>
-    <lastmod>2024-05-09T19:11:37+02:00</lastmod>
   </url><url>
     <loc>https://lorenzifrancesco.github.io/post/numerics/simple_vectorization/</loc>
     <lastmod>2024-05-09T19:11:37+02:00</lastmod>
