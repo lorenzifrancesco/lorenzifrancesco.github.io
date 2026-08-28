@@ -13,8 +13,17 @@
       <link>https://lorenzifrancesco.github.io/post/misc/designing-event-posters/</link>
       <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://lorenzifrancesco.github.io/post/misc/designing-event-posters/</guid>
-      <description>&lt;p&gt;A poster for an event has a difficult job. It must attract attention, explain what the event is, and give the practical information in a few seconds. At the same time, it may need to contain portraits, talk titles, logos, a timetable, and a QR code.&lt;/p&gt;
-&lt;p&gt;I learned most of my workflow while preparing posters for &lt;strong&gt;PRAPI&lt;/strong&gt; (Ph.D. Research Activity Presentation) and &lt;strong&gt;FNIP&lt;/strong&gt; (Focus on Optical Neuro-Imaging and Photonics). I make the final composition in &lt;a href=&#34;https://inkscape.org/&#34;&gt;Inkscape&lt;/a&gt;, but I also use small scripts when a background or a repeated layout can be generated more easily than it can be drawn.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A scientific poster must attract attention and communicate the event in seconds, despite portraits, schedules, logos, and QR codes. For &lt;strong&gt;PRAPI&lt;/strong&gt; and &lt;strong&gt;FNIP&lt;/strong&gt;, I compose in &lt;a href=&#34;https://inkscape.org/&#34;&gt;Inkscape&lt;/a&gt; and automate repetitive elements with scripts.&lt;/p&gt;
+&lt;h2 id=&#34;start-with-the-reading-order&#34;&gt;Start with the reading order&lt;/h2&gt;
+&lt;p&gt;I decide what people should read first:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Name of the event.&lt;/li&gt;
+&lt;li&gt;Date and place.&lt;/li&gt;
+&lt;li&gt;Main speakers or programme.&lt;/li&gt;
+&lt;li&gt;Registration link and QR code.&lt;/li&gt;
+&lt;li&gt;Organizers and sponsors.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Text size follows this order: the title works at a distance; details reward a closer look.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simple (but nontrivial) vectorization in Numpy</title>
