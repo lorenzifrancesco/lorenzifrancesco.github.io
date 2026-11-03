@@ -33,15 +33,14 @@
       <description>&lt;div class=&#34;profile-block&#34;&gt;
   &lt;div class=&#34;profile-copy&#34;&gt;
     &lt;h3&gt;Francesco Lorenzi&lt;/h3&gt;
-    &lt;p&gt;Postdoctoral researcher&lt;br&gt;
-    Department of Information Engineering&lt;br&gt;
+    &lt;p&gt;Ph.D. in Physics&lt;br&gt;
     University of Padova&lt;/p&gt;
     &lt;ul&gt;
       &lt;li&gt;Padova, Italy&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&#34;mailto:francesco.lorenzi.2@phd.unipd.it&#34;&gt;Email&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;mailto:francesco.lorenzi98@gmail.com&#34;&gt;Email&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&#34;https://github.com/lorenzifrancesco&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&#34;https://scholar.google.it/citations?user=zZfA3VcAAAAJ&amp;hl=en&amp;oi=ao&#34;&gt;Google Scholar&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/academic_cv_lorenzi.pdf&#34;&gt;CV&lt;/a&gt;, September 2026&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/academic_cv_lorenzi.pdf&#34;&gt;CV&lt;/a&gt;, November 2026&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
   &lt;img src=&#34;https://lorenzifrancesco.github.io/images/email.jpg&#34; alt=&#34;Francesco Lorenzi&#34; class=&#34;profile-photo&#34;&gt;
@@ -49,10 +48,10 @@
 &lt;p&gt;I did my Ph.D. in Physics, completed in March 2026. During the Ph.D. I worked on matter-wave solitons, nonlinear phenomena in Bose-Einstein condensates such as Josephson oscillations, and quantum scattering theory for ultracold atomic collisions.&lt;/p&gt;
 &lt;h3 id=&#34;academic-experience-and-education&#34;&gt;Academic experience and education&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Postdoctoral researcher&lt;/strong&gt;, Department of Information Engineering, University of Padova. Current work on photonics, electromagnetics, nonlinear wave propagation, and realistic simulations for optical communications.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Postdoctoral researcher&lt;/strong&gt;, Department of Information Engineering, University of Padova, October 2025 – September 2026. Work on photonics, electromagnetics, nonlinear wave propagation, and realistic simulations for optical communications.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Ph.D. in Physics&lt;/strong&gt;, University of Padova, completed in March 2026. Thesis: &lt;em&gt;Nonlinear physics of ultracold quantum gases and optical fields in media&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;M.Sc. thesis&lt;/strong&gt;, &lt;em&gt;Nonlinear noise in WDM systems: study of classical and quantum channel interaction and capacity&lt;/em&gt;, September 2022. &lt;a href=&#34;https://lorenzifrancesco.github.io/docs/Lorenzi_NLIN_BW.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;B.Sc. thesis&lt;/strong&gt;, &lt;em&gt;Dispersione cromatica e non linearita in fibra ottica, un&amp;rsquo;analisi simulativa&lt;/em&gt;. &lt;a href=&#34;https://lorenzifrancesco.github.io/docs/tesina.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;B.Sc. thesis&lt;/strong&gt;, &lt;em&gt;Dispersione cromatica e non linearità in fibra ottica, un&amp;rsquo;analisi simulativa&lt;/em&gt;. &lt;a href=&#34;https://lorenzifrancesco.github.io/docs/tesina.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;other-interests&#34;&gt;Other interests&lt;/h3&gt;
 &lt;p&gt;My personal interests include mathematics, especially analysis and geometry, philosophy of science, RF and microwave electronics, and music.&lt;/p&gt;</description>
@@ -97,17 +96,19 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/rinem2026-slow-light.pdf&#34;&gt;RiNEm 2026&lt;/a&gt;, XXVI Riunione Nazionale di Elettromagnetismo, L&amp;rsquo;Aquila, Italy, 6-9 September 2026, presentation on &lt;em&gt;Beer-Lambert absorption enhancement in structural and material slow light&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/rinem2026-nonlocal.pdf&#34;&gt;RiNEm 2026&lt;/a&gt;, XXVI Riunione Nazionale di Elettromagnetismo, L&amp;rsquo;Aquila, Italy, 6-9 September 2026, presentation on &lt;em&gt;Dimensional reduction for paraxial beams with thermally mediated nonlocal nonlinearity&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/icop2026.pdf&#34;&gt;ICOP2026&lt;/a&gt;, Italian Conference of Optics and Photonics, L&amp;rsquo;Aquila, Italy, 15-17 June 2026, presentation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/icop2026.pdf&#34;&gt;ICOP2026&lt;/a&gt;, Italian Conference of Optics and Photonics, L&amp;rsquo;Aquila, Italy, 15-17 June 2026, presentation on &lt;em&gt;Fast estimation of nonlinear interference noise in distributed Raman-amplified few-mode fiber links&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/poster_QTech2.pdf&#34;&gt;QSnow-QTech 2026&lt;/a&gt;, QSnow-QTech workshop, January 2026, poster.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/badHonnef2025.pdf&#34;&gt;Bad Honnef 2025&lt;/a&gt;, Bad Honnef physics school on Ultracold Quantum Matter, August 2025, &lt;a href=&#34;https://lorenzifrancesco.github.io/docs/badHonnefposter.pdf&#34;&gt;poster&lt;/a&gt; and flash presentation.&lt;/li&gt;
+&lt;li&gt;Atomtronics 2024, Benasque, Spain, May 2024, poster on quantum fluctuations in atomic Josephson junctions, co-presented with A. Bardin.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/CAPS.pdf&#34;&gt;CAPS24&lt;/a&gt;, Cold Atom Workshop, Barcelona, January 2024, poster.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/cmd30.pdf&#34;&gt;CMD30/FisMat2023&lt;/a&gt;, Milan, September 2023.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/ecoc.pdf&#34;&gt;ECOC22&lt;/a&gt;, European Conference on Optical Communications, Basel, September 2022.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;seminars&#34;&gt;Seminars&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/peg-presentation-atoms.pdf&#34;&gt;&lt;em&gt;Atomic physics from an electromagnetics point of view: an appetizer&lt;/em&gt;&lt;/a&gt;, PEG group meeting, Department of Information Engineering, University of Padova, 30 September 2026.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/peg-presentation.pdf&#34;&gt;&lt;em&gt;A couple of algorithms for numerical optics: Gerchberg-Saxton phase retrieval and &amp;ldquo;Fast&amp;rdquo; Hankel transform&lt;/em&gt;&lt;/a&gt;, PEG group meeting, Department of Information Engineering, University of Padova, March 2026.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/phd-defense-presentation.pdf&#34;&gt;&lt;em&gt;Nonlinear physics of ultracold quantum gases and optical fields in media&lt;/em&gt;&lt;/a&gt;, Ph.D. thesis defense, University of Padova, 25 March 2026.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/peg-presentation.pdf&#34;&gt;&lt;em&gt;A couple of algorithms for numerical optics: Gerchberg-Saxton phase retrieval and &amp;ldquo;Fast&amp;rdquo; Hankel transform&lt;/em&gt;&lt;/a&gt;, PEG meeting presentation, to be given in 2026.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/bqmc.pdf&#34;&gt;&lt;em&gt;Matter-wave soliton dynamics @ BQMC&lt;/em&gt;&lt;/a&gt;, October 2023.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/RG1_mixtures_Lorenzi.pdf&#34;&gt;&lt;em&gt;Study of the lambda and phase separation transitions in 3He-4He mixtures&lt;/em&gt;&lt;/a&gt;, Ph.D. course &lt;em&gt;Renormalization Group in Statistical Mechanics&lt;/em&gt;, October 2023.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lorenzifrancesco.github.io/docs/RG2_scaling_Lorenzi.pdf&#34;&gt;&lt;em&gt;Renormalization group study of first-order phase transitions: scaling properties and finite-size effects&lt;/em&gt;&lt;/a&gt;, Ph.D. course &lt;em&gt;Renormalization Group in Statistical Mechanics&lt;/em&gt;, October 2023.&lt;/li&gt;
@@ -146,41 +147,6 @@ $$
 \nabla^2 \phi = \frac{1}{\varepsilon} \sum_i z_i a_i \exp[-\beta z_i \phi] , .
 $$
 Aha! A nice nonlinear equation! How to solve it? We can use perturbation methods.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Conformal mapping and Helmholtz equation</title>
-      <link>https://lorenzifrancesco.github.io/post/pe/conformal-copy/</link>
-      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://lorenzifrancesco.github.io/post/pe/conformal-copy/</guid>
-      <description>&lt;p&gt;Inspired by &lt;strong&gt;[10.1126/science.1126493]&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;conformal-transformation-and-helmholtz-equation&#34;&gt;Conformal transformation and Helmholtz equation&lt;/h3&gt;
-&lt;p&gt;Consider the Helmholtz equation describing a scalar phasor field $\psi$ in a 2D space filled by a isotropic medium of index $n(\mathbf{r})$.
-$$
-(\nabla^2 + n^2k_0^2)\psi = 0.
-$$
-the phasor field is corresponding to a given light polarization.
-We can introduce the complex variable $z=x+iy$, and we have the relations
-$$
-\partial_x = \partial_z+\partial_{\bar{z}},
-$$
-$$
-\partial_y = i\left(\partial_z-\partial_{\bar{z}}\right).
-$$
-By substitution, $\nabla^2 = 4\partial_z\partial_{\bar{z}}$.
-Consider now an analytical function $w(z)$. We have
-$$
-\partial_z\partial_{\bar{z}} = \left|\partial_z w\right|^2 \partial_w\partial_{\bar{w}}.
-$$
-We can map the Helmholtz equation into
-$$
-(4\partial_w\partial_{\bar{w}} + n&amp;rsquo;^2k_0^2)\psi = 0
-$$
-where the new index is $n&amp;rsquo; = n |\partial_z w|$.
-Then, we can map again the Helmholtz equation into new variables $u, v$, having $w=u+iv$, obtaining
-$$
-(\partial_u^2+\partial_v^2 + n&amp;rsquo;^2k_0^2)\psi = 0
-$$
-therefore mapping the previous electromagnetic problem into a new problem with a transformed index.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Posts</title>
@@ -337,37 +303,6 @@ So the directories will be&lt;/p&gt;</description>
 &lt;p&gt;If $\phi$ is the angle the pendulum have with respect to the vertical downward position, for some values of the driving frequency and amplitude, it can be stable in the inverted position $\phi = \pi$, and unstable in the upright position $\phi = 0$.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Some interesting bibliography in physics</title>
-      <link>https://lorenzifrancesco.github.io/other/interesting_bibliography/</link>
-      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://lorenzifrancesco.github.io/other/interesting_bibliography/</guid>
-      <description>&lt;p&gt;Here I collect some interesting bibliography in physics, that I have read or I am reading in this moment.&lt;/p&gt;
-&lt;h3 id=&#34;photonics-and-electromagnetics&#34;&gt;Photonics and Electromagnetics&lt;/h3&gt;
-&lt;p&gt;A book with which I am in love and have followed me for many years is&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Electromagnetic Waves&lt;/em&gt;, C. G. Someda, CRC Press (2006)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;quantum-optics-and-noise&#34;&gt;Quantum optics and noise&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Quantum noise - a Handbook of Markovian and Non-Markovian methods with Applications to Quantum Optics&lt;/em&gt;, C. W. Gardiner and P. Zoller, Springer (1999)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Elements of Quantum Optics&lt;/em&gt;, P. Meystre and M. Sargent III, Springer (2007)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Optical Coherence and Quantum Optics&lt;/em&gt;, L. Mandel and E. Wolf, Cambridge University Press (1995)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;condensed-matter-physics&#34;&gt;Condensed Matter Physics&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Many-particle Physics&lt;/em&gt;, G. Mahan, Kluwer Academic (1990)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;essays&#34;&gt;Essays&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Introduzione alla Cibernetica&lt;/em&gt;, N. Wiener, Bollati Boringhieri (2012)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Vortici e Colori -  alle origini dell&amp;rsquo;opera di James Clerk Maxwell&lt;/em&gt;, G. Peruzzi, Dedalo (2010)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;considerazioni-semiserie&#34;&gt;Considerazioni semiserie&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fare ricerca è come giocare a Cluedo: devi capire chi ha fatto cosa, quando, ed usando che metodo.&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
       <title>Binomial from Poisson in composite process</title>
       <link>https://lorenzifrancesco.github.io/post/mathematics/poisson/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
@@ -474,24 +409,6 @@ $$&lt;/p&gt;</description>
       <guid>https://lorenzifrancesco.github.io/post/mathematics/canonical/</guid>
       <description>&lt;p&gt;Nonlinear Schrödinger equations appears in numerous physical setups, like nonlinear optics, condensed matter physics and plasma physics.
 In all of these scenarios, it describes the dynamics of wave envelopes in the presence of dispersion and weak nonlinearity. A natural question is to understand if it is possible to write the equation regardless of the physical details, starting from a purely mathematical assumptions on the evolution of the fields. This is illuminating from the mathematical point of view, besides being an useful exercise.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pics</title>
-      <link>https://lorenzifrancesco.github.io/pics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lorenzifrancesco.github.io/pics/</guid>
-      <description>&lt;p&gt;I collected quite a few visualizations, scientific and non scientific, across the years. These figures are a playful subset patchwork of them, collected and arranged just for fun.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://lorenzifrancesco.github.io/images/pics/chelsea_shape_propagation.gif&#34;
-         alt=&#34;Diffractive propagation of a cat.&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Diffractive propagation of a cat.&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://lorenzifrancesco.github.io/images/pics/Fantasmi_MALEVOLI_tran.png&#34;
-         alt=&#34;This is what is means to have race conditions in Julia. Every point there corresponds to a full 3D Gross-Pitaevskii solution, taking minutes. What an adventure to have to manage these ghosts!&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;This is what is means to have race conditions in Julia. Every point there corresponds to a full 3D Gross-Pitaevskii solution, taking minutes. What an adventure to have to manage these ghosts!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
